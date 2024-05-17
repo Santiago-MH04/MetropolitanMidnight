@@ -3,13 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href=".icons/luna.png" type="image/x-icon">
     <title>chat</title>
 </head>
 <body>
     <header>
-        
-    </header>
-    <main></main>
+        <div>
+          <img id="logo" src="../../public/img/distintivo-metropolitan2.webp" width="300" alt="no cargo nada">
+        </div>
+    
+        <nav>
+          <a href="#">DISCOTECAS</a>
+          <a href="./src/pages/grupos.html">GRUPOS</a>
+          <a href="#">TRANSPORTE</a>
+          <a href="#">CHIVAS</a>
+          <a href="#">ZONA VIP</a>
+          <div id="ingresar">
+            <a href="#">INGRESAR</a>
+          </div>
+        </nav>
+    
+      </header>
+    <main>
+        <article class="container">
+            <div class="col-md-6mt-4">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h3>¡chatiemos!</h3>
+                    </div>
+                    <div id="chat" class="card-body"></div>
+                    <form class="card-footer d-flex align-items-center justify-content-center">
+                        <input type="text" id="message" class="me-2">
+                        <input type="submit" class="btn">
+                    </form>
+
+
+
+                </div>
+            </div>
+        </article>
+    </main>
     <footer></footer>
     <script type="module" src="../js/mainChat.js"></script>
     <script type="module" src="/socket.io/socket.io.js"></script>
