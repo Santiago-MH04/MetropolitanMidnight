@@ -137,6 +137,16 @@ nav a:hover:after {
 
 //fin de contenido estandarizado para toda la pagina
 
+//background
+body{
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/570/819/731/abstract-colors-colorful-dots-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+
+//background botones 
 .btn{
     background-color: var(--color-purple);
 }
@@ -145,3 +155,39 @@ nav a:hover:after {
     background-color: var(--color-black);
     color: var(--color-white);
 }
+
+//back ground chats activos de las discotecas
+
+
+.chat{
+    background-color: var(--color-black);
+}
+
+.card-chat{
+    background-color: var(--color-purple);
+}
+
+.card-chat:hover{
+    background-color: var(--color-softGray);
+    transition: 4s;
+    transform: scale(1.04);
+
+    
+}
+.aside{
+    background-color: #aa5eff;
+}
+
+.containerchat{
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    border-radius: 4px;
+    
+
+}
+
+
+
+
+

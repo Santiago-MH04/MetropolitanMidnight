@@ -1,50 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href=".icons/luna.png" type="image/x-icon">
-    <title>chat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href=".icons/luna.png" type="image/x-icon">
+  <title>chat</title>
 </head>
+
+
 <body>
-    <header>
-        <div>
-          <img id="logo" src="../../public/img/distintivo-metropolitan2.webp" width="300" alt="no cargo nada">
+  <!-- background -->
+
+
+
+  <!-- contenido html -->
+
+  <header>
+    <div>
+      <img id="logo" src="../../public/img/distintivo-metropolitan2.webp" width="300" alt="no cargo nada">
+    </div>
+
+    <nav>
+      <a href="#">DISCOTECAS</a>
+      <a href="./src/pages/grupos.html">GRUPOS</a>
+      <a href="#">TRANSPORTE</a>
+      <a href="#">CHIVAS</a>
+      <a href="#">ZONA VIP</a>
+      <div id="ingresar">
+        <a href="#">INGRESAR</a>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <aside class="m-5">
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+        aria-controls="staticBackdrop">
+        tus chats
+      </button>
+
+      <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-center" id="staticBackdropLabel">discotecas en chat</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    
-        <nav>
-          <a href="#">DISCOTECAS</a>
-          <a href="./src/pages/grupos.html">GRUPOS</a>
-          <a href="#">TRANSPORTE</a>
-          <a href="#">CHIVAS</a>
-          <a href="#">ZONA VIP</a>
-          <div id="ingresar">
-            <a href="#">INGRESAR</a>
-          </div>
-        </nav>
-    
-      </header>
-    <main>
-        <article class="container">
-            <div class="col-md-6mt-4">
-                <div class="card">
-                    <div class="card-header text-center">
-                        <h3>¡chatiemos!</h3>
-                    </div>
-                    <div id="chat" class="card-body"></div>
-                    <form class="card-footer d-flex align-items-center justify-content-center">
-                        <input type="text" id="message" class="me-2">
-                        <input type="submit" class="btn">
-                    </form>
 
-
-
-                </div>
+        <div class="offcanvas-body chat ">
+          <div class="container containerchat ">
+            <div class="card card-chat" style="max-width:max-content;" type="button " aria-label="Close"
+              data-bs-dismiss="offcanvas">
+              <img
+                src="https://img.freepik.com/foto-gratis/discoteca-llena-gente-vasos-cerveza-gran-numero-personas-bebidas_1340-32851.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h2 class="card-text text-center">amarna</h2>
+              </div>
             </div>
-        </article>
-    </main>
-    <footer></footer>
-    <script type="module" src="../js/mainChat.js"></script>
-    <script type="module" src="/socket.io/socket.io.js"></script>
+          </div>
+          <div class="container containerchat ">
+            <div class="card card-chat" style="max-width:max-content;" type="button " aria-label="Close"
+              data-bs-dismiss="offcanvas">
+              <img
+                src="https://img.freepik.com/foto-gratis/discoteca-llena-gente-vasos-cerveza-gran-numero-personas-bebidas_1340-32851.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h2 class="card-text text-center">amarna</h2>
+              </div>
+            </div>
+          </div>
+          <div class="container containerchat ">
+            <div class="card card-chat" style="max-width:max-content;" type="button " aria-label="Close"
+              data-bs-dismiss="offcanvas">
+              <img
+                src="https://img.freepik.com/foto-gratis/discoteca-llena-gente-vasos-cerveza-gran-numero-personas-bebidas_1340-32851.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h2 class="card-text text-center">amarna</h2>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+      </div>
+    </aside>
+
+
+
+    <section class="container">
+      <div class="col-md-6mt-4">
+        <div class="card">
+          <div class="card-header text-center">
+            <h3>¡chatiemos!</h3>
+          </div>
+          <div id="chat" class="card-body"></div>
+          <form id="message-form" class="card-footer d-flex align-items-center justify-content-center">
+            <input type="text" id="message" class="me-2">
+            <input type="submit" class="btn">
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script type="module" src="../js/mainChat.js"></script>
 </body>
-</html>
