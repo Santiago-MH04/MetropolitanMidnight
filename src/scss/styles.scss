@@ -30,6 +30,7 @@ header {
     justify-content: center;
     width: 100%;
     position: fixed;
+    top: 0;
     border: solid white;
     background: var(--color-black);
     display:flex;
@@ -48,17 +49,17 @@ header {
 nav{
     // background-color: rgba($color: #000000, $alpha: 1.0);
     
-    height: 80px;
+    // height: 80px;
     padding-bottom: 0px;
     margin-left: 200px;
     display: flex;
     // border: solid white;
     gap: 130px;
     justify-content: space-between;
-    align-items:end;
+    align-items:center;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
     z-index: 2;
 }
 
@@ -118,32 +119,50 @@ nav a:hover:after {
 
 
 }
-//----circulo central----
+//----Titulo discoteca----
 
-
-
-
-#circle {
-    width: 580px;
-    height: 580px;
-    background-color: var(--color-purple);
-    border-radius: 100%;
-    position: relative;
-    top: 225px;
-    margin: auto;
-
-
+.nombre-discoteca {
+    font-family: "Krub", sans-serif;
 }
 
+
+.nombre-discoteca h2 {
+    margin: 0;
+    font-weight:700 ;
+    line-height: 1.2;
+    padding-top: 130px;
+    color: var(--color-white);
+    font-size:6rem ;
+}
+.nombre-discoteca p {
+    margin: 0;
+    line-height: 0.6;
+    color: var(--color-white);
+    font-size:2rem ;
+    text-align: left;
+}
+
+
+
+
+
 //imagen de la pareja disfrazada de diablo
+
+#contenedor-diablos {
+    padding-top: 140px;
+    display: flex;
+    border: solid white;
+    justify-content: center;
+    
+}
 
 #diablos {
     
     width: 700px;
-    position: relative;
-    z-index:1 ;
-    bottom: 550px;
-    left: 620px;
+    // position: relative;
+    // z-index:1 ;
+
+  
 }
 
 
