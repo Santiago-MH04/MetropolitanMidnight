@@ -35,12 +35,8 @@ header {
     position: fixed;
     top: 0;
     // border: solid white;
-    background: var(--color-black);
+    background-color: var(--color-black);
     display:flex;
-    
-    
-    
-    
 }
 
 #logo {
@@ -136,7 +132,7 @@ nav a:hover:after {
     // top: 430px;
     // left: 350px;
     font-family: "Krub", sans-serif;
-   z-index: 100;
+//    z-index: 100;
 }
 
 
@@ -187,6 +183,7 @@ nav a:hover:after {
 
 .top-discotecas {
     position: relative;
+    z-index: -1;
     padding-left: 30px;
     left: 300px;
     width: 425px;
@@ -195,7 +192,6 @@ nav a:hover:after {
     border: solid var(--color-white);
     border-width: 3px;
     color: var(--color-white);
-    
     font-family: "Krub", sans-serif;
     
 }
