@@ -68,6 +68,7 @@ nav{
 }
 
 #ingresar{
+    margin-top: 9px;
     display: flex;
     align-items: center;
     background-color: var(--color-white);
@@ -163,11 +164,6 @@ nav a:hover:after {
 }
 
 
-
-
-
-
-
 //imagen de la pareja disfrazada de diablo
 
 #contenedor-diablos {
@@ -184,9 +180,67 @@ nav a:hover:after {
     
     width: 700px;
     // position: relative;
-    // z-index:1 ;
+    // z-index:1 ; 
+}
 
-  
+//top discotecas
+
+.top-discotecas {
+    position: relative;
+    padding-left: 30px;
+    left: 300px;
+    width: 800px;
+    // text-align: center;
+    height: 90px;
+    border: solid var(--color-white);
+    border-width: 3px;
+    color: var(--color-white);
+    
+    font-family: "Krub", sans-serif;
+    
+}
+
+.mayo {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+
+
+
+.año {
+    padding-bottom: 10px;
+    line-height: 0.6;
+    // text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+    
+}
+
+#descripcion {
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    font-family: "Krub", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 150px;
+    border: solid var(--color-white);
+    width: 480px;
+    
+}
+
+.titulo {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    
+    text-transform: uppercase;
+    font-weight: 700;
+    
+    
 }
 
 
