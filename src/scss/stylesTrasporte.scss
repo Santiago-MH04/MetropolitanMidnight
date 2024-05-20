@@ -14,10 +14,10 @@
 
 
 :root {
-    --color-black:#1c1c1c;
-    --color-white:#ffffff;
-    --color-purple:#aa5eff;
-    --color-softGray:#dfdede;
+    --color-black: #1c1c1c;
+    --color-white: #ffffff;
+    --color-purple: #aa5eff;
+    --color-softGray: #dfdede;
 }
 
 body {
@@ -25,9 +25,9 @@ body {
 }
 
 header {
-    display:flex;
-    
-    
+    display: flex;
+
+
 }
 
 #logo {
@@ -36,7 +36,7 @@ header {
 }
 
 // nav styles 
-nav{
+nav {
     background-color: var(--color-black);
     position: fixed;
     width: auto;
@@ -47,38 +47,39 @@ nav{
     // border: solid white;
     gap: 130px;
     justify-content: space-between;
-    align-items:end;
+    align-items: end;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
     z-index: 2;
 }
 
-#ingresar{
+#ingresar {
     margin-left: 100px;
     background-color: var(--color-white);
 }
 
-#ingresar:hover{
+#ingresar:hover {
     background-color: #aa5eff;
 }
 
 #ingresar a {
     color: var(--color-black);
     padding-left: 10px;
-    padding-right:10px ;
+    padding-right: 10px;
 }
 
 
 
 nav a {
-    position:relative;
+    position: relative;
     text-decoration: none;
     color: var(--color-softGray);
     letter-spacing: 0.5px;
-    
+
 
 }
+
 nav a:hover {
     color: var(--color-white);
 }
@@ -91,7 +92,7 @@ nav a:after {
     height: 3px;
     width: 0;
     left: 0;
-    bottom:-10px;
+    bottom: -10px;
     transition: 0.3s;
 
 
@@ -105,15 +106,59 @@ nav a:hover:after {
     height: 3px;
     width: 100%;
     left: 0;
-    bottom:-10px;
+    bottom: -10px;
 
 
 }
+
 // ******* ////
+
+// title styles
+
+.containers-drivers {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-white);
+    margin-bottom: 100px;
+    background-color: #b10a0a;
+}
+
+.containers-drivers h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 70px;
+    padding-bottom: 0;
+    margin-right: 400px;
+    background-color: #aa5eff;
+}
+
+.driver-titles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #162970;
+}
+
+.driver-titles h2 span {
+    font-family: "Krub", sans-serif;
+    background-color: #aa5eff;
+    padding-top: 0;
+    font-size: 20px;
+
+}
+
+.driver-titles h2 strong {
+    color: var(--color-purple);
+    font-size: 70px;
+    background-color: #1c1c1c;
+    margin-left: 80px;
+}
+
+//
 
 // card styles
 
-.card { 
+.card {
     align-items: center;
     border: solid 3px;
     border-color: var(--color-white);
@@ -126,7 +171,7 @@ nav a:hover:after {
 .card-title {
     text-align: center;
     font-family: "Oswald", sans-serif;
-    margin-top: 10px ;
+    margin-top: 10px;
     color: var(--color-white);
     font-size: 36px;
 }
@@ -142,7 +187,7 @@ nav a:hover:after {
 
 .card-text {
     text-align: center;
-    font-family: "Krub", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: var(--color-white);
     margin-left: 30px;
     margin-right: 30px;
