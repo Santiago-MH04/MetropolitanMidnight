@@ -26,8 +26,6 @@ body {
 
 header {
     display: flex;
-
-
 }
 
 #logo {
@@ -107,8 +105,6 @@ nav a:hover:after {
     width: 100%;
     left: 0;
     bottom: -10px;
-
-
 }
 
 // ******* ////
@@ -117,52 +113,55 @@ nav a:hover:after {
 
 .containers-drivers {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 7%;
     color: var(--color-white);
-    margin-bottom: 100px;
-    background-color: #b10a0a;
+    margin-bottom: 4%;
 }
 
-.containers-drivers h1 {
-    font-family: "Oswald", sans-serif;
-    font-size: 70px;
-    padding-bottom: 0;
-    margin-right: 400px;
-    background-color: #aa5eff;
+.driver-titles-elig h1 {
+    font-family: "Krub", sans-serif;
+    position: relative;
+    bottom: 13%;
+    left: 40%;
+    font-size: 100px;
+    font-weight: 900;
 }
 
 .driver-titles {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    flex-direction: column;
-    background-color: #162970;
 }
-
-.driver-titles h2 span {
+.driver-titles-tucon{
     font-family: "Krub", sans-serif;
-    background-color: #aa5eff;
-    padding-top: 0;
-    font-size: 20px;
+    position: relative;
+    right: 5%;
+    margin-top: 10%;
 
 }
-
-.driver-titles h2 strong {
+.driver-titles-pri{
+    font-family: "Krub", sans-serif;
+    position: relative;
     color: var(--color-purple);
-    font-size: 70px;
-    background-color: #1c1c1c;
-    margin-left: 80px;
+    font-size: 100px;
+    left: 3%;
 }
-
-//
 
 // card styles
+
+.containers-card {
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
 
 .card {
     align-items: center;
     border: solid 3px;
-    border-color: var(--color-white);
     background-color: var(--color-black);
+    border-color: var(--color-white);
+    margin-bottom: 15%;
     width: 330px;
     height: 500px;
     margin-top: 20px;
