@@ -1,5 +1,5 @@
 {
-  "name": "metropolitan",
+  "name": "discoteca",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,5 +15,20 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3"
-  }
+  },
+  "description": "idk",
+  "main": "index.js",
+  "author": "David Sanchez C",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Santiago-MH04/MetropolitanMidnight.git"
+  },
+  "keywords": [
+    "idk"
+  ],
+  "bugs": {
+    "url": "https://github.com/Santiago-MH04/MetropolitanMidnight/issues"
+  },
+  "homepage": "https://github.com/Santiago-MH04/MetropolitanMidnight#readme"
 }
