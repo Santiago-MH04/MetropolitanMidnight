@@ -1,3 +1,5 @@
+
+//codigo para el slider
 const $next = document.querySelector('.next');
 const $prev = document.querySelector('.prev');
 
@@ -16,3 +18,20 @@ $prev.addEventListener(
         document.querySelector('.slide').prepend(items[items.length - 1]);
     },
 );
+
+//estrellas
+
+document.addEventListener('DOMContentLoaded', () => {
+    const stars = document.querySelectorAll('.star');
+    stars.forEach(star => {
+        star.addEventListener('click', () => {
+            const value = star.getAttribute('data-value');
+            stars.forEach(s => {
+                s.classList.remove('selected');
+                if (s.getAttribute('data-value') <= value) {
+                    s.classList.add('selected');
+                }
+            });
+        });
+    });
+});

@@ -34,56 +34,105 @@
     </header>
 
     <main>
-        <div class="container ">
-            <div class="slide">
-                <div class="item" style="background-image: url(../../public/img/discotecas/CLEMENTINA/248006465_1461746847555568_7469248552349604836_n.jpg);background-size: cover;">
-                    <div class="content">
-                        <div class="name">Clementia</div>
-                        <div class="des">Un lugar unico en su genero</div>
-                        <button>Ver mas</button>
+        <!-- slider -->
+        <section class="slider">
+            <div class="container_slider">
+                <div class="slide">
+                    <div class="item"
+                        style="background-image: url(../../public/img/discotecas/CLEMENTINA/clementia9\.webp);background-size: cover;">
+                        <div class="content">
+                            <div class="name">Clementia</div>
+                            <div class="des">Un lugar unico en su genero</div>
+                            <button>Ver mas</button>
+                        </div>
+                    </div>
+                    <div class="item"
+                        style="background-image: url(../../public/img/discotecas/dulcinea/dulcinea3.webp);background-size: cover;">
+                        <div class="content">
+                            <div class="name">Dulcinea</div>
+                            <div class="des">Un experiencia dulce</div>
+                            <button>Ver mas</button>
+                        </div>
+                    </div>
+                    <div class="item"
+                        style="background-image: url(../../public/img/discotecas/logia/logia3.webp);background-size: cover;">
+                        <div class="content">
+                            <div class="name">Logia</div>
+                            <div class="des">Ritmo intenso, noche sin fin en Logia</div>
+                            <button>Ver mas</button>
+                        </div>
+                    </div>
+                    <div class="item"
+                        style="background-image: url(../../public/img/discotecas/MIRANDA/miranda3.webp);background-size: cover;">
+                        <div class="content">
+                            <div class="name">Miranda</div>
+                            <div class="des">donde la fiesta nunca termina</div>
+                            <button>Ver mas</button>
+                        </div>
+                    </div>
+                    <div class="item"
+                        style="background-image: url(../../public/img/discotecas/PerroNegro/perroNegro5.webp);background-size: cover;">
+                        <div class="content">
+                            <div class="name">Perro negro</div>
+                            <div class="des"> la casa del perreo intenso</div>
+                            <button>Ver mas</button>
+                        </div>
+                    </div>
+                    <div class="item"
+                        style="background-image: url(../../public/img/discotecas/tutaina/tutaina4.webp);background-size: cover;">
+                        <div class="content">
+                            <div class="name">Tutaina</div>
+                            <div class="des"> el lugar donde el reguetón se vive al máximo</div>
+                            <button>Ver mas</button>
+                        </div>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(../../public/img/discotecas/dulcinea/440010760_18105197473377376_5070378254846049651_n.jpg);background-size: cover;">
-                    <div class="content">
-                        <div class="name">Dulcinea</div>
-                        <div class="des">Un experiencia dulce</div>
-                        <button>Ver mas</button>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(../../public/img/discotecas/logia/438254702_18430284502048524_1248628513665413567_n.jpg);background-size: cover;">
-                    <div class="content">
-                        <div class="name">Logia</div>
-                        <div class="des">Ritmo intenso, noche sin fin en Logia</div>
-                        <button>Ver mas</button>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(../../public/img/discotecas/MIRANDA/440074331_18252309901222789_973072043932107809_n.jpg);background-size: cover;">
-                    <div class="content">
-                        <div class="name">Miranda</div>
-                        <div class="des">donde la fiesta nunca termina</div>
-                        <button>Ver mas</button>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(../../public/img/discotecas/PerroNegro/434094715_2205772516424745_1700537556540909714_n.jpg);background-size: cover;">
-                    <div class="content">
-                        <div class="name">Perro negro</div>
-                        <div class="des"> la casa del perreo intenso</div>
-                        <button>Ver mas</button>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(../../public/img/discotecas/tutaina/441050326_403450515874484_6369606946995020026_n.jpg);background-size: cover;">
-                    <div class="content">
-                        <div class="name">Tutaina</div>
-                        <div class="des"> el lugar donde el reguetón se vive al máximo</div>
-                        <button>Ver mas</button>
-                    </div>
+                <div class="button">
+                    <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
-            <div class="button">
-                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
-                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </section>
+
+        <hr>
+        <!-- menu -->
+        <section class="menu_discotecas">
+            <h2>encuentra <span class="text-color"> tu discoteca</span></h2>
+            <select id="menu_discotecas" class="form-select" aria-label="Default select example">
+                <option selected>Selecciona tu zona</option>
+                <option value="1">Poblado</option>
+                <option value="2">Laureles</option>
+                <option value="3">El Centro</option>
+            </select>
+        </section>
+
+        <!-- cards -->
+
+        <section class="cards">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../../public/img/discotecas/PerroNegro/perroNegro2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Perro Negro</h5>
+                    <p class="card-text">el Club Perro Negro ha brindado a sus asistentes un espacio seguro para el perreo. Un sótano oscuro donde la sensualidad resurge entre luces neones y se baila acalorado sin juzgar a nadie.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="star-rating">
+                            <span class="star" data-value="5">&#9733;</span>
+                            <span class="star" data-value="4">&#9733;</span>
+                            <span class="star" data-value="3">&#9733;</span>
+                            <span class="star" data-value="2">&#9733;</span>
+                            <span class="star" data-value="1">&#9733;</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">ver mas</a>
+                </div>
             </div>
-        </div>
+            
+        </section>
 
     </main>
 
