@@ -116,7 +116,7 @@ nav a:hover:after {
     flex-direction: row;
     justify-content: center;
     color: var(--color-white);
-    margin-top: 7%;
+    margin-top: 4%;
     margin-bottom: 4%;
 }
 
@@ -170,14 +170,13 @@ nav a:hover:after {
 }
 
 .box-number {
-    position: absolute;
     display: flex;
+    position: absolute;
     font-size: x-large;
     font-family: "Krub", sans-serif;
     align-items: center;
     justify-content: center;
     background-color: var(--color-white);
-    top: 0%;
     margin-right: 85%;
     font-weight: 900;
     height: 8%;
@@ -188,6 +187,7 @@ nav a:hover:after {
     text-align: center;
     font-family: "Oswald", sans-serif;
     color: var(--color-white);
+    margin-bottom: 0%;
     margin-top: 5%;
     font-size: 36px;
 }
@@ -206,15 +206,16 @@ nav a:hover:after {
 
 .card-img-top {
     width: 45%;
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
 .card-text {
     text-align: center;
     font-family: "Oswald", sans-serif;
     color: var(--color-white);
-    margin-left: 30px;
-    margin-right: 30px;
+    font-size:larger ;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .card-body {
@@ -227,7 +228,8 @@ nav a:hover:after {
 .btn-solicitar {
     text-align: center;
     font-family: "Oswald", sans-serif;
-    width: 35%;
+    width: 45%;
+    padding: 5%;
     color: var(--color-softGray);
     border-radius: 0%;
     background-color: var(--color-purple);
