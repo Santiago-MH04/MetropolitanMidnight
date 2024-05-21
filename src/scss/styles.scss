@@ -163,6 +163,45 @@ nav a:hover:after {
     
 }
 
+//texto vertical
+
+#texto-vertical{
+   position: relative;
+   left: 0%;
+   top: 40%;
+    width:auto;
+    right: 100px;
+    height: auto;
+    text-align: right;
+    writing-mode: vertical-lr; 
+    text-orientation: mixed; 
+    transform: rotate(180deg);
+    
+    
+    z-index: 2; 
+     
+    
+}
+#texto-vertical h2{
+    color: var(--color-white);
+    margin: 0;
+    font-size:3.5rem ;
+    font-weight: 250;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+#texto-vertical p {
+    margin: 0;
+ font-size: 1.8rem;
+ line-height: 1;
+ font-weight: 250;
+ padding: 0;
+ letter-spacing: 2px;
+ 
+}
+
+
 
 //imagen de la pareja disfrazada de diablo
 
@@ -242,7 +281,7 @@ nav a:hover:after {
     font-weight: 700;    
 }
 .textcontent {
-    text-align: justify;
+    // text-align: justify;
     margin-bottom: 50px;
 }
 
