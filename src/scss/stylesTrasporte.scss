@@ -115,8 +115,8 @@ nav a:hover:after {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 7%;
     color: var(--color-white);
+    margin-top: 7%;
     margin-bottom: 4%;
 }
 
@@ -157,22 +157,47 @@ nav a:hover:after {
 }
 
 .card {
+    position: relative;
+    display: flex;
     align-items: center;
-    border: solid 3px;
+    border: solid;
     background-color: var(--color-black);
-    border-color: var(--color-white);
+    border-color: var(--color-softGray);
+    border-radius: 0%;
     margin-bottom: 15%;
-    width: 330px;
-    height: 500px;
-    margin-top: 20px;
+    width: 70%;
+    height: 90%;
+}
+
+.box-number {
+    position: absolute;
+    display: flex;
+    font-size: x-large;
+    font-family: "Krub", sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    top: 0%;
+    margin-right: 85%;
+    font-weight: 900;
+    height: 8%;
+    width: 15%;
 }
 
 .card-title {
     text-align: center;
     font-family: "Oswald", sans-serif;
-    margin-top: 10px;
     color: var(--color-white);
+    margin-top: 5%;
     font-size: 36px;
+}
+
+.hr-purple {
+    border: solid 2px;
+    color: var(--color-purple);
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 15%;
 }
 
 .card-title strong {
@@ -190,4 +215,21 @@ nav a:hover:after {
     color: var(--color-white);
     margin-left: 30px;
     margin-right: 30px;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-solicitar {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    width: 35%;
+    color: var(--color-softGray);
+    border-radius: 0%;
+    background-color: var(--color-purple);
+
 }
