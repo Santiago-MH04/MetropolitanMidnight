@@ -21,3 +21,17 @@ if (__dirname.startsWith("\\") || __dirname.startsWith("/")) {
 //path toma la ruta que extrajimos arriba como argumento y devuelve el directorio padre de esa ruta
 __dirname = path.dirname(__dirname);
 console.log(dirname)
+
+
+//Es similar a crear un objeto que representa tu aplicación web en Express.js. Posteriormente, configuras esta aplicación para manejar rutas, middleware y otras funciones relacionadas con el servidor web. en resumen es una forma de crear un servidor listo para configurarse 
+const app = express();
+
+const server=http.createServer(app)
+//Al crear esta instancia de Socket.io y pasarle el servidor HTTP como argumento, estás configurando Socket.io para manejar conexiones de sockets web en tu aplicación. Esto permite la comunicación en tiempo real entre el cliente y el servidor a través de sockets WebSocket.
+const io =new SocketIO(server);
+
+//si el puerto es otro toma ese puerto si no toma el 4000
+app.set(`port`,process.env.PORT  || 4000)
+
+//importamos lo que esta en sockets
+sockets(io);
