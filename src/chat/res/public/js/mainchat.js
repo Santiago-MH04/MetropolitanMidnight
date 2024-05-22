@@ -6,6 +6,14 @@ $(function(){
     const socket=io()
 
 
+    //obteniendo los elementos del doom desde la interface 
+    const $messageform =$(`#message-form`);
+    console.log($messageform)
+    const $messagebox=$(`#message`)
+    console.log($messagebox)
+    const $chat=$(`#chat`)
+    console.log($chat)
+
 
 
 
