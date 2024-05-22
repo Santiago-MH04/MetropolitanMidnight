@@ -19,7 +19,7 @@
     --color-purple:#aa5eff;
     --color-softGray:#dfdede;
     --color-pink:#dc9fff;
-    --color-PureBlack:#000000;
+    --color-PureBlack:#111111;
 }
 
 
@@ -338,6 +338,7 @@ nav a:hover:after {
 }
 
 footer {
+    padding-top: 3rem;
     background-color: var(--color-PureBlack);
     font-family: "Oswald", sans-serif;
     width: 100%; 
@@ -348,16 +349,22 @@ footer {
     color: var(--color-white);
     border: solid white; 
     display: flex; 
-    justify-content: center;
+    // justify-content: center;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap; 
 }
 
-/*  contenido temporal aquí para ver el footer */
 
-footer {
-    padding-top: 3rem;
-    
+
+.footer{ //recordar poner display block para el responsive
+    display: flex;
+    gap: 14rem;
+    border: solid white;
+    height: max-content;
+
 }
+
 .content-mensajes {
     display: flex;
     
@@ -366,8 +373,9 @@ footer {
 .mensajes-ganchos h3 {
     color: var(--color-purple);
     padding-right: 10px;
-    font-size: 4.2rem;
+    font-size: 5rem;
     font-weight: 300;
+    margin-top: -0.5rem;
     
     
 }
@@ -378,13 +386,19 @@ footer {
 }
 
 .parrafo {
+    font-family: "Krub", sans-serif;
     margin-top: 0.8rem;
     font-size: 1.5rem;
     padding-left: 0.8rem;
     line-height: 1.2;
-    
+    letter-spacing: 0.1rem;    
 }
 
+.social-media {
+    font-family: "Krub", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
 
 
 
