@@ -24,39 +24,56 @@
     --color-white: #ffffff;
     --color-purple: #aa5eff;
     --color-softGray: #dfdede;
+    --color-pink: #dc9fff;
+    --color-PureBlack: #111111;
 }
 
-#menu {
+
+body {
+    background-color: var(--color-black);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    justify-content: center;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    // border: solid white;
+    background-color: var(--color-black);
     display: flex;
-
-
 }
 
 #logo {
-    margin-top: 20px;
-    margin-left: 50px;
+
+    padding: 10px 0px;
+
 }
 
+//-------barra de navegacion------
 nav {
-    background-color: var(--color-black);
-    position: fixed;
-    width: auto;
-    height: 120px;
+    // background-color: rgba($color: #000000, $alpha: 1.0);
+
+    // height: 80px;
     padding-bottom: 0px;
-    margin-left: 500px;
+    margin-left: 200px;
     display: flex;
     // border: solid white;
-    gap: 130px;
+    gap: 150px;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     z-index: 2;
 }
 
 #ingresar {
-    margin-left: 100px;
+    margin-top: 9px;
+    display: flex;
+    align-items: center;
     background-color: var(--color-white);
 }
 
@@ -112,27 +129,73 @@ nav a:hover:after {
 
 }
 
-#circle {
-    width: 600px;
-    height: 600px;
-    background-color: var(--color-purple);
-    border-radius: 100%;
-    position: relative;
-    top: 70px;
-    margin: auto;
+//footer
+
+.footer {
+    //recordar poner display block para el responsive
+    display: flex;
+    gap: 14rem;
+    // border: solid white;
+    height: max-content;
+
+}
+
+.content-mensajes {
+    display: flex;
+
+}
+
+.mensajes-ganchos h3 {
+    color: var(--color-purple);
+    padding-right: 10px;
+    font-size: 5rem;
+    font-weight: 300;
+    margin-top: -0.5rem;
 
 
 }
 
-//imagen de la pareja disfrazada de diablo
+.mensajes-ganchos h4 {
+    font-size: 4rem;
+    font-weight: 300;
 
-#diablos {
-    width: 700px;
-    position: relative;
-    z-index: 1;
-    bottom: 700px;
-    left: 620px;
 }
+
+.parrafo {
+    font-family: "Krub", sans-serif;
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+    padding-left: 0.8rem;
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
+}
+
+
+.redes {
+
+    display: flex;
+    gap: 6rem;
+}
+
+.social-media {
+    margin-top: 1.8rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    font-family: "Krub", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    // border: solid white;
+}
+
+
+.social-media a {
+    font-size: 1.5rem;
+    color: var(--color-purple);
+
+}
+
+// estilos
 
 body {
     background-color: var(--color-black);
@@ -141,9 +204,8 @@ body {
 // carrusel
 
 main {
-    width: 100%;
-    height: 100vh;
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -161,14 +223,18 @@ main {
     display: grid;
     place-items: center;
     width: 100%;
-    height: 130vh;
-    
+    height: 100vh;
+    border: 5px solid #f5f5f5;
+    position: absolute;
+
 }
 
 .container_slider {
-    width: 160vh;
-    height: 100vh;
+    width: 100vh;
+    height: 10vh;
     background: #f5f5f5;
+    border: 5px solid #f5f5f5;
+
 }
 
 .container_slider .slide .item {
@@ -183,6 +249,8 @@ main {
     background-size: cover;
     display: inline-block;
     transition: 0.5s;
+    border: 5px solid #f5f5f5;
+
 }
 
 .slide .item:nth-child(1),
@@ -245,6 +313,7 @@ main {
 }
 
 .content button {
+
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -293,6 +362,8 @@ main {
     gap: 50px;
     padding-top: 60%;
     margin-top: 50%;
+    border: 5px solid #f5f5f5;
+
 }
 
 #menu_discotecas {
@@ -303,7 +374,9 @@ main {
     background-color: var(--color-softGray);
     display: flex;
     flex-direction: column;
-    
+    border: 5px solid #f5f5f5;
+
+
 
 }
 
@@ -315,9 +388,11 @@ h2 {
     color: var(--color-softGray);
     text-transform: uppercase;
 }
+
 .text-color {
     color: var(--color-purple);
 }
+
 //cartas
 
 .card {
@@ -328,6 +403,7 @@ h2 {
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
+
 .card-body {
     text-align: center;
 }
@@ -339,28 +415,29 @@ h2 {
     direction: rtl;
     justify-content: center;
     font-size: 2rem;
-    
+
 }
 
 .star {
     cursor: pointer;
-    color: var(--color-softGray); 
+    color: var(--color-softGray);
     transition: color 0.2s;
 }
 
 .star:hover,
-.star:hover ~ .star {
-    color: var(--color-purple);  
+.star:hover~.star {
+    color: var(--color-purple);
 }
+
 .star.selected,
-.star.selected ~ .star {
-    color: var(--color-purple); 
+.star.selected~.star {
+    color: var(--color-purple);
 }
 
 .discotecas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 90px;
-    margin-top: 100px;
-    
+    border: 5px solid #f5f5f5;
+
 }

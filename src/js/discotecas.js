@@ -34,33 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // main.js
 
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('../../public/data/discotecasDB.json')
-        .then(response => response.json())
-        .then(data => {
-            const container = document.querySelector('.discotecas');
-            data.forEach(disco => {
-                const discoElement = document.createElement('div');
-                discoElement.classList.add('disco');
-                discoElement.innerHTML = `
-                    <h2>${disco.name}</h2>
-                    <p>${disco.description}</p>
-                    <p><strong>Zona:</strong> ${disco.location.zone}</p>
-                    <div>${disco.location.map}</div>
-                    <p><strong>Horarios:</strong> ${disco.hours}</p>
-                    <p><strong>Precio de Entrada:</strong> ${disco.price.entry}</p>
-                    <p><strong>Precios de Bebidas:</strong> ${disco.price.Drinks}</p>
-                    <img src="${disco.logo}" alt="Logo de ${disco.name}">
-                `;
-                container.appendChild(discoElement);
-            });
-        })
-        .catch(error => console.error('Error al cargar el archivo JSON:', error));
-});
-
-
-//MALPARIDO SOPLAMONDA URIBISTA GONORREA
-
-document.addEventListener("DOMContentLoaded", function() {
     const menuDiscotecas = document.getElementById('menu_discotecas');
     const container = document.querySelector('.discotecas');
 
