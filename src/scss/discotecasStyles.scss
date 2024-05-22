@@ -195,22 +195,21 @@ main {
     height: 100%;
 }
 
-
 .slide .item:nth-child(3) {
-    left: calc(50% + 450px);
+    left: calc(50% + 650px);
 
 }
 
 .slide .item:nth-child(4) {
-    left: calc(50% + 680px);
+    left: calc(50% + 800px);
 }
 
 .slide .item:nth-child(5) {
-    left: calc(50% + 750px);
+    left: calc(50% + 950px);
 }
 
 .slide .item:nth-child(n + 6) {
-    left: calc(50% + 650px);
+    left: calc(50% + 1200px);
     opacity: 0;
 }
 
@@ -293,6 +292,7 @@ main {
     padding: 0 50px;
     gap: 50px;
     padding-top: 1300px;
+    margin-top: 800px;
 }
 #menu_discotecas {
     border: #aa5eff solid 5px;
@@ -352,4 +352,12 @@ h2 {
 .star.selected,
 .star.selected ~ .star {
     color: var(--color-purple); 
+}
+
+.discotecas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px;
+    margin-top: 100px;
+    
 }
