@@ -14,7 +14,20 @@ $(function(){
     const $chat=$(`#chat`)
     console.log($chat)
 
+    //eventos
+    $messageform.submit(e=>{
+        e.preventDefault();
+        // console.log($messagebox.val())
+        socket.emit(`send message`,$messagebox.val())
+        $messagebox.val(``)
 
+
+    })
+
+    socket.on(`new message`,function (data){
+        $chat.append(data+`<br>`)
+
+    })
 
 
 
