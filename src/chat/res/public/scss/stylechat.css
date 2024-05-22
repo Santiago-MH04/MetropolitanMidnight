@@ -10,12 +10,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&display=swap');
 
 
-*{
-    font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 200 700;
-}
-
 :root {
     --color-black:#1c1c1c;
     --color-white:#ffffff;
@@ -36,6 +30,7 @@ header {
 #logo {
     margin-top: 20px;
     margin-left: 50px;
+    width: 300px;
 }
 
 nav{
@@ -46,7 +41,6 @@ nav{
     padding-bottom: 0px;
     margin-left: 500px;
     display: flex;
-   
     gap: 130px;
     justify-content: space-between;
     align-items:end;
@@ -89,7 +83,6 @@ nav a:after {
     content: "";
     position: absolute;
     background-color: var(--color-purple);
-   
     height: 3px;
     width: 0;
     left: 0;
@@ -103,7 +96,6 @@ nav a:hover:after {
     content: "";
     position: absolute;
     background-color: var(--color-purple);
-
     height: 3px;
     width: 100%;
     left: 0;
@@ -124,7 +116,7 @@ nav a:hover:after {
 
 }
 
-
+/* //imagen de la pareja disfrazada de diablo */
 
 #diablos {
     width: 700px;
@@ -135,6 +127,7 @@ nav a:hover:after {
 }
 
 
+/* aca terminan los styles generales de la pagina principal */
 
 
 
