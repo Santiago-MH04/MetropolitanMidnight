@@ -1,19 +1,28 @@
 {
-  "name": "metropolitan",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "proyecto-combinado",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "concurrently \"npm run start:intento-2\" \"npm run dev:metropolitan\"",
+    "start:intento-2": "nodemon --exec babel-node src/chat/src/indexchat.js",
+    "dev:metropolitan": "vite",
+    "build:metropolitan": "vite build",
+    "preview:metropolitan": "vite preview"
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
+    "@babel/core": "^7.24.5",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.5",
+    "nodemon": "^3.1.0",
     "sass": "^1.77.1",
     "vite": "^5.2.11"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "express": "^4.19.2",
+    "google-fonts": "^1.0.0",
+    "socket.io": "^4.7.5"
   }
 }
+
