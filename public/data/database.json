@@ -2,8 +2,8 @@
     "database": [
         {
             "id": 1,
-            "username": "Pepito Pérez",
-            "password": "12345"
+            "username": "alan",
+            "img": "./img/conductor1.jpg"
         }
     ]
 }
