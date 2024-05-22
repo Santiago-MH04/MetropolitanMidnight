@@ -291,9 +291,10 @@ main {
     width: 100%;
     padding: 0 50px;
     gap: 50px;
-    padding-top: 1300px;
-    margin-top: 800px;
+    padding-top: 60%;
+    margin-top: 50%;
 }
+
 #menu_discotecas {
     border: #aa5eff solid 5px;
     border-radius: 20px;
@@ -302,6 +303,8 @@ main {
     background-color: var(--color-softGray);
     display: flex;
     flex-direction: column;
+    
+
 }
 
 h2 {
