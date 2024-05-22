@@ -19,6 +19,7 @@
     --color-purple:#aa5eff;
     --color-softGray:#dfdede;
     --color-pink:#dc9fff;
+    --color-PureBlack:#000000;
 }
 
 
@@ -202,11 +203,9 @@ nav a:hover:after {
 //imagen de la pareja disfrazada de diablo
 
 #contenedor-diablos {
-    
-    
-    padding: 150px;
+    padding-top: 150px;
     display: flex;
-    // border: solid white;
+    border: solid white;
     justify-content: center;
     
 }
@@ -308,7 +307,7 @@ nav a:hover:after {
 .arma{
     position: relative;
     display: inline-block;
-    font-family: "Oswald", sans-serif;
+    
     font-weight: 500;
     text-decoration: none;
     color: var(--color-softGray);
@@ -337,5 +336,58 @@ nav a:hover:after {
     bottom: -10px;
     width: 100%;
 }
+
+footer {
+    background-color: var(--color-PureBlack);
+    font-family: "Oswald", sans-serif;
+    width: 100%; 
+    height: 300px; 
+    position: relative;
+    bottom: 20px; 
+    z-index: 1; 
+    color: var(--color-white);
+    border: solid white; 
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+/*  contenido temporal aquí para ver el footer */
+
+footer {
+    padding-top: 3rem;
+    
+}
+.content-mensajes {
+    display: flex;
+    
+}
+
+.mensajes-ganchos h3 {
+    color: var(--color-purple);
+    padding-right: 10px;
+    font-size: 4.2rem;
+    font-weight: 300;
+    
+    
+}
+.mensajes-ganchos h4 {
+    font-size: 4rem;
+    font-weight: 300;
+    
+}
+
+.parrafo {
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+    padding-left: 0.8rem;
+    line-height: 1.2;
+    
+}
+
+
+
+
+
 
 
