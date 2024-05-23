@@ -170,10 +170,24 @@ nav a:hover:after {
 
 @media(max-width:768px){
  // HEADER
-   
+   nav {
+    display: none;
+   }
   .mostrar-menu,.esconder-menu{
     display: block;
   }
+  nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-black);
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+  };
 }
 
 
