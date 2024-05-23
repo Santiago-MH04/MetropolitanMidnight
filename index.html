@@ -10,14 +10,30 @@
 
 <body>
 
-  <header>
-    <div class="header">
-      <!-- <input type="checkbox" id="check">
-      <label for="check" class="mostrar-menu"><i class="bi bi-list"></i></label> -->
-      <div>
-        <img id="logo" src="./img/distintivo-visual.webp" width="200" alt="distintivo-visual">
-      </div>
-      <nav>
+  <header class="header">
+      <img id="logo" src="./img/distintivo-visual.webp" width="200" alt="distintivo-visual">
+    <div class="nav-desktop">
+      <nav class="nav-items-desktop">
+        <ul class="nav-desktop-container-items">
+          <li><a href="#">DISCOTECAS</a></li>
+          <li><a href="#">GRUPOS</a></li>
+          <li><a href="#">TRANSPORTE</a></li>
+          <li><a href="#">VIP</a></li>
+          <li><a href="#">IDIOMA</a></li>
+        </ul>
+        <div id="ingresar">
+          <a href="#">INGRESAR</a>
+        </div>
+        <i class="bi bi-x-lg"></i>
+      </nav>
+      
+    </div>
+
+    <!-- nav mobile -->
+    <div class="nav-mobile">
+      <i class="icon-close bi bi-x-lg"></i>
+
+      <nav class="nav-items-mobile">
         <a href="#">DISCOTECAS</a>
         <a href="#">GRUPOS</a>
         <a href="#">TRANSPORTE</a>
@@ -26,12 +42,10 @@
         <div id="ingresar">
           <a href="#">INGRESAR</a>
         </div>
-        <input type="checkbox" id="check">
-        <label for="check" class="esconder-menu"><i class="bi bi-x-lg"></i></label>
-      
+        
+      </nav>
     </div>
-    </nav>
-    <label for="check" class="mostrar-menu"><i class="bi bi-list"></i></label>
+    <i class="icon-open bi bi-list"></i>
   </header>
 
   <main>
