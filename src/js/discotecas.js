@@ -1,4 +1,5 @@
 //codigo para el slider
+
 const $next = document.querySelector(".next");
 const $prev = document.querySelector(".prev");
 
@@ -12,26 +13,9 @@ $prev.addEventListener("click", () => {
     document.querySelector(".slide").prepend(items[items.length - 1]);
 });
 
-//estrellas
 
-document.addEventListener("DOMContentLoaded", () => {
-    const stars = document.querySelectorAll(".star");
-    stars.forEach((star) => {
-        star.addEventListener("click", () => {
-            const value = star.getAttribute("data-value");
-            stars.forEach((s) => {
-                s.classList.remove("selected");
-                if (s.getAttribute("data-value") <= value) {
-                    s.classList.add("selected");
-                }
-            });
-        });
-    });
-});
 
 //imprimir en el html la info de las discotecas de la base de datos
-
-// main.js
 
 document.addEventListener("DOMContentLoaded", function() {
     const menuDiscotecas = document.getElementById('menu_discotecas');
@@ -100,4 +84,22 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(data => renderDiscotecas(data))
             .catch(error => console.error('Error al cargar el archivo JSON:', error));
     });
+});
+
+//estrellas
+
+document.addEventListener("DOMContentLoaded", () => {
+    const stars = document.querySelectorAll(".star");
+    stars.forEach((star) => {
+        star.addEventListener("click", () => {
+            const value = star.getAttribute("data-value");
+            stars.forEach((s) => {
+                s.classList.remove("selected");
+                if (s.getAttribute("data-value") <= value) {
+                    s.classList.add("selected");
+                }
+            });
+        });
+    });
+    
 });
