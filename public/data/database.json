@@ -1,0 +1,9 @@
+{
+    "database": [
+        {
+            "id": 1,
+            "username": "Pepito Pérez",
+            "password": "12345"
+        }
+    ]
+}
