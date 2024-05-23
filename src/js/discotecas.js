@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Función para filtrar las discotecas por zona
     function filtrarDiscotecasPorZona(discotecas, zona) {
-        return discotecas.filter(disco => disco.location.zone === zona);
+        return discotecas.filter(disco => disco.location.zone === zona );
     }
 
     
