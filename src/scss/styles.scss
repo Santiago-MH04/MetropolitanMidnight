@@ -33,27 +33,28 @@ body {
 //---------------------------HEADER------------------------
 
 header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding:50px;
     position: fixed;
     top: 0;
     left:0;
     width: 100%;
-    height: 18.52vh;
+    height: 15.7vh;
     background-color: var(--color-black);
     // border: solid white;
     z-index: 1000;
 }
 
 
-
-
-
-
 .header {
     display:flex;
     justify-content: center;
+    padding:0 50px ;
     width: 100%;
     max-width: 1200px;
-    height: 18.52vh;
+    height: 15.7vh;
     margin: 0 auto;
     position: fixed;
     top: 0;
@@ -63,6 +64,9 @@ header {
     background-color: var(--color-black);
     z-index: 1000;
 }
+
+
+
 
 #logo {
     width: 200px;
@@ -145,6 +149,36 @@ nav a:hover:after {
 
 
 }
+
+//---------------------------------MENU HAMBURGUESA-----------------------
+.mostrar-menu,.esconder-menu{
+    color: #dfdede;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+    z-index: 1000;
+}
+
+
+#check {
+    display: none;
+}
+
+
+//----------------------RESPONSIVE BARRA DE NAVEGACION-----------------------
+
+@media(max-width:768px){
+ // HEADER
+   
+  .mostrar-menu,.esconder-menu{
+    display: block;
+  }
+}
+
+
+
+
 //----SECCION PRINCIPAL----
 
 .nombre-discoteca {
