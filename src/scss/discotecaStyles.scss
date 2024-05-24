@@ -354,3 +354,117 @@ main {
     border: none;
     cursor: pointer;
 }
+
+//sevices
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-top: 10%;
+    gap: 2rem;
+    padding: 10px;
+    color: var(--color-white);
+
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 40%;
+}
+
+.services .service_logo{
+    font-size: 3rem;
+}
+.services .service_title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.services .service_description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#hours_title , #price_title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-bottom: 3px solid var(--color-purple);
+    width: 200px;
+    
+}
+.services .service_description p{
+    margin-top: 1rem;
+}
+
+.ubication{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 40%;
+}
+.ubication .ubication_logo{
+    font-size: 3rem;
+    color: var(--color-white);
+}
+.ubication .ubication_title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.ubication .ubication_description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+}
+
+#map_frame{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 60%;
+    color: var(--color-white);
+    border: 3px solid var(--color-purple);
+}
+.review{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.reviews .reviews_logo{
+    font-size: 3rem;
+    color: var(--color-white);
+}
+.reviews .reviews_title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.reviews .reviews_description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+}
