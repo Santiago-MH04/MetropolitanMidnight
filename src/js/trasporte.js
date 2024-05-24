@@ -8,10 +8,12 @@ let id
 
 drivers()
 
+// we connect the json-server
 async function drivers() {
     const callOnTheData = await fetch(`${urlJsonServer}`)
     const data = await callOnTheData.json()
 
+    //we paint the html with the values ​​of the json-server
     containersCard.innerHTML = ""
     data.forEach(element => {
         containersCard.innerHTML += `<div class="col">
@@ -39,3 +41,4 @@ async function drivers() {
     `
     })  
 }
+

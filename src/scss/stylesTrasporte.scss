@@ -134,14 +134,16 @@ nav a:hover:after {
     flex-direction: row;
     align-items: center;
 }
-.driver-titles-tucon{
+
+.driver-titles-tucon {
     font-family: "Krub", sans-serif;
     position: relative;
     right: 5%;
     margin-top: 10%;
 
 }
-.driver-titles-pri{
+
+.driver-titles-pri {
     font-family: "Krub", sans-serif;
     position: relative;
     color: var(--color-purple);
@@ -213,7 +215,7 @@ nav a:hover:after {
     text-align: center;
     font-family: "Oswald", sans-serif;
     color: var(--color-white);
-    font-size:larger ;
+    font-size: larger;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -234,4 +236,75 @@ nav a:hover:after {
     border-radius: 0%;
     background-color: var(--color-purple);
 
+}
+
+// style service
+
+#service {
+    display: flex;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    margin: 10%;
+    color: var(--color-white);
+    width: 50%;
+}
+
+.tex-service {
+    display: flex;
+    flex-direction: column;
+}
+
+.tex-service h2 {
+    font-size: 59px;
+}
+
+.tex-service h2 strong {
+    color: var(--color-purple);
+}
+
+
+.service-p {
+    height: 50%;
+}
+
+.box-aptitudes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1 {
+    width: 25%;
+    margin-left: 23px;
+}
+
+
+.colum2 {
+    text-align: center;
+}
+
+.btn-trabaja {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    width: 21%;
+    color: var(--color-softGray);
+    border-radius: 0%;
+    background-color: var(--color-purple);
+}
+
+.box-aptitudes1 {
+    display: flex;
+    position: absolute;
+    background-color: var(--color-purple);
+    height: 2%;
+    width: 1%;
+    margin-left: -2%;
+}
+
+.box-aptitudes2 {
+    display: flex;
+    position: absolute;
+    left: 26%;
+    height: 2%;
+    width: 1%;
+    background-color: var(--color-purple);
 }
