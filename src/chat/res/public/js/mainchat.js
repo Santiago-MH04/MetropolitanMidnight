@@ -16,6 +16,8 @@ $(function(){
 
     
 
+    
+
 
 ///obteniendo elementos de el nick name form 
 const nickform= document.querySelector("#nick-form")
@@ -33,8 +35,13 @@ nickform.addEventListener("submit",(e)=>{
     e.preventDefault()
     console.log("enviando")
 
-    socket.on("nuevo usuario", )
-    socket.emit("nuevo usuario", nickName.val(), function(data){
+    socket.on("nuevo usuario",(data,cb)=>{
+
+
+
+
+    })
+    socket.emit("nuevo usuario", nickName.value, (data)=>{
         
 
     })
