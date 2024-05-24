@@ -8,7 +8,8 @@ export default function (io) {
     io.on('connection', socket => {
         console.log('Nuevo usuario conectado');
 
-        socket.on("new user",(data,cb)=>{
+        socket.on("nuevo usuario",(data,cb)=>{
+            //investige como hace para que con esta linea se mande a la consola todo 
             console.log(data)
             if(nickNames.indexOf(data)!= -1){
                 cb(false)
