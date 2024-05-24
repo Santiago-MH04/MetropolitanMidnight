@@ -3,22 +3,22 @@
         {
             "id": 1,
             "name": "zero",
-            "img": "../../public/img/conductor1.jpg"
+            "img": "../../public/img/conductor1.webp"
         },
         {
             "id": 2,
             "name": "david",
-            "img": "../../public/img/conductor2.jpg"
+            "img": "../../public/img/conductor2.webp"
         },
         {
             "id": 3,
             "name": "santiago",
-            "img": "../../public/img/conductor3.jpg"
+            "img": "../../public/img/conductor3.webp"
         },
         {
             "id": 4,
             "name": "felipe",
-            "img": "../../public/img/conductor4.jpg"
+            "img": "../../public/img/conductor4.webp"
         }
     ]
 }
