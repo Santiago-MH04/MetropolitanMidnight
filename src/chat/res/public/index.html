@@ -30,92 +30,120 @@
       </div>
     </nav>
 
+    <div>
+      <div class="container"></div>
+    </div>
+
   </header>
 
+  <div class=" card col-md-4 mt-5 mx-auto" id="nicwrap">
+    <div class="card-header">
+      <h3>enter your username:</h3>
+    </div>
+    <p id="nick-error"></p>
+    <div class="card-body">
+      <form id="nick-form">
+        <input type="text" id="nickname" class="form-control">
+        <input type="submit" class="btn btn-warning btn-block mt-2">
+      </form>
+    </div>
 
-  <main>
-    <aside class="m-5">
-      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
-        aria-controls="staticBackdrop">
-        tus chats
-      </button>
+  </div>
 
-      <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
-        aria-labelledby="staticBackdropLabel">
-        <div class="offcanvas-header text-center">
-          <h5 class="offcanvas-title text-light" id="staticBackdropLabel">discotecas en chat</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-
-        <div class="offcanvas-body chat ">
-          <div class="container containerchat ">
-            <div class="card card-chat" style="max-width:max-content;" type="button " aria-label="Close"
-              data-bs-dismiss="offcanvas">
-              <img
-                src="https://img.freepik.com/foto-gratis/discoteca-llena-gente-vasos-cerveza-gran-numero-personas-bebidas_1340-32851.jpg"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <h2 class="card-text text-center text-light">amarna</h2>
+  <!-- se encierra todo el main en el div para hacer una especie de login muy basico  -->
+  <div class="content" id="contentWrap">
+    <main>
+      <aside class="m-5">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+          aria-controls="staticBackdrop">
+          tus chats
+        </button>
+  
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+          aria-labelledby="staticBackdropLabel">
+          <div class="offcanvas-header text-center">
+            <h5 class="offcanvas-title text-light" id="staticBackdropLabel">discotecas en chat</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+  
+          <div class="offcanvas-body chat ">
+            <div class="container containerchat ">
+              <div class="card card-chat" style="max-width:max-content;" type="button " aria-label="Close"
+                data-bs-dismiss="offcanvas">
+                <img
+                  src="https://img.freepik.com/foto-gratis/discoteca-llena-gente-vasos-cerveza-gran-numero-personas-bebidas_1340-32851.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-text text-center text-light">amarna</h2>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="container containerchat ">
-            <div class="card card-chat" style="max-width:max-content;" type="button " aria-label="Close"
-              data-bs-dismiss="offcanvas">
-              <img
-                src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/R6VY4ZMB3NDS3HWHRLIA3IL5HM.png"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <h2 class="card-text text-center text-light">perronegro</h2>
+            <div class="container containerchat ">
+              <div class="card card-chat" style="max-width:max-content;" type="button " aria-label="Close"
+                data-bs-dismiss="offcanvas">
+                <img
+                  src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/R6VY4ZMB3NDS3HWHRLIA3IL5HM.png"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-text text-center text-light">perronegro</h2>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="container containerchat ">
-            <div class="card card-chat" style="max-width:max-content;" type="button " aria-label="Close"
-              data-bs-dismiss="offcanvas">
-              <img
-                src="https://imagenes.elpais.com/resizer/v2/XCT4EPHJ3RC2PP37CW2JDWGQCM.jpg?auth=988ffe4b9daaa00c5bd7ddc055822a6cfc6ebffdddffb50358d602c5f74c0f3c&width=1200"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <h2 class="card-text text-center text-light">logia</h2>
+            <div class="container containerchat ">
+              <div class="card card-chat" style="max-width:max-content;" type="button " aria-label="Close"
+                data-bs-dismiss="offcanvas">
+                <img
+                  src="https://imagenes.elpais.com/resizer/v2/XCT4EPHJ3RC2PP37CW2JDWGQCM.jpg?auth=988ffe4b9daaa00c5bd7ddc055822a6cfc6ebffdddffb50358d602c5f74c0f3c&width=1200"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-text text-center text-light">logia</h2>
+                </div>
               </div>
             </div>
-          </div>
-
-
-      </div>
-      </div>
-    </aside>
-
-
-
-    <section class="container d-flex align-items-center justify-content-center ">
-      <div class=" mt-4 m-4 ">
-        <div class="card ">
-          <div class="card-header text-center">
-            <h3>chat  amarna</h3>
-          </div>
-          <div id="chat" class="card-body"></div>
-          <form id="message-form" class="card-footer d-flex align-items-center justify-content-center">
-            <input type="text" id="message" class="me-2 form-control">
-            <input type="submit" class="btn ">
-          </form>
+  
+  
         </div>
-      </div>
-
-      <div class="col-md-6mt-4 m-4 ">
-        <div class="card ">
-          <div class="card-header text-center">
-            <h3>usuarios</h3>
-          </div>
-          <div id="user" class="card-body"></div>
         </div>
-      </div>
-    </section>
-  </main>
+      </aside>
+  
+  
+  
+      <section class="container d-flex align-items-center justify-content-center ">
+        <div class=" mt-4 m-4 ">
+          <div class="card ">
+            <div class="card-header text-center">
+              <h3>chat  amarna</h3>
+            </div>
+            <div id="chat" class="card-body"></div>
+            <form id="message-form" class="card-footer d-flex align-items-center justify-content-center">
+              <input type="text" id="message" class="me-2 form-control">
+              <input type="submit" class="btn ">
+            </form>
+          </div>
+        </div>
+  
+        <div class="col-md-6mt-4 m-4 ">
+          <div class="card ">
+            <div class="card-header text-center">
+              <h3>usuarios</h3>
+            </div>
+            <div id="usernames" class="card-body">
+              <!-- aqui deberian ir la usuarios -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+  </div>
+
+
+
   <footer>
     
   </footer>
+
+
   <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="

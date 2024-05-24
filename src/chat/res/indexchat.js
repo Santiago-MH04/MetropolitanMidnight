@@ -23,7 +23,7 @@ const server=http.createServer(app)
 //el modulo socket io funciona ensima de un servidor 
 const io =new SocketIO(server);
 //si el puerto es otro toma ese puerto si no toma el 3000
-app.set(`port`,process.env.PORT  || 3000)
+app.set(`port`,process.env.PORT  || 3001)
 
 //importamos lo que esta en sockets
 sockets(io);
@@ -36,7 +36,7 @@ console.log(path.join(__dirname, 'public'));
 
 
 //archivos estaticos
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname,'public')))
 
 //empezando el servidor 
 server.listen(app.get(`port`), () => {

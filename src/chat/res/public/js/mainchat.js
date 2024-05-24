@@ -14,6 +14,34 @@ $(function(){
     const $chat=$(`#chat`)
     console.log($chat)
 
+    
+
+
+///obteniendo elementos de el nick name form 
+const nickform= document.querySelector("#nick-form")
+console.log(nickform)
+const nickError= document.querySelector("#nick-error")
+console.log(nickError)
+const nickName= document.querySelector("#nickname")
+console.log(nickName)
+const users=document.querySelector("#usernames")
+console.log(users)
+
+
+
+nickform.addEventListener("submit",(e)=>{
+    e.preventDefault()
+    console.log("enviando")
+
+    socket.on("nuevo usuario", )
+    socket.emit("nuevo usuario", nickName.val(), function(data){
+        
+
+    })
+
+})
+
+$()
 
     //eventos
     $messageform.submit(e=>{
