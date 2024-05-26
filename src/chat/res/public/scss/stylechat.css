@@ -133,13 +133,7 @@ nav a:hover:after {
 
 
 
-body{
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/013/513/265/small_2x/gold-bokeh-particle-background-black-background-use-blending-mode-screen-loop-animation-video.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center
-    
-}
+
 
 
 
@@ -187,8 +181,14 @@ body{
     
 
 }
+.title{
+    margin-right: 5em;
+}
 
-
+.title1{
+    margin-left: 4em;
+    color: var(--color-purple);
+}
 
 #user{min-height: 30em;
     min-width: 15em;
@@ -200,8 +200,8 @@ body{
 #chat{
     min-height: 30em;
     min-width:40em ;
-    background-color: var(--color-black);
-    color: var(--color-white);
+    background-color: var(--color-white);
+    color: var(--color-black);
 }
 
 .card-header{
