@@ -9,10 +9,10 @@
     "preview:metropolitan": "vite preview"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2",
     "@babel/core": "^7.24.5",
     "@babel/node": "^7.23.9",
     "@babel/preset-env": "^7.24.5",
+    "concurrently": "^8.2.2",
     "nodemon": "^3.1.0",
     "sass": "^1.77.1",
     "vite": "^5.2.11"
@@ -20,10 +20,10 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "express": "^4.19.2",
     "google-fonts": "^1.0.0",
-    "socket.io": "^4.7.5",
-    "json-server": "^1.0.0-beta.0"
+    "json-server": "^1.0.0-beta.0",
+    "socket.io": "^4.7.5"
   }
 }
-

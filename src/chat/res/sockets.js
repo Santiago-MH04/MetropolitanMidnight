@@ -17,6 +17,7 @@ export default function (io) {
                 cb(true)
                 socket.nickName=data
                 nickNames.push(socket.nickName)
+                io.sockets.emit("usernames",nickNames)
             }
 
 
