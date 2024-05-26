@@ -205,7 +205,7 @@ nav a:hover:after {
 
 #chat{
     min-height: 30em;
-    min-width:40em ;
+    min-width:50em ;
     background-color: var(--color-white);
     color: var(--color-black);
 }
@@ -223,8 +223,12 @@ nav a:hover:after {
 
 @media screen and (max-width: 768px) {
     /* Redimensiona el ancho mínimo del chat y los usuarios */
-    #chat, #user {
-      min-width: auto;
+    #chat{
+      min-width:10em;
+      min-height: 10em;
+    }
+    #user {
+        display: none;
     }
   
     /* Ajusta el tamaño de la fuente en los encabezados de la tarjeta */
