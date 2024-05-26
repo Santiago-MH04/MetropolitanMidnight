@@ -17,6 +17,7 @@
     --color-white:#ffffff;
     --color-purple:#aa5eff;
     --color-softGray:#dfdede;
+    --color-purpleclaro:#a945c7;
 }
 
 body {
@@ -58,7 +59,7 @@ nav{
 }
 
 #ingresar:hover{
-    background-color: #aa5eff;
+    background-color: var(--color-purple);
 }
 
 #ingresar a {
@@ -185,6 +186,11 @@ nav a:hover:after {
     margin-right: 5em;
 }
 
+.container-chat{
+    background-color: var(--color-purpleclaro);
+    box-shadow: 0 0 10px var(--color-purpleclaro), 0 0 40px var(--color-purpleclaro),0 0 80px var(--color-purple);
+    border-radius: 5px;
+}
 .title1{
     margin-left: 4em;
     color: var(--color-purple);
