@@ -3,7 +3,7 @@
 //esta es la coneccion de sockets de el servidor 
 export default function (io) {
 
-    let nickNames=["fazt","ryan","joe"]
+    let nickNames=[]
     // Si todo sale bien se mostrará esto 
     io.on('connection', socket => {
         console.log('Nuevo usuario conectado');
@@ -17,7 +17,7 @@ export default function (io) {
                 cb(true)
                 socket.nickName=data
                 nickNames.push(socket.nickName)
-                io.sockets.emit("usernames",nickNames)
+                updateNicknames()
             }
 
 
@@ -27,9 +27,24 @@ export default function (io) {
         //me envia los datos a traves de send messages
         socket.on(`send message`, function(data){
             //el recive los mensajes y los reenvia
-            io.emit(`new message`,data)
+            io.emit(`new message`,{
+                msg:data,
+                nick:socket.nickName
+            })
         })
 
+        socket.on("disconnect", data=>{
+            if(!socket.nickName) return;
+            nickNames.splice(nickNames.indexOf(socket.nickName),1)
+            updateNicknames()
+    
+            
+    
+        })
+
+        function updateNicknames(){
+            io.sockets.emit("usernames",nickNames)
+        }
 
     });
 
