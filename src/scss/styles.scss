@@ -52,11 +52,14 @@ body {
 
 
 #logo {
+    position: relative;
     width: 200px;
     padding: 10px 0px;
-
-
 }
+
+
+
+
 
 .nav-desktop {
     display: flex;
@@ -161,23 +164,9 @@ body {
 
 }
 
-//---------------------------------MENU HAMBURGUESA-----------------------
-// .mostrar-menu,.esconder-menu{
-//     color: #dfdede;
-//     font-size: 1.5rem;
-//     cursor: pointer;
-//     display: none;
-//     transition: 0.4s;
-//     z-index: 1000;
-// }
 
 
-// #check {
-//     display: none;
-// }
-
-
-// //----------------------RESPONSIVE BARRA DE NAVEGACION-----------------------
+ //----------------------RESPONSIVE BARRA DE NAVEGACION-----------------------
 
 @media(max-width:1100px) {
     .nav-desktop {
@@ -379,7 +368,7 @@ body {
 //imagen de la pareja disfrazada de diablo
 
 #contenedor-diablos {
-    padding-top: 150px;
+    padding-top: 100px;
     display: flex;
     // border: solid white;
     justify-content: center;
@@ -516,7 +505,21 @@ body {
 }
 
 //------------------------------RESPONSIVE SECCION PRINCIPAL----------------------
-@media(max-width:1100px) {}
+@media(max-width:1100px) {
+#contenedor-diablos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#texto-vertical {
+    display: none;
+}
+.nombre-discoteca{
+    padding: 0;
+}
+
+
+}
 
 
 //--------------------------------ACA COMIENZA EL FOOTER---------------------------
@@ -528,9 +531,9 @@ footer {
     font-family: "Oswald", sans-serif;
     width: 100%;
     height: 300px;
-    position: relative;
-    bottom: 20px;
-    z-index: 1;
+    // position: relative;
+    // bottom: 20px;
+    // z-index: 1;
     color: var(--color-white);
     // border: solid white; 
     display: flex;
@@ -543,10 +546,8 @@ footer {
 
 
 .footer {
-    //recordar poner display block para el responsive
     display: flex;
     gap: 14rem;
-    // border: solid white;
     height: max-content;
 
 }
@@ -606,7 +607,42 @@ footer {
 
 }
 
-// vip 
+//----------RESPONSIVE FOOTER-------
+
+@media(max-width:1100px){
+    footer{
+        margin-top: 30px;
+        height: 600px;
+        
+    }
+    .footer{
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+    }
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+       
+        
+        
+    }
+  
+    .derechos{
+        display: flex;
+        justify-content: center;
+    }
+}
+    
+
+
+//___-----------------------------PAGINA VIP-------------------------------
 
 @media (width >=768px) {
     body {
@@ -668,29 +704,9 @@ footer {
 
     color: #f7f7f7;
 
-    background: #121212;
-
 }
 
-.background {
 
-    position: fixed;
-
-    z-index: -1;
-
-    top: -33vh;
-
-    left: -100px;
-
-    right: -100px;
-
-    height: 60vmax;
-
-    rotate: -4deg;
-
-    background: #4f97ff;
-
-}
 
 .card {
 
@@ -718,11 +734,53 @@ grid .primary {
 
 .card-vip {
     background-color: var(--color-black);
-    margin-top: 90%;
+    margin-top: 30%;
 }
 
 
 //cards
+
+.container-card {
+    text-align: center;
+    border: solid var(--color-purple);
+    font-family: "krub", sans-serif;
+    letter-spacing: 0.5px;
+    padding-bottom: 12%;
+}
+
 .card-header{
+   
+    padding-top: 10%;
+    padding-bottom:  10%;
+}
+
+.card-header h2{
+font-size: 2.5rem;
+font-family: "Oswald", sans-serif;
+}
+
+.card-title {
+    color: var(--color-purple);
+font-size:2rem ;
+padding-bottom: 5%;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    text-align: start;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.btn {
+    background-color:var(--color-purple);
+    border: none;
+    border-radius: 0px;
     
 }
+.btn:hover {
+    background-color:var(--color-pink);
+
+}
+
