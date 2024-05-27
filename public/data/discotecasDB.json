@@ -12,7 +12,8 @@
             "entry": "$15",
             "Drinks": "$5 - $15"
         },
-        "logo": "../../public/img/discotecas/MIRANDA/miranda1.webp"
+        "logo": "../../public/img/discotecas/MIRANDA/miranda1.webp",
+        "banner":"../../public/img/discotecas/MIRANDA/miranda3.webp"
     },
     {
         "id": 2,
@@ -27,7 +28,9 @@
             "entry": "$10",
             "Drinks": "$3 - $12"
         },
-        "logo": "../../public/img/discotecas/PerroNegro/perroNegro2.webp"
+        "logo": "../../public/img/discotecas/PerroNegro/perroNegro2.webp",
+        "banner":"../../public/img/discotecas/PerroNegro/perroNegro5.webp"
+
     },
     {
         "id": 3,
@@ -42,7 +45,9 @@
             "entry": "$8",
             "Drinks": "$2 - $10"
         },
-        "logo": "../../public/img/discotecas/tutaina/tutaina1.webp"
+        "logo": "../../public/img/discotecas/tutaina/tutaina1.webp",
+        "banner":"../../public/img/discotecas/tutaina/tutaina4.webp"
+
     },
     {
         "id": 4,
@@ -57,7 +62,9 @@
             "entry": "$20",
             "Drinks": "$7 - $20"
         },
-        "logo": "../../public/img/discotecas/CLEMENTINA/clementia3.webp"
+        "logo": "../../public/img/discotecas/CLEMENTINA/clementia3.webp",
+        "banner":"../../public/img/discotecas/CLEMENTINA/clementia9.webp"
+
     },
     {
         "id": 5,
@@ -72,7 +79,9 @@
             "entry": "$7",
             "Drinks": "$3 - $10"
         },
-        "logo": "../../public/img/discotecas/dulcinea/dulcinea1.webp"
+        "logo": "../../public/img/discotecas/dulcinea/dulcinea1.webp",
+        "banner":"../../public/img/discotecas/dulcinea/dulcinea3.webp"
+
     },
     {
         "id": 6,
@@ -87,6 +96,8 @@
             "entry": "$12",
             "Drinks": "$5 - $15"
         },
-        "logo": "../../public/img/discotecas/logia/logia1.webp"
+        "logo": "../../public/img/discotecas/logia/logia1.webp",
+        "banner":"../../public/img/discotecas/logia/logia3.webp"
+
     }
 ]
