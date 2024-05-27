@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </li>
         </ul>
         <div class="card-body">
-            <a href="#" class="card-link">ver mas</a>
+            <a href="discoteca.html" class="card-link">ver mas</a>
         </div>
         </div>
         `;
