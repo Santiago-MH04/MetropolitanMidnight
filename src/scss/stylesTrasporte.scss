@@ -252,6 +252,7 @@ nav a:hover:after {
 .tex-service {
     display: flex;
     flex-direction: column;
+    margin-top: 30%;
 }
 
 .tex-service h2 {
@@ -264,7 +265,7 @@ nav a:hover:after {
 
 
 .service-p {
-    height: 50%;
+    height: 20%;
 }
 
 .box-aptitudes {
@@ -285,10 +286,11 @@ nav a:hover:after {
 .btn-trabaja {
     text-align: center;
     font-family: "Oswald", sans-serif;
-    width: 21%;
     color: var(--color-softGray);
-    border-radius: 0%;
     background-color: var(--color-purple);
+    margin-top: 10%;
+    border-radius: 0%;
+    width: 30%;
 }
 
 .box-aptitudes1 {
@@ -307,4 +309,9 @@ nav a:hover:after {
     height: 2%;
     width: 1%;
     background-color: var(--color-purple);
+}
+
+#img-trabaja {
+    margin-left: 95%;
+    margin-top: 25%;
 }
