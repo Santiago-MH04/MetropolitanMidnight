@@ -45,7 +45,6 @@ header {
 
     position: fixed;
     top: 0;
-    // border: solid white;
     background-color: var(--color-black);
     display: flex;
 }
@@ -359,23 +358,47 @@ main {
 
 .info{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 15%;
+}
+
+.info .info_title{
+    font-weight: bold;
+    border-bottom: 3px solid var(--color-purple);
+    width: 250px;
+    color: var(--color-white);
+}
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    border-bottom: 3px solid var(--color-purple);
+    width: 250px;
+    color: var(--color-white);
+}
+.container_info{
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 90%;
-    margin-top: 10%;
-    gap: 2rem;
+    margin-top: 5%;
+    gap: 5rem;
     padding: 10px;
     color: var(--color-white);
-
 }
 
-.services{
+.services {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     width: 40%;
+    box-shadow: 0 10px 50px var(--color-pink);
+    border-radius: 20px;
+    padding: 15px;
 }
+
 
 .services .service_logo{
     font-size: 3rem;
@@ -407,7 +430,11 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    width: 40%;
+    width: 50%;
+    box-shadow: 0 10px 50px var(--color-pink);
+    border-radius: 20px;
+    padding: 15px;
+    
 }
 .ubication .ubication_logo{
     font-size: 3rem;

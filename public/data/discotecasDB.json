@@ -5,7 +5,7 @@
         "description": "A stylish and modern nightclub known for its vibrant atmosphere and top-notch DJs.",
         "location": {
             "zone": "poblado",
-            "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4106359357647!2d-75.57138758840301!3d6.2094459937524995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429e39fe501c7%3A0x2fad66f4157c621a!2sMiranda%20disco%20Medell%C3%ADn!5e0!3m2!1ses-419!2sco!4v1716322743841!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+            "map": "<iframe id=\"map_frame\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4106359357647!2d-75.57138758840301!3d6.2094459937524995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429e39fe501c7%3A0x2fad66f4157c621a!2sMiranda%20disco%20Medell%C3%ADn!5e0!3m2!1ses-419!2sco!4v1716322743841!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
         },
         "hours": "Thursday to Saturday: 10:00 PM - 4:00 AM",
         "price": {
@@ -21,7 +21,7 @@
         "description": "A popular spot among locals and tourists alike, famous for its eclectic music and lively dance floor.",
         "location": {
             "zone": "Poblado",
-            "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4296330639804!2d-75.56831308917347!3d6.206923293754961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4682827e0de695%3A0xc5e4f64f1614282a!2sPerro%20Negro%20Club!5e0!3m2!1ses-419!2sco!4v1716328594000!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+            "map": "<iframe id=\"map_frame\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4296330639804!2d-75.56831308917347!3d6.206923293754961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4682827e0de695%3A0xc5e4f64f1614282a!2sPerro%20Negro%20Club!5e0!3m2!1ses-419!2sco!4v1716328594000!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
         },
         "hours": "Wednesday to Sunday: 9:00 PM - 3:00 AM",
         "price": {
@@ -38,7 +38,7 @@
         "description": "Known for its traditional Colombian music and festive ambiance, perfect for experiencing local culture.",
         "location": {
             "zone": "Poblado",
-            "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.279109243585!2d-75.57500928917327!3d6.226883993735181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428356bf62f55%3A0xebad21f36cbbf62d!2sFonda%20Tutaina%20Tuturuma!5e0!3m2!1ses-419!2sco!4v1716328635718!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+            "map": "<iframe id=\"map_frame\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.279109243585!2d-75.57500928917327!3d6.226883993735181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428356bf62f55%3A0xebad21f36cbbf62d!2sFonda%20Tutaina%20Tuturuma!5e0!3m2!1ses-419!2sco!4v1716328635718!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
         },
         "hours": "Friday to Sunday: 8:00 PM - 2:00 AM",
         "price": {
@@ -55,7 +55,7 @@
         "description": "A chic venue with a sophisticated vibe, featuring a mix of electronic and house music.",
         "location": {
             "zone": "Poblado",
-            "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.6059844440106!2d-75.56450697152434!3d6.2076796996096455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44298796dfba5b%3A0xc511159a024f1290!2sCLEMENTINA!5e0!3m2!1ses-419!2sco!4v1716328939483!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+            "map": "<iframe id=\"map_frame\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.6059844440106!2d-75.56450697152434!3d6.2076796996096455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44298796dfba5b%3A0xc511159a024f1290!2sCLEMENTINA!5e0!3m2!1ses-419!2sco!4v1716328939483!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
         },
         "hours": "Thursday to Saturday: 10:00 PM - 4:00 AM",
         "price": {
@@ -72,7 +72,7 @@
         "description": "A cozy nightclub with a relaxed atmosphere, perfect for socializing and enjoying good music.",
         "location": {
             "zone": "laureles",
-            "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1096749847543!2d-75.58846969999999!3d6.249276399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442900161e1b7f%3A0xca85399b0d13e782!2sDiscoteca%20Dulcinea!5e0!3m2!1ses-419!2sco!4v1716328983713!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+            "map": "<iframe id=\"map_frame\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1096749847543!2d-75.58846969999999!3d6.249276399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442900161e1b7f%3A0xca85399b0d13e782!2sDiscoteca%20Dulcinea!5e0!3m2!1ses-419!2sco!4v1716328983713!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
         },
         "hours": "Friday to Sunday: 8:00 PM - 2:00 AM",
         "price": {
@@ -89,7 +89,7 @@
         "description": "A trendy spot with a great selection of cocktails and an energetic dance floor.",
         "location": {
             "zone": "laureles",
-            "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1060553867287!2d-75.59113558917309!3d6.249753893712541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293f52386fc1%3A0x64563794833ae5d0!2sLa%20Logia!5e0!3m2!1ses-419!2sco!4v1716329017756!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+            "map": "<iframe id=\"map_frame\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1060553867287!2d-75.59113558917309!3d6.249753893712541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293f52386fc1%3A0x64563794833ae5d0!2sLa%20Logia!5e0!3m2!1ses-419!2sco!4v1716329017756!5m2!1ses-419!2sco\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
         },
         "hours": "Thursday to Sunday: 9:00 PM - 3:00 AM",
         "price": {

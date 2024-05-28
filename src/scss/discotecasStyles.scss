@@ -38,29 +38,21 @@ body {
 header {
     justify-content: center;
     width: 100%;
-
     position: fixed;
     top: 0;
-    // border: solid white;
     background-color: var(--color-black);
     display: flex;
 }
 
 #logo {
-
     padding: 10px 0px;
-
 }
 
 //-------barra de navegacion------
 nav {
-    // background-color: rgba($color: #000000, $alpha: 1.0);
-
-    // height: 80px;
     padding-bottom: 0px;
     margin-left: 200px;
     display: flex;
-    // border: solid white;
     gap: 150px;
     justify-content: space-between;
     align-items: center;
@@ -87,15 +79,11 @@ nav {
     padding-right: 10px;
 }
 
-
-
 nav a {
     position: relative;
     text-decoration: none;
     color: var(--color-softGray);
     letter-spacing: 0.5px;
-
-
 }
 
 nav a:hover {
@@ -106,46 +94,36 @@ nav a:after {
     content: "";
     position: absolute;
     background-color: var(--color-purple);
-    // background-color: var(--color-white);
     height: 3px;
     width: 0;
     left: 0;
     bottom: -10px;
     transition: 0.3s;
-
-
 }
 
 nav a:hover:after {
     content: "";
     position: absolute;
     background-color: var(--color-purple);
-    // background-color: var(--color-white);
     height: 3px;
     width: 100%;
     left: 0;
     bottom: -10px;
-
-
 }
 
 //footer
 footer {
     background-color: var(--color-PureBlack);
-
 }
+
 .footer {
-    //recordar poner display block para el responsive
     display: flex;
     gap: 14rem;
-    // border: solid white;
     height: max-content;
-
 }
 
 .content-mensajes {
     display: flex;
-
 }
 
 .mensajes-ganchos h3 {
@@ -154,14 +132,11 @@ footer {
     font-size: 5rem;
     font-weight: 300;
     margin-top: -0.5rem;
-
-
 }
 
 .mensajes-ganchos h4 {
     font-size: 4rem;
     font-weight: 300;
-
 }
 
 .parrafo {
@@ -173,9 +148,7 @@ footer {
     letter-spacing: 0.1rem;
 }
 
-
 .redes {
-
     display: flex;
     gap: 6rem;
 }
@@ -188,14 +161,11 @@ footer {
     font-family: "Krub", sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
-    // border: solid white;
 }
-
 
 .social-media a {
     font-size: 1.5rem;
     color: var(--color-purple);
-
 }
 
 // estilos
@@ -229,16 +199,12 @@ main {
     height: 89vh;
     position: relative;
     top: 170px;
-    
-
 }
 
 .container_slider {
     width: 100vh;
     height: 10vh;
     background: #f5f5f5;
-    
-
 }
 
 .container_slider .slide .item {
@@ -253,7 +219,6 @@ main {
     background-size: cover;
     display: inline-block;
     transition: 0.5s;
-
 }
 
 .slide .item:nth-child(1),
@@ -268,7 +233,6 @@ main {
 
 .slide .item:nth-child(3) {
     left: calc(50% + 650px);
-
 }
 
 .slide .item:nth-child(4) {
@@ -316,7 +280,6 @@ main {
 }
 
 .content button {
-
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -353,7 +316,7 @@ main {
     cursor: pointer;
 }
 
-// menu
+// menu discotecas
 
 .menu_discotecas {
     display: flex;
@@ -367,16 +330,14 @@ main {
 }
 
 #menu_discotecas {
-    border: #aa5eff solid 5px;
+    border: #aa5eff solid 2px;
     border-radius: 20px;
-    width: 100%;
+    width: 85%;
     height: 100%;
     background-color: var(--color-softGray);
+    box-shadow: 0 10px 50px var(--color-pink);
     display: flex;
     flex-direction: column;
-
-
-
 }
 
 h2 {
@@ -398,13 +359,35 @@ h2 {
     width: 18rem;
     border: none;
     border-radius: 20px;
-    box-shadow: 0 30px 50px #505050;
+    box-shadow: 0 30px 50px var(--color-pink);
     padding-bottom: 20px;
     margin-bottom: 30px;
+    background-color: var(--color-softGray);
+    animation: fadeIn 0.5s ease-in-out 0.6s 1 forwards;
+    animation-delay:0s ;
 }
 
 .card-body {
     text-align: center;
+    background-color: var(--color-softGray);
+}
+
+.discotecas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 // estrellas
@@ -414,12 +397,16 @@ h2 {
     direction: rtl;
     justify-content: center;
     font-size: 2rem;
+    background-color: var(--color-softGray);
+}
 
+.list-group-item {
+    background-color: var(--color-softGray);
 }
 
 .star {
     cursor: pointer;
-    color: var(--color-softGray);
+    color: var(--color-white);
     transition: color 0.2s;
 }
 
@@ -431,10 +418,4 @@ h2 {
 .star.selected,
 .star.selected~.star {
     color: var(--color-purple);
-}
-
-.discotecas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 90px;
 }

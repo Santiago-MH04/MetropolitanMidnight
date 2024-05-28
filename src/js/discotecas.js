@@ -55,39 +55,49 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function renderizarDisco(disco) {
+        
         const discoElement = document.createElement('div');
         discoElement.classList.add('disco');
         discoElement.innerHTML = `
-        <div class="card" style="width: 18rem;" >
-        <img src="${disco.logo}" class="card-img-top" alt="logo de ${disco.name}">
-        <div class="card-body">
-            <h5 class="card-title">${disco.name}</h5>
-            <p class="card-text">${disco.description}</p>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-                <div class="star-rating">
-                    <span class="star" data-value="5">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="1">&#9733;</span>
-                </div>
-            </li>
-        </ul>
-        <div class="card-body">
-            <a href="#" class="card-link"  id_discoteca=${disco.id}>ver mas</a>
-        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="${disco.logo}" class="card-img-top" alt="logo de ${disco.name}">
+            <div class="card-body">
+                <h5 class="card-title">${disco.name}</h5>
+                <p class="card-text">${disco.description}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="star-rating">
+                        <span class="star" data-value="5">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="1">&#9733;</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link" id_discoteca=${disco.id}>ver mas</a>
+            </div>
         </div>
         `;
+            
+     //estrellas
+        const stars = discoElement.querySelectorAll('.star');
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                stars.forEach(s => s.classList.remove('selected'));
+                star.classList.add('selected');
+            });
+        });  
         container.appendChild(discoElement);
     }
+    
 
     // Función para filtrar las discotecas por zona
     function filtrarDiscotecasPorZona(discotecas, zona) {
         return discotecas.filter(disco => disco.location.zone === zona);
     }
-
 
     menuDiscotecas.addEventListener('change', function () {
 
@@ -96,21 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(data => renderDiscotecas(data))
             .catch(error => console.error('Error al cargar el archivo JSON:', error));
 
-
-
-    });   //estrellas
-
-    const stars = document.querySelectorAll(".star");
-    stars.forEach((star) => {
-        star.addEventListener("click", () => {
-            const value = star.getAttribute("data-value");
-            stars.forEach((s) => {
-                s.classList.remove("selected");
-                if (s.getAttribute("data-value") <= value) {
-                    s.classList.add("selected");
-                }
-            });
-        });
-    });
+    });  
 });
 
