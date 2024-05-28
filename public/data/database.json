@@ -1,9 +1,11 @@
 {
-    "database": [
+    "users": [
         {
             "id": 1,
             "username": "Pepito Pérez",
-            "password": "12345"
+            "email": "pepito@correopepito.net",
+            "password": "12345",
+            "role": "admin"
         }
     ]
 }
