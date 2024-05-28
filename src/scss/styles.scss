@@ -76,7 +76,7 @@ body {
     gap: 5rem;
 }
 
-.btn-hiden{
+.btn-hiden {
     display: none;
 }
 
@@ -169,15 +169,15 @@ body {
 
 }
 
-.dropdown-menu{
+.dropdown-menu {
     line-height: 2;
 }
 
 
- //----------------------RESPONSIVE BARRA DE NAVEGACION-----------------------
+//----------------------RESPONSIVE BARRA DE NAVEGACION-----------------------
 
 @media(max-width:1100px) {
-    
+
     .nav-desktop {
         display: none;
     }
@@ -378,7 +378,7 @@ body {
 //imagen de la pareja disfrazada de diablo
 
 #contenedor-diablos {
-    
+
     padding-top: 100px;
     display: flex;
     // border: solid white;
@@ -517,17 +517,19 @@ body {
 
 //------------------------------RESPONSIVE SECCION PRINCIPAL----------------------
 @media(max-width:1100px) {
-#contenedor-diablos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#texto-vertical {
-    display: none;
-}
-.nombre-discoteca{
-    padding: 0;
-}
+    #contenedor-diablos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #texto-vertical {
+        display: none;
+    }
+
+    .nombre-discoteca {
+        padding: 0;
+    }
 
 
 }
@@ -620,19 +622,21 @@ footer {
 
 //----------RESPONSIVE FOOTER-------
 
-@media(max-width:1100px){
-    footer{
+@media(max-width:1100px) {
+    footer {
         margin-top: 30px;
         height: 600px;
-        
+
     }
-    .footer{
-        
+
+    .footer {
+
         display: flex;
         align-items: center;
         flex-direction: column;
         gap: 0;
     }
+
     .redes {
         display: flex;
         flex-direction: column;
@@ -640,56 +644,67 @@ footer {
         margin: 0;
         padding: 0;
         gap: 0;
-       
-        
-        
+
+
+
     }
-  
-    .derechos{
+
+    .derechos {
         display: flex;
         justify-content: center;
     }
 }
-    
+
 
 
 //___-----------------------------PAGINA VIP-------------------------------
 
+main {
+    margin-top: 10%;
+}
+
+.main-vip {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding-left: 5%;
+    padding: 5%;
+}
 
 
-
-.card-vip{
+.card-vip {
+    margin-top: 30%;
     margin-top: 200px;
     display: flex;
     flex-wrap: wrap;
     border: solid white;
-    
+
 }
 
 .container-card {
+    color: var(--color-white);
     width: 20%;
     text-align: center;
     border: solid var(--color-purple);
     font-family: "krub", sans-serif;
     letter-spacing: 0.5px;
-    padding-bottom: 12%;
+
 }
 
-.card-header{
-   
+.card-header {
     padding-top: 10%;
-    padding-bottom:  10%;
+    padding-bottom: 10%;
 }
 
-.card-header h2{
-font-size: 2.5rem;
-font-family: "Oswald", sans-serif;
+.card-header h2 {
+    font-size: 2.5rem;
+    font-family: "Oswald", sans-serif;
 }
 
 .card-title {
     color: var(--color-purple);
-font-size:2rem ;
-padding-bottom: 5%;
+    font-size: 2rem;
+    padding-bottom: 5%;
 }
 
 .card-text {
@@ -701,15 +716,15 @@ padding-bottom: 5%;
 }
 
 .btn {
-    background-color:var(--color-purple);
+    position: relative;
+    right: 10px;
+    background-color: var(--color-purple);
     border: none;
     border-radius: 0px;
-    
+
 }
+
 .btn:hover {
-    background-color:var(--color-pink);
+    background-color: var(--color-pink);
 
 }
-
-
-

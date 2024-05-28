@@ -31,7 +31,7 @@ planes.forEach(plan => {
                                 <a href="" class="btn btn-primary">Obtener</a>
                             </div>
                         </div>
-                    </article>
+                   
                   
                 
    `;  
