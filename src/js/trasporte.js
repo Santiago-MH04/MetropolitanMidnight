@@ -5,6 +5,7 @@ import * as bootstrap from 'bootstrap'
 // Función principal para obtener y mostrar los datos
 const urlJsonServer = "http://localhost:3000/categories";
 const containersCard = document.getElementById("containers-card");
+const formReserva = document.getElementById('reservation-form');
 let id;
 
 // Función principal para obtener y mostrar los datos
@@ -43,30 +44,25 @@ async function drivers() {
 drivers();
 
 // Manejar el envío del formulario
-document.getElementById('reservation-form').addEventListener('submit', async (event) => {
+formReserva.addEventListener('submit', async (event) => {
     event.preventDefault();
 
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
 
-    try {
-        const response = await fetch('http://localhost:3000/reservations', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        });
+    const response = await fetch('http://localhost:3000/reservations', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    });
 
-        if (response.ok) {
-            alert('Reserva enviada con éxito');
-            document.querySelector('#reservationModal .btn-close').click();
-            event.target.reset();
-        } else {
-            alert('Error al enviar la reserva');
-        }
-    } catch (error) {
-        console.error('Error:', error);
+    if (response.ok) {
+        alert('Reserva enviada con éxito');
+        document.querySelector('#reservationModal .btn-close').click();
+        event.target.reset();
+    } else {
         alert('Error al enviar la reserva');
     }
 });

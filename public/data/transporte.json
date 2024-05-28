@@ -21,10 +21,16 @@
       "img": "../../public/img/conductor4.webp"
     }
   ],
-  "discoteca": [
-    { "name": "Perro Negro" },
-    { "name": "Miranda" },
-    { "name": "Club XYZ" }
+  "discotecas": [
+    {
+      "name": "Perro Negro"
+    },
+    {
+      "name": "Miranda"
+    },
+    {
+      "name": "Club XYZ"
+    }
   ],
   "reservations": [
 
