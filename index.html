@@ -22,24 +22,37 @@
 <body>
 
   <header class="header">
-      <img id="logo" src="./img/distintivo-visual.webp" width="200" alt="distintivo-visual">
-      <i class="icon-open btn-hiden bi bi-list"></i>
-      <div class="nav-desktop">
+    <img id="logo" src="./img/distintivo-visual.webp" width="200" alt="distintivo-visual">
+    <i class="icon-open btn-hiden bi bi-list"></i>
+    <div class="nav-desktop">
       <nav class="nav-items-desktop">
         <ul class="nav-desktop-container-items">
           <li><a href="#">DISCOTECAS</a></li>
           <li><a href="#">GRUPOS</a></li>
           <li><a href="#">TRANSPORTE</a></li>
           <li><a href="./src/pages/vip.html">VIP</a></li>
-          <li><a href="#">IDIOMA</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                IDIOMA
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
+                <li><a class="dropdown-item" href="#">ENGLISH</a></li>
+                
+              </ul>
+            </div>
+          </li>
+          <!-- <a href="#">IDIOMA</a> -->
         </ul>
-        <div id="ingresar" >
+        <div id="ingresar">
           <a href="#">INGRESAR</a>
         </div>
         <i class="bi bi-x-lg"></i>
       </nav>
-      
-      </div>
+
+    </div>
 
     <!-- nav mobile -->
     <div class="nav-mobile hiden">
@@ -55,9 +68,9 @@
           <a href="#">INGRESAR</a>
         </div>
       </nav>
-      
+
     </div>
-    
+
   </header>
 
   <main>
@@ -78,7 +91,7 @@
 
 
 
-      <img id="diablos" src="./public/img/diablos1.webp" alt="pareja en fiesta">
+      <img id="diablos" src="./img/diablos1.webp" alt="pareja en fiesta">
 
 
 
