@@ -8,63 +8,73 @@
     <title>Login</title>
 </head>
 <body>
-    <header class="header">
-        <img id="logo" src="./img/distintivo-visual.webp" width="200" alt="distintivo-visual">
-        <i class="icon-open btn-hiden bi bi-list"></i>
-        <div class="nav-desktop">
-        <nav class="nav-items-desktop">
-          <ul class="nav-desktop-container-items">
-            <li><a href="#">DISCOTECAS</a></li>
-            <li><a href="#">GRUPOS</a></li>
-            <li><a href="#">TRANSPORTE</a></li>
-            <li><a href="#">VIP</a></li>
-            <li><a href="#">IDIOMA</a></li>
-          </ul>
-          <div id="ingresar" >
-            <a href="#">INGRESAR</a>
-          </div>
-          <i class="bi bi-x-lg"></i>
-        </nav>
-        
+  <header class="header">
+    <a href="/">
+      <img id="logo" src="../../img/distintivo-visual.webp" width="200" alt="distintivo-visual">
+    </a>
+      <i class="icon-open btn-hiden bi bi-list"></i>
+      <div class="nav-desktop">
+      <nav class="nav-items-desktop">
+        <ul class="nav-desktop-container-items">
+          <li><a href="./src/pages/discotecas.html">DISCOTECAS</a></li>
+          <li><a href="http://localhost:3001">GRUPOS</a></li>
+          <li><a href="./src/pages/transporte.html">TRANSPORTE</a></li>
+          <li><a href="./src/pages/vip.html">VIP</a></li>
+          <li><a href="#">IDIOMA</a></li>
+        </ul>
+        <div id="ingresar" >
+          <a href="./ingresar.html">INGRESAR</a>
         </div>
-  
-      <!-- nav mobile -->
-      <div class="nav-mobile hiden">
-        <i class="icon-close bi bi-x-lg"></i>
-  
-        <nav class="nav-items-mobile">
-          <a href="#">DISCOTECAS</a>
-          <a href="#">GRUPOS</a>
-          <a href="#">TRANSPORTE</a>
-          <a href="#">VIP</a>
-          <a href="#">IDIOMA</a>
-          <div id="ingresar" class="contain-ingresar">
-            <a href="#">INGRESAR</a>
-          </div>
-        </nav>      
-      </div> 
-    </header>
-    <section>
-        <h1>Entra y comparte con esta <span>gran comunidad</span></h1>
-        <div class="background"></div>
-        <article class="card">
-            <figure>
-                <img src="" alt="logo">
-            </figure>
-            <h2>Welcome back</h2>
-            <form class="form">
-                <input type="email text" placeholder="Username" />
-                <input type="password" placeholder="Password" />
-                <button>Sign in</button>
-            </form>
-        </article>
-        <div>
-            Need an account? Sign up
-            <a href="#">here</a>
+        <i class="bi bi-x-lg"></i>
+      </nav>
+      
+      </div>
+
+    <!-- nav mobile -->
+    <div class="nav-mobile hiden">
+      <i class="icon-close bi bi-x-lg"></i>
+
+      <nav class="nav-items-mobile">
+        <a href="#">DISCOTECAS</a>
+        <a href="#">GRUPOS</a>
+        <a href="#">TRANSPORTE</a>
+        <a href="./src/pages/vip.html">VIP</a>
+        <a href="#">IDIOMA</a>
+        <div id="ingresar" class="contain-ingresar">
+          <a href="./ingresar.html">INGRESAR</a>
         </div>
-    </section>
+      </nav>
+      
+    </div>
+    
+  </header>
+
+  <main>
+    <section id="section">
+      <h1>Entra y comparte con esta <span>gran comunidad</span></h1>
+      <div class="background"></div>
+      <article class="card">
+          <figure>
+              <img src="" alt="logo">
+          </figure>
+          <h2>Welcome back</h2>
+          <form class="form">
+              <input type="email text" placeholder="Username" />
+              <input type="password" placeholder="Password" />
+              <button>Sign in</button>
+          </form>
+      </article>
+      <div>
+          Need an account? Sign up
+          <a href="#">here</a>
+      </div>
+  </section>
+
+  </main>
+
     <footer>
         <article class="footer">
+    
           <div class="content-mensajes">
             <div class="mensajes-ganchos">
               <h3>+</h3>
@@ -76,6 +86,7 @@
               <p>MIEMBROS <br> FELICES</p>
             </div>
           </div>
+    
           <div class="content-mensajes">
             <div class="mensajes-ganchos">
               <h3>+</h3>
@@ -87,6 +98,7 @@
               <p>DISCOTECAS<br>ASOCIADAS</p>
             </div>
           </div>
+    
           <div class="content-mensajes">
             <div class="mensajes-ganchos">
               <h3>+</h3>
@@ -98,24 +110,33 @@
               <p>MIEMBROS <br> FELICES</p>
             </div>
           </div>
+    
         </article>
+    
         <article class="redes">
+    
           <div class="social-media">
             <p>NUESTRAS REDES</p>
             <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
             <a href="https://x.com/?lang=es"><i class="bi bi-twitter-x"></i></a>
             <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
           </div>
+    
           <div class="social-media">
             <a href="mailto:METROPOLITANMIDNIGHT@GMAIL.COM"><i class="bi bi-envelope-fill"></i></a>
             <p>METROPOLITANMIDNIGHT@GMAIL.COM</p>
           </div>
+    
         </article>
+    
         <div class="social-media">
           <p> © 2024 METROPOLITAN MIDNIGHT ALL RIGHTS RESERVED</p>
         </div>
+    
+    
+    
       </footer>
-    <script src="../js/main.js"></script>
-    <script src="../js/ingresar.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/ingresar.js"></script>
 </body>
 </html>
