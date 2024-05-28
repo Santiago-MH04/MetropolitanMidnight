@@ -69,42 +69,44 @@
         <!-- form  -->
         <!-- Modal de Bootstrap para el formulario flotante -->
         <section class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel"
-        aria-hidden="true">
-        <article class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="reservationModalLabel">Solicitud de Reserva</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            aria-hidden="true">
+            <article class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="reservationModalLabel">Solicitud de Reserva</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="reservation-form">
+                            <div class="mb-3">
+                                <label for="hora-reserva" class="form-label">Fecha y Hora de Reserva:</label>
+                                <input type="datetime-local" id="hora-reserva" name="hora-reserva" class="form-control"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="lugar-partida" class="form-label">Lugar de Partida:</label>
+                                <input type="text" id="lugar-partida" name="lugar-partida" class="form-control"
+                                    placeholder="Ejemplo: Calle Principal #123, Ciudad" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="discoteca-destino" class="form-label">Discoteca Destino:</label>
+                                <select id="discoteca-destino" name="discoteca-destino" class="form-select" required>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo:</label>
+                                <input type="email" id="correo" name="correo" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <form id="reservation-form">
-                        <div class="mb-3">
-                            <label for="hora-reserva" class="form-label">Fecha y Hora de Reserva:</label>
-                            <input type="datetime-local" id="hora-reserva" name="hora-reserva" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="lugar-partida" class="form-label">Lugar de Partida:</label>
-                            <input type="text" id="lugar-partida" name="lugar-partida" class="form-control" placeholder="Ejemplo: Calle Principal #123, Ciudad" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="discoteca-destino" class="form-label">Discoteca Destino:</label>
-                            <select id="discoteca-destino" name="discoteca-destino" class="form-select" multiple>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="telefono" class="form-label">Teléfono:</label>
-                            <input type="tel" id="telefono" name="telefono" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="correo" class="form-label">Correo:</label>
-                            <input type="email" id="correo" name="correo" class="form-control" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </article>
-    </section>
+            </article>
+        </section>
 
 
         <!-- card drivers section -->
@@ -206,7 +208,7 @@
 
     <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/trasporte.js"></script>
-    <script src="../js/loadNightclubs.js" defer></script>
+    <script src="../js/loadNightclubs.js"></script>
 </body>
 
 </html>
