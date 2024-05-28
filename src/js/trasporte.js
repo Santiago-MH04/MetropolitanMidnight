@@ -93,10 +93,10 @@ document.getElementById('trabaja-form').addEventListener('submit', async (event)
     });
 
     if (response.ok) {
-        alert('Reserva enviada con éxito');
+        alert('Solicitud enviada con éxito');
         document.querySelector('#trabajaModal .btn-close').click();
         event.target.reset();
     } else {
-        alert('Error al enviar la reserva');
+        alert('Error al enviar la solicitud');
     }
 });
