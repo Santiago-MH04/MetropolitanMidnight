@@ -1,9 +1,21 @@
 {
-    "database": [
+    "database":[
         {
-            "id": 1,
-            "username": "andres",
-            "password": "12345"
+            "id":1,
+            "username":"pepito perez",
+            "password":"1234"
+        },
+
+        {
+            "id":2,
+            "username":"juan",
+            "password":"567"
+        }
+
+    ],
+    "conected":[
+        {
+            "usernames":"juan"
         }
     ]
 }

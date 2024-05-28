@@ -1,9 +1,12 @@
-
-
-
-
 const socket = io()
-$(function () {
+
+
+$(async function () {
+
+    const dataUsers = await fetch(`http://localhost:3000/database`)
+    //en allow se almacenan los usuarios que ya sale registrados en la base de datos 
+    const allDataRegister = await dataUsers.json()
+    const allow = allDataRegister.map(entry => entry.username)
 
     //este es el encargado de enviar los datos
     //esta es la conexion de sockets de el cliente
@@ -38,22 +41,38 @@ $(function () {
         e.preventDefault()
         console.log("enviando")
 
-        socket.on("nuevo usuario", (data, cb) => {
+        // socket.on("nuevo usuario", (data, cb) => {
 
 
 
 
-        })
+        // })
         socket.emit("nuevo usuario", nickName.value, (data) => {
-            if (data) {
-                document.querySelector("#nick-wrap").style.display = "none";
-                document.querySelector("#content-wrap").style.display = "block"
-            } else {
-                nickError.innerHTML = `<div class="alert alet-danger">
-                <i class="bi bi-person">ese usuario ya existe</i>
-                </div>`
+            console.log(nickName.value)
+            let registrado = false
+            for (let i = 0; i < allow.length; i++) {
+                if (allow[i] === nickName.value) {
+                    registrado = true
+                    break
+                }
             }
-            nickName.value=``
+            if (registrado === true) {
+                if (data) {
+                    document.querySelector("#nick-wrap").style.display = "none";
+                    document.querySelector("#content-wrap").style.display = "block"
+                }else {
+                    nickError.innerHTML = `<div class="alert alet-danger">
+                <i class="bi bi-person">este usuario ya esta conectado</i>
+                </div>`
+                }
+            } else {
+
+                alert("usuario no registrado")
+                window.location.href = `http://localhost:5173`
+
+            }
+
+            // nickName.value = ``
 
         })
 
@@ -76,13 +95,13 @@ $(function () {
 
     })
 
-    socket.on("usernames",data =>{
-        let html=``
-        for(let i=0; i<data.length; i++){
-            html += `<p><i class="bi bi-person-circle"></i>${data[i].username}</p>`
-            
+    socket.on("usernames", data => {
+        let html = ``
+        for (let i = 0; i < data.length; i++) {
+            html += `<p><i class="bi bi-person-circle"></i>${data[i]}</p>`
+
         }
-        users.innerHTML=html
+        users.innerHTML = html
     })
 
 })
