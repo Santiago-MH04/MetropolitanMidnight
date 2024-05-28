@@ -76,6 +76,10 @@ body {
     gap: 5rem;
 }
 
+.btn-hiden{
+    display: none;
+}
+
 
 //--------------BARRA DE NAVEGACION desktop------------
 .nav-items-desktop {
@@ -90,6 +94,7 @@ body {
 }
 
 .icon-open {
+    color: white;
     position: absolute;
     right: 0;
     top: 0;
@@ -172,6 +177,7 @@ body {
  //----------------------RESPONSIVE BARRA DE NAVEGACION-----------------------
 
 @media(max-width:1100px) {
+    
     .nav-desktop {
         display: none;
     }
@@ -209,6 +215,7 @@ body {
         transition: 0.8s;
 
         .icon-close {
+
             cursor: pointer;
             font-size: 2rem;
             color: var(--color-white);
@@ -648,103 +655,19 @@ footer {
 
 //___-----------------------------PAGINA VIP-------------------------------
 
-@media (width >=768px) {
-    body {
-        height: 100vh;
-        padding: 60px 20px;
-    }
 
-    .grid {
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-    }
 
-    grid>div {
-        height: 100%;
-    }
 
-    .primary {
-
-        order: -1;
-
-        grid-column: 1/3;
-
-    }
+.card-vip{
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid white;
+    
 }
-
-.primary.card {
-    max-width: 45vw;
-}
-
-.background {
-    top: -25vh;
-}
-
-@media (width >=980px) {
-
-    .grid {
-
-        grid-template-rows: 1fr;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .grid>div {
-        height: auto;
-    }
-
-    .primary {
-        order: 0;
-        grid-column: auto;
-    }
-
-    .background {
-        top: -100px;
-    }
-}
-
-#vip-card {
-
-    padding: 60px 15%;
-
-    color: #f7f7f7;
-
-}
-
-
-
-.card {
-
-    border-radius: 12px;
-}
-
-.grid {
-
-    display: grid;
-    place-items: center;
-
-    gap: 20px;
-
-    width: 100%;
-
-}
-
-.grid>div {
-    width: 100%;
-}
-
-grid .primary {
-    order: -1;
-}
-
-.card-vip {
-    background-color: var(--color-black);
-    margin-top: 30%;
-}
-
-
-//cards
 
 .container-card {
+    width: 20%;
     text-align: center;
     border: solid var(--color-purple);
     font-family: "krub", sans-serif;
@@ -787,4 +710,6 @@ padding-bottom: 5%;
     background-color:var(--color-pink);
 
 }
+
+
 

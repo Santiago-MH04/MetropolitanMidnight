@@ -9,7 +9,7 @@
 
 
     "planes":[
-        {
+        {   
             "nombre": "plan básico",
             "costo": 9.99,
             "descripcion": ["Acceso a descuentos del 10% en entradas y bebidas en discotecas participantes.",
@@ -26,13 +26,12 @@
             ]
         },
         {
-            "nombre":"Plan Básico",
+            "nombre":"plan élite",
             "costo":25.99,
             "descripcion": [
                 "Acceso a descuentos del 30% en entradas y bebidas en discotecas participantes",
                 "Accede a fiestas privadas privilegiadas sobre horarios de apertura, ubicación y género musical.",
                 "Descuento del 30% en licores durante tu visita."
-
             ]
         }
     ]

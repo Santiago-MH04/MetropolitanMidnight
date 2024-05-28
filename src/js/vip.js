@@ -1,12 +1,47 @@
+// Import our custom CSS
+import '../scss/styles.scss'
+
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap'
+
+
 // -------------------------------ACA COMIENZA LA LOGICA DE VIP---------------------------
 
-const planes = document.querySelector("main")
+const main = document.querySelector("main")
+    main.innerHTML = "";
+const datos = await fetch(`http://localhost:3000/planes`)
+const planes = await datos.json()
 
-for (let i = 0; i < planes.length; i++) {
-   main.innerHTML+=`
+main.innerHTML = "";
+
+planes.forEach(plan => {
+   main.innerHTML += `
+                
+                   
+                        <div class="container-card">
+                            <div class="card-header">
+                                <h2>${plan.nombre}</h2>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">$${plan.costo}/mes</h5>
+                                <ul>
+                                    <li class="card-text">${plan.descripcion[0]}</li>
+                                    <li class="card-text">${plan.descripcion[1]}</li>
+                                    <li class="card-text">${plan.descripcion[2]}</li>
+                                <a href="" class="btn btn-primary">Obtener</a>
+                            </div>
+                        </div>
+                    </article>
+                  
+                
+   `;  
+});
+
+
+/*for (let i = 0; i < planes.length; i++) {
+   main.innerHTML +=`
    <article id="vip-card">
             <div class="background"></div>
-
             <div class="grid">
                 <div>
                     <article class="card-vip">
@@ -21,34 +56,10 @@ for (let i = 0; i < planes.length; i++) {
                                         </li>
                                     <li class="card-text">${planes[i].descripcion[1]}</li>
                                     <li class="card-text">${planes[i].descripcion[2]}</li>
-                                <p class="card-text"></p>
                                 <a href="" class="btn btn-primary">Obtener</a>
                             </div>
                         </div>
                     </article>
-
                 </div>
-
-                <div>
-                    <article class="card-vip">
-                        <div class="container-card">
-                            <div class="card-header">
-                                <h2>Plan Premium</h2>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">$19.99/mes</h5>
-                                <ul>
-                                    <li class="card-text">Entrada prioritaria: Evita las filas y entra más rápido a la discoteca.</li>
-                                    <li class="card-text">Descuentos ampliados: 20% de descuento en bebidas y 10% en la entrada a la discoteca.</li><br>
-                                    <li class="card-text">Reservas prioritarias:reserva mesas y areas VIP</li>
-                                </ul>
-                                <p class="card-text"></p>
-                                <a href="" class="btn btn-primary">Obtener</a>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-   
    `  
-}
+}*/
