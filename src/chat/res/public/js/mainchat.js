@@ -79,7 +79,7 @@ $(function () {
     socket.on("usernames",data =>{
         let html=``
         for(let i=0; i<data.length; i++){
-            html += `<p><i class="bi bi-person-circle"></i>${data[i]}</p>`
+            html += `<p><i class="bi bi-person-circle"></i>${data[i].username}</p>`
             
         }
         users.innerHTML=html

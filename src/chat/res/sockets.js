@@ -1,16 +1,18 @@
 // Exportar la función utilizando export default
 
 //esta es la coneccion de sockets de el servidor 
-export default function (io) {
+export default async function (io) {
 
-    let nickNames=[]
+    const datos = await fetch(`http://localhost:3000/database`)
+    const nickNames = await  datos.json()
+
     // Si todo sale bien se mostrará esto 
     io.on('connection', socket => {
         console.log('Nuevo usuario conectado');
 
         socket.on("nuevo usuario",(data,cb)=>{
             //investige como hace para que con esta linea se mande a la consola todo 
-            console.log(data)
+            
             if(nickNames.indexOf(data)!= -1){
                 cb(false)
             }else{

@@ -223,6 +223,7 @@ nav a:hover:after {
 
 @media screen and (max-width: 768px) {
     /* Redimensiona el ancho mínimo del chat y los usuarios */
+    
     #chat{
       min-width:10em;
       min-height: 10em;
@@ -240,6 +241,9 @@ nav a:hover:after {
   /* Agrega estilos específicos para pantallas de hasta 576px de ancho */
   @media screen and (max-width: 576px) {
     /* Redimensiona el ancho mínimo del formulario de mensaje */
+    
+    
+    
     #message-form {
       flex-direction: column; /* Cambia la dirección del flexbox a columna */
       align-items: center; /* Centra los elementos en el eje transversal */
