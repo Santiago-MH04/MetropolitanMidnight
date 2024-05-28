@@ -6,6 +6,7 @@ import * as bootstrap from 'bootstrap'
 const urlJsonServer = "http://localhost:3000/categories";
 const containersCard = document.getElementById("containers-card");
 const formReserva = document.getElementById('reservation-form');
+const trabaja = document.getElementById('trabaja-form');
 let id;
 
 // Función principal para obtener y mostrar los datos
@@ -33,7 +34,7 @@ async function drivers() {
                 <div class="card-body">
                     <p class="card-text">${element.name}, conductor privado de élite, garantiza un servicio de excelencia con
                         habilidades de manejo expertas y atención al cliente insuperable</p>
-                    <a href="#" class="btn btn-solicitar btn-primary" data-bs-toggle="modal" data-bs-target="#reservationModal">SOLICITAR</a>
+                    <a href="#" class="btn btn-solicitar" data-bs-toggle="modal" data-bs-target="#reservationModal">SOLICITAR</a>
                 </div>
             </div>
         </article>`;
@@ -43,7 +44,7 @@ async function drivers() {
 // Cargar datos al inicio
 drivers();
 
-// Manejar el envío del formulario
+// Manejar el envío del formulario reserva
 formReserva.addEventListener('submit', async (event) => {
     event.preventDefault();
 
@@ -67,3 +68,35 @@ formReserva.addEventListener('submit', async (event) => {
     }
 });
 
+// Escuchar el cambio en el campo de entrada de archivos
+document.getElementById('imageUpload').addEventListener('change', (event) => {
+    const file = event.target.files[0];
+    if (file) {
+        const filePath = URL.createObjectURL(file); // Obtener la ruta local del archivo
+        document.getElementById('filePath').value = filePath; // Almacenar la ruta en el campo oculto
+    }
+});
+
+// Manejar el envío del formulario de trabajo con nosotros
+document.getElementById('trabaja-form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData);
+
+    const response = await fetch('http://localhost:3000/trabaja', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+        alert('Reserva enviada con éxito');
+        document.querySelector('#trabajaModal .btn-close').click();
+        event.target.reset();
+    } else {
+        alert('Error al enviar la reserva');
+    }
+});

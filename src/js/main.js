@@ -19,4 +19,3 @@ iconOpen.addEventListener('click', ()=>{
     navMobile.classList.toggle('hiden');
     iconOpen.classList.add('btn-hidden');
 })// Import our custom CSS
-import '../scss/styles.scss'
