@@ -10,9 +10,9 @@ import sockets from './sockets.js';
 let __dirname = decodeURIComponent(new URL(import.meta.url).pathname)
 
 // Eliminar la barra invertida inicial
-if (__dirname.startsWith("\\") || __dirname.startsWith("/")) {
-    __dirname = __dirname.slice(1);
-}
+// if (__dirname.startsWith("\\") || __dirname.startsWith("/")) {
+//     __dirname = __dirname.slice(1);
+// }
 
 __dirname = path.dirname(__dirname);
 
@@ -40,6 +40,6 @@ app.use(express.static(path.join(__dirname,'public')))
 
 //empezando el servidor 
 server.listen(app.get(`port`), () => {
-    console.log("Servidor en puerto 3000");
+    console.log("Servidor en puerto 3001");
 });
 
