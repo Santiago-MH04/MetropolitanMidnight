@@ -4,40 +4,175 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="turismo nocturno y conexion con las persona, discotecas">
+  <meta name="keywords" content="discoteca,amigos,relaciones,salidas,turismo,musica">
+  <meta name="sitedomain" content="https://metropolitanmidnight.com" />
+  <meta name="organization" content="metropolitan midnight" />
+  <meta name="author" content="juan pablo,juan felipe,dave,santiago Marin, andres caceres" />
+  <meta name="designer" content="juan pablo,juan felipe,dave,santiago Marin, andres caceres">
+  <meta name="publisher" content="juan pablo,juan felipe,dave,santiago Marin, andres caceres" />
+  <meta name="copyright" content="&copy; 2024 metropolitan midnight. All rights reserved.">
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow" />
+  <meta name="revisit-after" content="15days" />
   <link rel="shortcut icon" href=".icons/luna.png" type="image/x-icon">
   <title>Metropolitan midnight</title>
 </head>
 
 <body>
-  <header>
-    <div>
-      <img id="logo" src="./img/distintivo-metropolitan2.webp" width="300" alt="">
-    </div>
 
-    <nav>
-      <a href="#">DISCOTECAS</a>
-      <a href="#">GRUPOS</a>
-      <a href="./src/pages/transporte.html">TRANSPORTE</a>
-      <a href="#">CHIVAS</a>
-      <a href="#">ZONA VIP</a>
-      <div id="ingresar">
-        <a href="#">INGRESAR</a>
+  <header class="header">
+      <img id="logo" src="./img/distintivo-visual.webp" width="200" alt="distintivo-visual">
+      <i class="icon-open btn-hiden bi bi-list"></i>
+      <div class="nav-desktop">
+      <nav class="nav-items-desktop">
+        <ul class="nav-desktop-container-items">
+          <li><a href="./src/pages/discotecas.html">DISCOTECAS</a></li>
+          <li><a href="http://localhost:3001">GRUPOS</a></li>
+          <li><a href="./src/pages/transporte.html">TRANSPORTE</a></li>
+          <li><a href="./src/pages/vip.html">VIP</a></li>
+          <li><a href="#">IDIOMA</a></li>
+        </ul>
+        <div id="ingresar" >
+          <a href="#">INGRESAR</a>
+        </div>
+        <i class="bi bi-x-lg"></i>
+      </nav>
+      
       </div>
-    </nav>
 
+    <!-- nav mobile -->
+    <div class="nav-mobile hiden">
+      <i class="icon-close bi bi-x-lg"></i>
+
+      <nav class="nav-items-mobile">
+        <a href="./src/pages/discotecas.html">DISCOTECAS</a>
+        <a href="http://localhost:3001">GRUPOS</a>
+        <a href="./src/pages/transporte.html">TRANSPORTE</a>
+        <a href="./src/pages/vip.html ">VIP</a>
+        <a href="#">IDIOMA</a>
+        <div id="ingresar" class="contain-ingresar">
+          <a href="#">INGRESAR</a>
+        </div>
+      </nav>
+      
+    </div>
+    
   </header>
 
   <main>
 
-    <div id="circle"> </div>
-
-    <img id="diablos" src="./public/img/diablos.webp" alt="pareja en fiesta">
 
 
+    <article id="contenedor-diablos">
+
+      <div class="nombre-discoteca">
+        <h1>MIRANDA<span>.</span></h1>
+        <P><span>DISCOTEC</span></P>
+
+        <div id="texto-vertical">
+          <P>AMIGABLE</P>
+          <h2>AMBIENTE </h2>
+        </div>
+      </div>
+
+
+
+      <img id="diablos" src="./public/img/diablos.webp" alt="pareja en fiesta">
+
+
+
+
+      <div id="descripcion">
+
+        <div class="top-discotecas">
+          <h2 class="mayo">TOP MAYO</h2>
+          <h2 class="año">2024</h2>
+        </div>
+
+        <h3 class="titulo"> LA MEJOR rankeada
+          por los usuarios //
+        </h3>
+        <p class="textcontent">
+          Las discotecas líderes se destacan por
+          su ambiente inclusivo y diverso, música
+          innovadora y espectáculos de luces impresionantes.
+          Una tercera se distingue por su enfoque en la sofisticación
+          y el lujo, ofreciendo un diseño exquisito y un servicio personalizado
+          para una experiencia refinada en la vida nocturna.
+        </p>
+        <div class="links">
+          <a class="conocelas" href="">CONOCELA</a>
+          <a class="arma" href="">ARMA TU PLAN</a>
+        </div>
+      </div>
+
+    </article>
 
   </main>
 
   <footer>
+    <article class="footer">
+
+      <div class="content-mensajes">
+        <div class="mensajes-ganchos">
+          <h3>+</h3>
+        </div>
+        <div class="mensajes-ganchos">
+          <h4>2000</h4>
+        </div>
+        <div class="parrafo">
+          <p>MIEMBROS <br> FELICES</p>
+        </div>
+      </div>
+
+      <div class="content-mensajes">
+        <div class="mensajes-ganchos">
+          <h3>+</h3>
+        </div>
+        <div class="mensajes-ganchos">
+          <h4>50</h4>
+        </div>
+        <div class="parrafo">
+          <p>DISCOTECAS<br>ASOCIADAS</p>
+        </div>
+      </div>
+
+      <div class="content-mensajes">
+        <div class="mensajes-ganchos">
+          <h3>+</h3>
+        </div>
+        <div class="mensajes-ganchos">
+          <h4>1000</h4>
+        </div>
+        <div class="parrafo">
+          <p>MIEMBROS <br> FELICES</p>
+        </div>
+      </div>
+
+    </article>
+
+    <article class="redes">
+
+      <div class="social-media">
+        <p>NUESTRAS REDES</p>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a href="https://x.com/?lang=es"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+      </div>
+
+      <div class="social-media">
+        <a href="mailto:METROPOLITANMIDNIGHT@GMAIL.COM"><i class="bi bi-envelope-fill"></i></a>
+        <p>METROPOLITANMIDNIGHT@GMAIL.COM</p>
+      </div>
+
+    </article>
+
+    <div class="social-media derechos ">
+      <p> © 2024 METROPOLITAN MIDNIGHT ALL RIGHTS RESERVED</p>
+    </div>
+
+
 
   </footer>
 
