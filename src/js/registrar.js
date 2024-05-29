@@ -72,25 +72,23 @@ async function registerUser(username, email, password) {
     const data = await response.json();
 }
 
-/*formReg.addEventListener('click', async (event) => {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById("termsModal");
+    var btn = document.getElementById("termsLink");
+    var span = document.getElementsByClassName("close")[0];
 
-    const formData = new FormData(event.target);    //Guarda un objeto en el json-server
-    const data = Object.fromEntries(formData);
-
-    const response = await fetch('http://localhost:3000/registrations', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    });
-
-    if (response.ok) {  //Devuelve true o false
-        alert('Vamos a registrar');
-        document.querySelector('#registrationModal .btn-close').click();
-        event.target.reset();
-    } else {
-        alert('Error al enviar el registro');
+    btn.onclick = function(event) {
+        event.preventDefault();
+        modal.style.display = "block";
     }
-});*/
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+});
