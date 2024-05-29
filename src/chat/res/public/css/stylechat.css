@@ -134,7 +134,7 @@ body {
 }
 
 .nav-items-desktop a:hover {
-    color: var(--color-white);
+    color: var(--color-white)
 }
 
 .nav-items-desktop a:after {
@@ -274,9 +274,14 @@ main{
     color: var(--color-black);
 }
 
+
+
+
+/* //estilos de los usuarios */
 .card-header{
     background-color: var(--color-purple);
     color:var(--color-white) ;
+    
 
 }
 
