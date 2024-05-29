@@ -3,7 +3,7 @@ const socket = io()
 
 $(async function () {
 
-    const dataUsers = await fetch(`http://localhost:3000/database`)
+    const dataUsers = await fetch(`http://localhost:3000/users`)
     //en allow se almacenan los usuarios que ya sale registrados en la base de datos 
     const allDataRegister = await dataUsers.json()
     const allow = allDataRegister.map(entry => entry.username)

@@ -1,20 +1,53 @@
 {
-    "database":[
+    "users": [
         {
-            "id":1,
-            "username":"pepito perez",
-            "password":"1234"
-        },
-
-        {
-            "id":2,
-            "username":"carlos",
-            "password":"567"
+            "id": 1,
+            "username": "PepitoPérez",
+            "email": "pepito@correopepito.net",
+            "password": "12345",
+            "role": "customer"
         },
         {
-            "id":3,
-            "username":"andres",
-            "password":"567"
+            "id": 2,
+            "username": "SilverWolf",
+            "email": "andrescaceres776@metropolitanmidnight.com",
+            "password": "ecw984ef2e*",
+            "role": "admin"
+        },
+        {
+            "id": 3,
+            "username": "JuanFelipe",
+            "email": "pulgarinhernandezjuanfelipe@metropolitanmidnight.com",
+            "password": "fclmwqe99jeg0w-*",
+            "role": "admin"
+        },
+        {
+            "id": 4,
+            "username": "JuanPablo",
+            "email": "gomezjuanpazero@metropolitanmidnight.com",
+            "password": "zero-dxpwoe92f0&",
+            "role": "admin"
+        },
+        {
+            "id": 5,
+            "username": "David",
+            "email": "apolo4778@metropolitanmidnight.com",
+            "password": "dcweofj34-9*",
+            "role": "admin"
+        },
+        {
+            "id": 6,
+            "username": "Santiago",
+            "email": "santimh04@metropolitanmidnight.com",
+            "password": "Dwi7dawawce323qa*",
+            "role": "admin"
+        },
+        {
+            "id": 6,
+            "username": "AnitaLaHuerfanita",
+            "email": "adoptame@orfanato.org",
+            "password": "password123",
+            "role": "customer"
         }
     ],
     "connected":[
@@ -96,3 +129,4 @@
         }
       ]
 }
+

@@ -3,27 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../scss/stylesLogin.scss">
+    <link rel="stylesheet" href="../scss/stylesRegister.scss">
     <title>Login</title>
 </head>
 <body>
-    <section>
-        <div class="background"></div>
-        <article class="card">
-            <figure>
-                <img src="" alt="logo">
-            </figure>
-            <h2>Welcome back</h2>
-            <form class="form">
-                <input type="email" placeholder="Username" />
-                <input type="password" placeholder="Password" />
-                <button>Sign in</button>
-            </form>
-        </article>
-        <footer>
-            Need an account? Sign up
-            <a href="#">here</a>
-        </footer>
+  <header class="header">
+    <a href="/">
+      <img id="logo" src="../../img/distintivo-visual.webp" width="200" alt="distintivo-visual">
+    </a>
+      <i class="icon-open btn-hiden bi bi-list"></i>
+      <div class="nav-desktop">
+      <nav class="nav-items-desktop">
+        <ul class="nav-desktop-container-items">
+          <li><a href="./src/pages/discotecas.html">DISCOTECAS</a></li>
+          <li><a href="http://localhost:3001">GRUPOS</a></li>
+          <li><a href="./src/pages/transporte.html">TRANSPORTE</a></li>
+          <li><a href="./src/pages/vip.html">VIP</a></li>
+          <li><a href="#">IDIOMA</a></li>
+        </ul>
+        <div id="ingresar" >
+          <a href="./ingresar.html">INGRESAR</a>
+        </div>
+        <i class="bi bi-x-lg"></i>
+      </nav>
+      
+      </div>
+
+    <!-- nav mobile -->
+    <div class="nav-mobile hiden">
+      <i class="icon-close bi bi-x-lg"></i>
+
+      <nav class="nav-items-mobile">
+        <a href="#">DISCOTECAS</a>
+        <a href="#">GRUPOS</a>
+        <a href="#">TRANSPORTE</a>
+        <a href="./src/pages/vip.html">VIP</a>
+        <a href="#">IDIOMA</a>
+        <div id="ingresar" class="contain-ingresar">
+          <a href="./ingresar.html">INGRESAR</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="section">
+      <h1>ENTRA Y COMPARTE <br>CON ESTA <span>GRAN COMUNIDAD</span></h1>
+      <div class="background"></div>
+      <article class="card">
+          <figure>
+              <img src="../../public/img/imagenLogin.webp" alt="logo">
+          </figure>
+          <form class="form">
+              <h2>INICIO DE SESIÓN</h2>
+              <input type="email" class="email" placeholder="Nombre de usuario, o correo electrónico" />
+              <input type="password" class="password" placeholder="Contraseña" />
+              <button type="submit" class="btn-form">ENTRAR</button>
+          </form>
+      </article>
+      <div class="banner">
+        <div class="recover-account">
+            ¿OLVIDASTE TU CONTRASEÑA?
+        </div>
+        <div class="create-account">
+            ¿NO TIENES UNA CUENTA? <a href="#" data-bs-toggle="modal" data-bs-target="#registrationModal">REGÍSTRATE</a>
+        </div>
+      </div>
     </section>
+    <section class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="reservationModalLabel"
+            aria-hidden="true">
+            <article class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="registrationModalLabel">Registro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="registration-form">
+                            <div class="mb-3">
+                                <label for="nombre-usuario" class="form-label">Nombre de usuario:</label>
+                                <input type="text" id="nombre-usuario" name="nombre-usuario" class="form-control" placeholder="Pepito Pérez" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico:</label>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="ejemplo@ejemplo.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña:</label>
+                                <input type="password" id="password" name="password" class="form-control"
+                                    placeholder="MetropolitanMidnight2024*" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Confirmar contraseña:</label>
+                                <input type="password" id="confirm-password" name="confirm-password" class="form-control"
+                                    placeholder="MetropolitanMidnight2024*" required>
+                            </div>
+                            <div class="cont-btn-enviar">
+                                <button type="submit" class="btn btn-enviar-form">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+  </main>
+
+<footer>
+    <article class="footer">
+        <div class="content-mensajes">
+        <div class="mensajes-ganchos">
+            <h3>+</h3>
+        </div>
+        <div class="mensajes-ganchos">
+            <h4>2000</h4>
+        </div>
+        <div class="parrafo">
+            <p>MIEMBROS <br> FELICES</p>
+        </div>
+        </div>
+
+        <div class="content-mensajes">
+        <div class="mensajes-ganchos">
+            <h3>+</h3>
+        </div>
+        <div class="mensajes-ganchos">
+            <h4>50</h4>
+        </div>
+        <div class="parrafo">
+            <p>DISCOTECAS<br>ASOCIADAS</p>
+        </div>
+        </div>
+
+        <div class="content-mensajes">
+        <div class="mensajes-ganchos">
+            <h3>+</h3>
+        </div>
+        <div class="mensajes-ganchos">
+            <h4>1000</h4>
+        </div>
+        <div class="parrafo">
+            <p>MIEMBROS <br> FELICES</p>
+        </div>
+        </div>
+    </article>
+
+    <article class="redes">
+        <div class="social-media">
+        <p>NUESTRAS REDES</p>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a href="https://x.com/?lang=es"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+        </div>
+        <div class="social-media">
+        <a href="mailto:METROPOLITANMIDNIGHT@GMAIL.COM"><i class="bi bi-envelope-fill"></i></a>
+        <p>METROPOLITANMIDNIGHT@GMAIL.COM</p>
+        </div>
+    </article>
+    <div class="social-media">
+        <p> © 2024 METROPOLITAN MIDNIGHT ALL RIGHTS RESERVED</p>
+    </div>
+</footer>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/ingresar.js"></script>
+    <script type="module" src="../js/registrar.js"></script>
 </body>
 </html>
