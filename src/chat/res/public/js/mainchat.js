@@ -6,7 +6,8 @@ $(async function () {
     const dataUsers = await fetch(`http://localhost:3000/users`)
     //en allow se almacenan los usuarios que ya sale registrados en la base de datos 
     const allDataRegister = await dataUsers.json()
-    const allow = allDataRegister.map(entry => entry.username)
+    const allowUsers = allDataRegister.map(entry => entry.username)
+    const allowPassword = allDataRegister.map(entry => entry.password)
 
     //este es el encargado de enviar los datos
     //esta es la conexion de sockets de el cliente
@@ -35,7 +36,8 @@ $(async function () {
     const users = document.querySelector("#usernames")
     console.log(users)
 
-
+    const password= document.querySelector("#password")
+    console.log(password)
 
     nickform.addEventListener("submit", (e) => {
         e.preventDefault()
@@ -50,8 +52,8 @@ $(async function () {
         socket.emit("nuevo usuario", nickName.value, (data) => {
             console.log(nickName.value)
             let registrado = false
-            for (let i = 0; i < allow.length; i++) {
-                if (allow[i] === nickName.value) {
+            for (let i = 0; i < allowUsers.length; i++) {
+                if ((allowUsers[i] === nickName.value)&&(allowPassword[i]===password.value)) {
                     registrado = true
                     break
                 }
@@ -67,7 +69,7 @@ $(async function () {
                 }
             } else {
 
-                alert("usuario no registrado")
+                alert("usuario no registrado o contraseña incorrecta")
                 window.location.href = `http://localhost:5173`
             }
 
