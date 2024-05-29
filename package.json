@@ -25,23 +25,23 @@
     "bootstrap-icons": "^1.11.3",
     "express": "^4.19.2",
     "google-fonts": "^1.0.0",
+    "i18next": "^23.11.5",
     "json-server": "^1.0.0-beta.0",
     "socket.io": "^4.7.5"
   },
-  
   "description": "idk",
   "main": "index.js",
   "author": "David Sanchez C",
   "license": "ISC",
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/Santiago-MH04/MetropolitanMidnight.git"
-    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Santiago-MH04/MetropolitanMidnight.git"
+  },
   "keywords": [
     "idk"
   ],
   "bugs": {
-      "url": "https://github.com/Santiago-MH04/MetropolitanMidnight/issues"
-    },
+    "url": "https://github.com/Santiago-MH04/MetropolitanMidnight/issues"
+  },
   "homepage": "https://github.com/Santiago-MH04/MetropolitanMidnight#readme"
 }
