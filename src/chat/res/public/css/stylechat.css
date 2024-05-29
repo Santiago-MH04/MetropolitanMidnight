@@ -152,6 +152,37 @@ body {
 .dropdown-item:hover{
     background-color:var(--color-pi);
 }
+
+@media only screen and (max-width: 768px) {
+    .nav-desktop {
+        justify-content: space-between;
+    }
+
+    #logo {
+        width: 150px; /* Ajusta el tamaño del logo para pantallas más pequeñas */
+    }
+
+    #ingresar {
+        padding-left: 0; /* Elimina el padding izquierdo en pantallas más pequeñas */
+    }
+}
+
+/* Media Query para pantallas de tamaño pequeño */
+@media only screen and (max-width: 576px) {
+    .nav-desktop-container-items {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        gap: 1rem; /* Reduzca el espacio entre los elementos */
+    }
+
+    #ingresar {
+        padding-top: 1rem; /* Agrega un poco de espacio arriba */
+        width: auto; /* Establece el ancho automático */
+    }
+
+    #ingresar a {
+        padding: 5px 10px; /* Ajusta el padding de los enlaces */
+    }
+}
 /* ////////////////////////////////////////////main */
 
 main{
@@ -367,7 +398,7 @@ main{
 
 }
 
-//----------RESPONSIVE FOOTER-------
+/* //----------RESPONSIVE FOOTER------- */
 
 @media(max-width:1100px) {
     footer {
@@ -404,7 +435,7 @@ main{
 
 
 
-//___-----------------------------PAGINA VIP-------------------------------
+/* //___-----------------------------PAGINA VIP------------------------------- */
 
 main {
     margin-top: 10%;
