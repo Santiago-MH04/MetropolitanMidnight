@@ -11,13 +11,13 @@ const confirmPassword = document.querySelector("#confirm-password");
 formReg.addEventListener("submit", async (event) => {
     event.preventDefault();
     const checkPassword = validatePasswords(password, confirmPassword);
-        /*console.log(`checkPassword = ${checkPassword}`);*/
+        console.log(`checkPassword = ${checkPassword}`);
     const checkEmail = await validateEmail(email);
-        /*console.log(`checkEmail = ${checkEmail}`);*/
+        console.log(`checkEmail = ${checkEmail}`);
 
         //Guardar usuario
     if (checkPassword === true && checkEmail === true) {
-        registerUser(username, email, password);
+        await registerUser(username, email, password);
         window.location.href = "/";
     } else {
         alert("Lo sentimos, pero alguno de los campos es incorrecto");

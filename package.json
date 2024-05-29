@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "concurrently \"npm run start:intento-2\" \"npm run dev:metropolitan\" \"npm:jsonserver\"",
+    "start": "concurrently \"npm run start:intento-2\" \"npm run dev:metropolitan\"",
     "start:intento-2": "nodemon --exec babel-node src/chat/res/indexchat.js",
     "dev:metropolitan": "vite",
     "build:metropolitan": "vite build",

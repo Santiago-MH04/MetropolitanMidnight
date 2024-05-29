@@ -20,8 +20,8 @@ form.addEventListener('submit', async(event) => {
     } else{
         if(user.password === password.value){
             localStorage.setItem("userOnline", JSON.stringify(user));
-            alert(`Bienvenido ${user.username}`);
-            /*window.location.href= "../pages/transporte.html";*/
+            alert(`¡Bienvenido ${user.username}!`);
+            window.location.href = "../pages/transporte.html";
         }
     }
     event.target.reset();
