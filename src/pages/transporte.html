@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/icons/luna.png" type="image/x-icon">
+    <link rel="stylesheet" href="../scss/stylesTrasporte.scss">
+    <title>transporte</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="/">
+            <img id="logo" src="../../img/distintivo-visual.webp" width="200" alt="distintivo-visual">
+        </a>
+        <i class="icon-open btn-hiden bi bi-list"></i>
+        <div class="nav-desktop">
+            <nav class="nav-items-desktop">
+                <ul class="nav-desktop-container-items">
+                    <li><a href="./src/pages/discotecas.html">DISCOTECAS</a></li>
+                    <li><a href="http://localhost:3001">GRUPOS</a></li>
+                    <li><a href="./src/pages/transporte.html">TRANSPORTE</a></li>
+                    <li><a href="./src/pages/vip.html">VIP</a></li>
+                    <li><a href="#">IDIOMA</a></li>
+                </ul>
+                <div id="ingresar">
+                    <a href="#">INGRESAR</a>
+                </div>
+                <i class="bi bi-x-lg"></i>
+            </nav>
+
+        </div>
+
+        <!-- nav mobile -->
+        <div class="nav-mobile hiden">
+            <i class="icon-close bi bi-x-lg"></i>
+
+            <nav class="nav-items-mobile">
+                <a href="#">DISCOTECAS</a>
+                <a href="#">GRUPOS</a>
+                <a href="#">TRANSPORTE</a>
+                <a href="./src/pages/vip.html">VIP</a>
+                <a href="#">IDIOMA</a>
+                <div id="ingresar" class="contain-ingresar">
+                    <a href="#">INGRESAR</a>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>  
+        <div class="containers-drivers">
+            <div class="driver-titles-elig">
+                <h1>ELIGE</h1>
+            </div>
+            <div class="driver-titles">
+                <div class="driver-titles-tucon">
+                    <h2><span>tu conductor</span> </h2>
+                </div>
+                <div class="driver-titles-pri">
+                    <strong>PRIVADO</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- form  -->
+        <!-- Modal de Bootstrap para el formulario flotante -->
+        <section class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel"
+            aria-hidden="true">
+            <article class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="reservationModalLabel">Solicitud de Reserva</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="reservation-form">
+                            <div class="mb-3">
+                                <label for="hora-reserva" class="form-label">Fecha y Hora de Reserva:</label>
+                                <input type="datetime-local" id="hora-reserva" name="hora-reserva" class="form-control"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="lugar-partida" class="form-label">Lugar de Partida:</label>
+                                <input type="text" id="lugar-partida" name="lugar-partida" class="form-control"
+                                    placeholder="Ejemplo: Calle Principal #123, Ciudad" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="discoteca-destino" class="form-label">Discoteca Destino:</label>
+                                <select id="discoteca-destino" name="discoteca-destino" class="form-select" required>
+                                    <option value="0" selected disabled>Escoge una discoteca</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="3105346658" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo:</label>
+                                <input type="email" id="correo" name="correo" class="form-control" placeholder="zeref@gmail.com" required>
+                            </div>
+                            <div class="cont-btn-enviar">   
+                                <button type="submit" class="btn-enviar-form btn">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- card drivers section -->
+        <section class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="containers-card">
+        </section>
+
+        <!-- about service section -->
+        <section id="service">
+            <div class="tex-service">
+                <h2>Acerca <span>del servicio</span></h2>
+                <p class="service-p">
+                    nustro servicio de conductores privados ofrece comodidad y seguridad incomparables. Con conductores
+                    profecionales, corteses y confiables, garantizamos viajes sin preocupaciones donde la excelencia en
+                    el servicio y la puntualidad son nuestra prioridad
+                </p>
+                <div class="row  row-cols-2 box-aptitudes">
+                    <div class="colum1">
+                        <p> <span class="box-aptitudes1"></span>PROFESIONALISMO</p>
+                        <P><span class="box-aptitudes1"></span> COMODIDAD</P>
+                    </div>
+                    <div class="colum2">
+                        <P><span class="box-aptitudes2"></span> SEGURIDAD</P>
+                        <P><span class="box-aptitudes2"></span> PUNTUALIDAD</P>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-trabaja" data-bs-toggle="modal" data-bs-target="#trabajaModal">TRABAJA CON
+                    NOSOTROS</a>
+            </div>
+
+            <div>
+                <img src="../../public/img/conductor5.webp" alt="..." id="img-trabaja">
+            </div>
+        </section>
+
+        <!-- form  -->
+        <!-- Modal de Bootstrap para el formulario flotante -->
+        <section class="modal fade" id="trabajaModal" tabindex="-1" aria-labelledby="trabajaLabel" aria-hidden="true">
+            <article class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="trabaja-nosotros">Trabaja con nosotros</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="trabaja-form">
+                            <div class="mb-3">
+                                <label for="fecha-de-nacimiento" class="form-label">Fecha de nacimiento:</label>
+                                <input type="datetime-local" id="fecha-de-nacimiento" name="fecha-de-nacimiento" class="form-control"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="documente" class="form-label">Documento:</label>
+                                <input type="text" id="documente" name="documente" class="form-control"
+                                    placeholder="1059785784" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="direccion" class="form-label">Dirección:</label>
+                                <input type="text" id="documente" name="documente" class="form-control"
+                                    placeholder="Ejemplo: Calle principal #123, ciudad" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo electrónico:</label>
+                                <input type="email" id="correo" name="correo" class="form-control" required>
+                            </div>
+                            <div class="cont-btn-enviar">
+                                <button type="submit" class="btn-enviar-form btn">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <article class="footer">
+
+            <div class="content-mensajes">
+                <div class="mensajes-ganchos">
+                    <h3>+</h3>
+                </div>
+                <div class="mensajes-ganchos">
+                    <h4>2000</h4>
+                </div>
+                <div class="parrafo">
+                    <p>MIEMBROS <br> FELICES</p>
+                </div>
+            </div>
+
+            <div class="content-mensajes">
+                <div class="mensajes-ganchos">
+                    <h3>+</h3>
+                </div>
+                <div class="mensajes-ganchos">
+                    <h4>50</h4>
+                </div>
+                <div class="parrafo">
+                    <p>DISCOTECAS<br>ASOCIADAS</p>
+                </div>
+            </div>
+
+            <div class="content-mensajes">
+                <div class="mensajes-ganchos">
+                    <h3>+</h3>
+                </div>
+                <div class="mensajes-ganchos">
+                    <h4>1000</h4>
+                </div>
+                <div class="parrafo">
+                    <p>MIEMBROS <br> FELICES</p>
+                </div>
+            </div>
+
+        </article>
+
+        <article class="redes">
+
+            <div class="social-media">
+                <p>NUESTRAS REDES</p>
+                <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                <a href="https://x.com/?lang=es"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+            </div>
+
+            <div class="social-media">
+                <a href="mailto:METROPOLITANMIDNIGHT@GMAIL.COM"><i class="bi bi-envelope-fill"></i></a>
+                <p>METROPOLITANMIDNIGHT@GMAIL.COM</p>
+            </div>
+
+        </article>
+
+        <div class="social-media">
+            <p> © 2024 METROPOLITAN MIDNIGHT ALL RIGHTS RESERVED</p>
+        </div>
+
+
+
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/trasporte.js"></script>
+    <script type="module" src="../js/loadNightclubs.js"></script>
+</body>
+
+</html>

@@ -11,22 +11,15 @@
 //Krub
 @import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 :root {
-    --color-soft-black: #3a3a3a;
     --color-black: #1c1c1c;
     --color-white: #ffffff;
     --color-purple: #aa5eff;
     --color-softGray: #dfdede;
-    --color-pink: #dc9fff;
-    --color-PureBlack: #111111;
+    --color-Pink: #dc9fff;
 }
-
 
 body {
     background-color: var(--color-black);
@@ -49,11 +42,18 @@ body {
     z-index: 1000;
 }
 
+
+
+
 #logo {
     position: relative;
     width: 200px;
     padding: 10px 0px;
 }
+
+
+
+
 
 .nav-desktop {
     display: flex;
@@ -70,10 +70,6 @@ body {
     gap: 5rem;
 }
 
-.btn-hiden {
-    display: none;
-}
-
 
 //--------------BARRA DE NAVEGACION desktop------------
 .nav-items-desktop {
@@ -88,7 +84,6 @@ body {
 }
 
 .icon-open {
-    color: white;
     position: absolute;
     right: 0;
     top: 0;
@@ -104,13 +99,16 @@ body {
     width: 100%;
 
     a {
-        background-color:var(--color-softGray);
+        background-color: #dc9fff;
     }
 
     a:hover {
-        background-color:var(--color-purple);
+        background-color: #aa5eff;
     }
 }
+
+
+
 
 #ingresar a {
     color: var(--color-black);
@@ -118,11 +116,15 @@ body {
     padding-right: 10px;
 }
 
+
+
 .nav-items-desktop a {
     position: relative;
     text-decoration: none;
     color: var(--color-softGray);
     letter-spacing: 0.5px;
+
+
 }
 
 .nav-items-desktop a:hover {
@@ -137,8 +139,10 @@ body {
     height: 3px;
     width: 0;
     left: 0;
-    bottom: -7px;
+    bottom: -10px;
     transition: 0.3s;
+
+
 }
 
 .nav-items-desktop a:hover:after {
@@ -149,32 +153,16 @@ body {
     height: 3px;
     width: 100%;
     left: 0;
-    bottom: -7px;
+    bottom: -10px;
+
+
 }
 
-.dropdown-menu {
-    line-height: 2;
-    background-color:var(--color-soft-black);
-}
 
-.dropdown-item:hover{
-    background-color:var(--color-pi);
-}
 
-//---------------------------ICONO IDIOMAS-----------------------------------
-.btn-idioma{
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.btn i {
-    font-size: 17px;
-}
-
-//----------------------RESPONSIVE BARRA DE NAVEGACION-----------------------
+ //----------------------RESPONSIVE BARRA DE NAVEGACION-----------------------
 
 @media(max-width:1100px) {
-
     .nav-desktop {
         display: none;
     }
@@ -217,6 +205,8 @@ body {
             color: var(--color-white);
         }
 
+
+
         .nav-items-mobile {
             width: 100%;
             display: flex;
@@ -229,11 +219,14 @@ body {
             a {
                 text-decoration: none;
                 color: var(--color-softGray);
+
             }
 
             #ingresar {
                 padding-left: 0rem;
+
             }
+
         }
     }
 
@@ -246,230 +239,335 @@ body {
     }
 }
 
+// HEADER
+//    nav {
+//     display: none;
+//    }
+//   .mostrar-menu,.esconder-menu{
+//     display: block;
+//   }
+//   nav {
+//     position: fixed;
+//     width: 100%;
+//     height: 100vh;
+//     background-color: var(--color-black);
+//     left: 0;
+//     top: 0;
+//     text-align: center;
+//     padding: 100px 0px;
+//     z-index: 100;
+//     transition: 0.8s;
+//   };
+
+
 // nav-mobile
 .hiden {
     display: none;
 }
 
-//----SECCION PRINCIPAL----
+// .nav-mobile{
 
-.nombre-discoteca {
-    margin-top: 170px;
-    width: 440px;
-    height: 160px;
-    padding-left: 50px;
-    font-family: "Krub", sans-serif;
+//     position: absolute;
+//     left: 0;
+//     width:100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+
+// ******* ////
+
+// main
+
+main {
+    margin-top: 10%;
 }
 
-.nombre-discoteca h1 {
-    margin: 0;
-    font-weight: 700;
-    color: var(--color-white);
-    font-size: 6rem;
+.btn:hover {
+    background-color: var(--color-Pink);
 }
 
-.nombre-discoteca h1 span {
-    color: #aa5eff;
-}
+// title styles
 
-.nombre-discoteca p {
-    margin-right: 30px;
-    line-height: 0.6;
-    color: var(--color-white);
-    font-size: 2rem;
-    font-weight: 600;
-    padding-left: 275px;
-}
-
-//texto vertical
-#texto-vertical {
-    position: relative;
-    left: 0%;
-    top: 40%;
-    width: auto;
-    right: 100px;
-    height: auto;
-    text-align: right;
-    writing-mode: vertical-lr;
-    text-orientation: mixed;
-    transform: rotate(180deg);
-    z-index: 2;
-}
-
-#texto-vertical h2 {
-    color: var(--color-white);
-    margin: 0;
-    font-size: 3.5rem;
-    font-weight: 250;
-    line-height: 1.2;
-    letter-spacing: 2px;
-}
-
-#texto-vertical p {
-    margin: 0;
-    font-size: 1.8rem;
-    line-height: 1;
-    font-weight: 250;
-    padding: 0;
-    letter-spacing: 2px;
-}
-
-//imagen de la pareja disfrazada de diablo
-#contenedor-diablos {
-    padding-top: 0;
+.containers-drivers {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    color: var(--color-white);
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
-#diablos {
-    width: 60vh;
-    height: min-content;
-}
-
-//top discotecas
-.top-discotecas {
+.driver-titles-elig h1 {
+    font-family: "Krub", sans-serif;
     position: relative;
-    z-index: -1;
-    padding-left: 30px;
-    left: 300px;
-    width: 425px;
-    height: 110px;
-    border: solid var(--color-white);
-    border-width: 3px;
-    color: var(--color-white);
-    font-family: "Krub", sans-serif;
-
+    bottom: 13%;
+    left: 40%;
+    font-size: 100px;
+    font-weight: 900;
 }
 
-.mayo {
-    padding-top: 20px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-.año {
-    padding-bottom: 20px;
-    line-height: 0.6;
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-#descripcion {
-    color: var(--color-white);
+.driver-titles {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+}
+
+.driver-titles-tucon {
     font-family: "Krub", sans-serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-top: 50px;
-    width: 460px;
+    position: relative;
+    right: 5%;
+    margin-top: 10%;
+
 }
 
-.titulo {
-    margin-top: 80px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
+.driver-titles-pri {
+    font-family: "Krub", sans-serif;
+    position: relative;
+    color: var(--color-purple);
+    font-size: 100px;
+    left: 3%;
 }
 
-.textcontent {
-    margin-bottom: 50px;
+// card styles
+
+.containers-card {
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 
-//-----------------------------BOTONES CONOCELAS Y ARMA TU PLAN---------------------
-.links {
-    margin-left: 40px;
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: solid;
+    background-color: var(--color-black);
+    border-color: var(--color-softGray);
+    border-radius: 0%;
+    margin-bottom: 15%;
+    width: 70%;
+    height: 90%;
 }
 
-.links a {
-    letter-spacing: 2px;
-    font-size: 1rem;
+.box-number {
+    display: flex;
+    position: absolute;
+    font-size: x-large;
+    font-family: "Krub", sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    margin-right: 85%;
+    font-weight: 900;
+    height: 8%;
+    width: 15%;
 }
 
-.conocelas {
-    margin-right: 30px;
+.card-title {
+    text-align: center;
     font-family: "Oswald", sans-serif;
-    padding: 10px;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--color-black);
+    color: var(--color-white);
+    margin-bottom: 0%;
+    margin-top: 5%;
+    font-size: 36px;
+}
+
+.hr-purple {
+    border: solid 2px;
+    color: var(--color-purple);
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 15%;
+}
+
+.card-title strong {
+    color: var(--color-purple);
+}
+
+.card-img-top {
+    width: 45%;
+    margin-top: 5%;
+}
+
+
+.star-rating {
+    display: flex;
+    direction: rtl;
+    margin-bottom: 0%;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.list-group-item li {
     background-color: var(--color-softGray);
 }
+.star {
+    cursor: pointer;
+    color: var(--color-white);
+    transition: color 0.2s;
+}
 
-.arma {
-    position: relative;
-    display: inline-block;
+.star:hover,
+.star:hover~.star {
+    color: var(--color-purple);
+}
 
-    font-weight: 500;
-    text-decoration: none;
+.star.selected,
+.star.selected~.star {
+    color: var(--color-purple);
+}
+
+.card-text {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: var(--color-white);
+    font-size: larger;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-solicitar {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    width: 45%;
+    padding: 5%;
     color: var(--color-softGray);
+    border-radius: 0%;
+    background-color: var(--color-purple);
 
 }
 
-.conocelas:hover {
+// style service
+
+#service {
+    display: flex;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    margin: 10%;
+    margin-top: 1%;
+    color: var(--color-white);
+    width: 50%;
+}
+
+.tex-service {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+.tex-service h2 {
+    font-size: 59px;
+}
+
+.tex-service h2 strong {
+    color: var(--color-purple);
+}
+
+
+.service-p {
+    height: 20%;
+}
+
+.box-aptitudes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1 {
+    width: 25%;
+    margin-left: 23px;
+}
+
+
+.colum2 {
+    text-align: center;
+}
+
+.btn-trabaja {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: var(--color-softGray);
+    background-color: var(--color-purple);
+    margin-top: 10%;
+    border-radius: 0%;
+    width: 30%;
+}
+
+.box-aptitudes1 {
+    display: flex;
+    position: absolute;
+    background-color: var(--color-purple);
+    height: 2%;
+    width: 1%;
+    margin-left: -2%;
+}
+
+.box-aptitudes2 {
+    display: flex;
+    position: absolute;
+    left: 26%;
+    height: 2%;
+    width: 1%;
     background-color: var(--color-purple);
 }
 
-.arma:hover {
+#img-trabaja {
+    margin-left: 95%;
+    margin-top: 25%;
+}
+
+
+// form 
+
+.form-control {
+    border: solid 2px var(--color-purple);
+}
+
+.modal-content {
+    background-color: var(--color-black);
     color: var(--color-white);
 }
 
-.arma::after {
-    content: "";
-    height: 3px;
-    margin-top: 7px;
-    width: 0;
-    background-color: var(--color-purple);
-    display: block;
-    transition: 0.4s;
-}
+.modal-header{
+    color: var(--color-white);
+    font-family: "Oswald", sans-serif;
+}   
 
-.arma:hover::after {
-    bottom: -10px;
+.modal-header h5{
+    color: var(--color-purple);
+    font-size: 40px;
+    
+}
+#trabaja-form{
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    height: 100%;
+}
+.cont-btn-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.btn-enviar-form{
+    width: 50%;
+    background-color: var(--color-purple);
 }
 
-//------------------------------RESPONSIVE SECCION PRINCIPAL----------------------
-@media(max-width:1100px) {
-    #contenedor-diablos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #texto-vertical {
-        display: none;
-    }
-
-    .nombre-discoteca {
-        padding: 0;   
-    }
+input {
+    opacity: 95%;
 }
-
-@media(max-width:400px) {
-    #contenedor-diablos {
-        width:200px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #texto-vertical {
-        display: none;
-    }
-
-    .nombre-discoteca {
-        padding: 0;
-        
-        
-    }
-    #diablos {
-        padding-left: 60%;
-    }
-}
-
 
 //--------------------------------ACA COMIENZA EL FOOTER---------------------------
 
@@ -480,21 +578,30 @@ footer {
     font-family: "Oswald", sans-serif;
     width: 100%;
     height: 300px;
-    color: var(--color-white); 
+    // position: relative;
+    // bottom: 20px;
+    // z-index: 1;
+    color: var(--color-white);
+    // border: solid white; 
     display: flex;
+    // justify-content: center;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
 }
 
+
+
 .footer {
     display: flex;
     gap: 14rem;
     height: max-content;
+
 }
 
 .content-mensajes {
     display: flex;
+
 }
 
 .mensajes-ganchos h3 {
@@ -503,6 +610,8 @@ footer {
     font-size: 5rem;
     font-weight: 300;
     margin-top: -0.5rem;
+
+
 }
 
 .mensajes-ganchos h4 {
@@ -520,7 +629,9 @@ footer {
     letter-spacing: 0.1rem;
 }
 
+
 .redes {
+
     display: flex;
     gap: 6rem;
 }
@@ -533,21 +644,26 @@ footer {
     font-family: "Krub", sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
+    // border: solid white;
 }
+
 
 .social-media a {
     font-size: 1.5rem;
     color: var(--color-purple);
+
 }
 
 //----------RESPONSIVE FOOTER-------
-@media(max-width:1100px) {
-    footer {
+
+@media(max-width:1100px){
+    footer{
         margin-top: 30px;
         height: 600px;
+        
     }
-
-    .footer {
+    .footer{
+        
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -560,104 +676,14 @@ footer {
         margin: 0;
         padding: 0;
         gap: 0;
+       
+        
+        
     }
-
-    .derechos {
+  
+    .derechos{
         display: flex;
         justify-content: center;
-        text-align: center;
     }
 }
-
-//___-----------------------------PAGINA VIP-------------------------------
-main {
-    margin-top: 10%;
-}
-
-.main-vip {
-    display: flex;
-    justify-content: center;
-    gap: 10%;
-    padding-left: 5%;
-    padding: 5%;
-}
-
-.card-vip {
-    margin-top: 30%;
-    margin-top: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    border: solid white;
-}
-
-.container-card {
-    color: var(--color-white);
-    width: 400px;
-    text-align: center;
-    border: solid var(--color-purple);
-    font-family: "krub", sans-serif;
-    letter-spacing: 0.5px;
-}
-
-.card-header {
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
-
-.card-header h2 {
-    font-size: 2.5rem;
-    font-family: "Oswald", sans-serif;
-}
-
-.card-title {
-    color: var(--color-purple);
-    font-size: 2rem;
-    padding-bottom: 5%;
-}
-
-.card-text {
-    font-size: 1.1rem;
-    text-align: start;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-}
-
-.btn {
-    position: relative;
-    right: 10px;
-    background-color: var(--color-purple);
-    border: none;
-    border-radius: 0px;
-
-}
-
-.btn:hover {
-    background-color: var(--color-pink);
-}
-
-//---------------------------------------------RESPONSIVE VIP-------------------------------
-@media(max-width:1100px){
-    .main-vip {
-        margin-top: 250px;
-        display: flex;
-        align-items: center;
-        flex-direction:column;
-        gap: 30px;
-    }
     
-}
-
-@media(max-width:400px){
-    .main-vip {
-        margin-top: 250px;
-        display: flex;
-        align-items: center;
-        flex-direction:column;
-        gap: 30px;
-    }
-        .container-card {
-            width: 300px;
-    }
-}
-
