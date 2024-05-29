@@ -24,67 +24,64 @@
 
 
 <header class="header">
-    <img id="logo" src="./../../public/img/distintivo-metropolitan2.webp" width="200" alt="distintivo-visual">
-    <i class="icon-open btn-hiden bi bi-list"></i>
-               
-    <!-- nav desktop -->
+  <a href="/">
+    <img id="logo" src="../../public/img/distintivo-visual.webp" width="200" alt="distintivo-visual">
+  </a>
+  <i class="icon-open btn-hiden bi bi-list"></i>
+             
+  <!-- nav desktop -->
 
-    <div class="nav-desktop">
- 
-      <nav class="nav-items-desktop">
-        <ul class="nav-desktop-container-items">
-          <li><a href="#">DISCOTECAS</a></li>
-          <li><a href="#">GRUPOS</a></li>
-          <li><a href="#">TRANSPORTE</a></li>
-          <li><a href="./src/pages/vip.html">VIP</a></li>
-          <li>
-            <div class="dropdown">
-              <button class="btn btn-secondary btn-idioma dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <i class="bi bi-translate"></i>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
-                <li><a class="dropdown-item" href="#">ENGLISH</a></li> 
-              </ul>
-            </div>
-          </li>
+  <div class="nav-desktop">
+
+    <nav class="nav-items-desktop">
+      <ul class="nav-desktop-container-items">
+        <li><a href="./discotecas.html">DISCOTECAS</a></li>
+        <li><a href="http://localhost:3001/">GRUPOS</a></li>
+        <li><a href="./transporte.html">TRANSPORTE</a></li>
+        <li><a href="./vip.html">VIP</a></li>
+        <li>
+          <div class="dropdown">
+            <button class="btn btn-secondary btn-idioma dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-translate"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
+              <li><a class="dropdown-item" href="#">ENGLISH</a></li> 
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div id="ingresar">
+        <a href="./ingresar.html">INGRESAR</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- nav mobile -->
+  <div class="nav-mobile hiden">
+    <i class="icon-close bi bi-x-lg"></i>
+    <nav class="nav-items-mobile">
+      <a href="./discotecas.html">DISCOTECAS</a>
+      <a href="http://localhost:3001/">GRUPOS</a>
+      <a href="./transporte.html">TRANSPORTE</a>
+      <a href="./vip.html">VIP</a>
+      <div class="dropdown">
+        <button class="btn btn-secondary btn-idioma dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <i class="bi bi-translate"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
+          <li><a class="dropdown-item" href="#">ENGLISH</a></li> 
         </ul>
-        <div id="ingresar">
-          <a href="#">INGRESAR</a>
-        </div>
-
-      </nav>
-
-    </div>
-
-    <!-- nav mobile -->
-    <div class="nav-mobile hiden">
-      <i class="icon-close bi bi-x-lg"></i>
-
-      <nav class="nav-items-mobile">
-        <a href="#">DISCOTECAS</a>
-        <a href="#">GRUPOS</a>
-        <a href="#">TRANSPORTE</a>
-        <a href="./src/pages/vip.html">VIP</a>
-        <div class="dropdown">
-          <button class="btn btn-secondary btn-idioma dropdown-toggle" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <i class="bi bi-translate"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
-            <li><a class="dropdown-item" href="#">ENGLISH</a></li> 
-          </ul>
-        </div>
-        <div id="ingresar" class="contain-ingresar">
-          <a href="#">INGRESAR</a>
-        </div>
-      </nav>
-
-    </div>
-
-  </header>
+      </div>
+      <div id="ingresar" class="contain-ingresar">
+        <a href="./ingresar.html">INGRESAR</a>
+      </div>
+    </nav> 
+  </div> 
+</header>
 
     <main class="main-vip">
         
