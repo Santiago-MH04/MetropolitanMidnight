@@ -367,7 +367,7 @@ body {
 
 #contenedor-diablos {
 
-    padding-top: 100px;
+    padding-top: 0;
     display: flex;
     justify-content: center;
 
@@ -510,10 +510,38 @@ body {
 
     .nombre-discoteca {
         padding: 0;
+        
     }
 
 
 }
+@media(max-width:400px) {
+    #contenedor-diablos {
+        width:200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #texto-vertical {
+        display: none;
+    }
+
+    .nombre-discoteca {
+        padding: 0;
+        
+        
+    }
+    #diablos {
+        padding-left: 60%;
+    }
+
+
+}
+
+
 
 
 //--------------------------------ACA COMIENZA EL FOOTER---------------------------
@@ -627,6 +655,7 @@ footer {
     .derechos {
         display: flex;
         justify-content: center;
+        text-align: center;
     }
 }
 
@@ -706,7 +735,7 @@ main {
 
 
 
-//---------------------------------------------responsive vip-------------------------------
+//---------------------------------------------RESPONSIVE VIP-------------------------------
 
 @media(max-width:1100px){
     .main-vip {
@@ -716,4 +745,20 @@ main {
         flex-direction:column;
         gap: 30px;
     }
+    
 }
+
+@media(max-width:400px){
+    .main-vip {
+        margin-top: 250px;
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        gap: 30px;
+    }
+        .container-card {
+            width: 300px;
+    }
+    
+}
+
