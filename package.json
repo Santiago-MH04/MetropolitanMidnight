@@ -26,6 +26,7 @@
     "express": "^4.19.2",
     "google-fonts": "^1.0.0",
     "i18next": "^23.11.5",
+    "i18next-http-backend": "^2.5.2",
     "json-server": "^1.0.0-beta.0",
     "socket.io": "^4.7.5"
   },

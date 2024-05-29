@@ -36,9 +36,9 @@ async function drivers() {
                     </div>
                 </li>
                 <div class="card-body">
-                    <p class="card-text">${element.name}, conductor privado de élite, garantiza un servicio de excelencia con
+                        <p class="card-text" data-i18n="tr-text24"> conductor privado de élite, garantiza un servicio de excelencia con
                         habilidades de manejo expertas y atención al cliente insuperable</p>
-                    <a href="#" class="btn btn-solicitar" data-bs-toggle="modal" data-bs-target="#reservationModal">SOLICITAR</a>
+                    <a class="btn btn-solicitar" data-bs-toggle="modal" data-bs-target="#reservationModal" data-i18n="tr-text25">SOLICITAR</a>
                 </div>
             </div>
         </article>`;

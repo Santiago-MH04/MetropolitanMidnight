@@ -15,8 +15,8 @@ i18next.use(Backend).init({
   backend: {
     loadPath: '/locales/{{lng}}/{{ns}}.json'    //URL de donde se obtiene el recurso
   },
-  ns: ['translation'],
-  defaultNS: 'translation',
+  ns: ['translationTransporte'],
+  defaultNS: 'translationTransporte',
   fallbackLng: 'en',
   interpolation: {
     escapeValue: false // not needed for react!!
