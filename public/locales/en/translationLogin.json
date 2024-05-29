@@ -1,0 +1,29 @@
+{
+    "lg-h-title1": "CLUBS",
+    "lg-h-title2": "GROUPS",
+    "lg-h-title3": "DRIVERS",
+    "lg-h-title4": "VIP",
+    "lg-h-title5": "LOG IN",
+
+    "lg-s-title1": "SIGN IN AND SHARE WITH THIS GREAT COMMUNITY",
+    "lg-s-title2": "LOG IN",
+    "lg-s-placeholder3": "Email",
+    "lg-s-placeholder4": "Password",
+    "lg-s-title5": "SIGN IN",
+
+    "lg-b-title1": "FORGOTTEN YOUR PASSWORD?",
+    "lg-b-title2": "DON'T HAVE AN ACCOUNT? SIGN UP",
+
+    "lg-mf-title1": "Register",
+    "lg-mb-title1": "Username:",
+    "lg-mb-placeholder1": "PepitoPérez (like that, with no spaces)",
+    "lg-mb-title2": "Email",
+    "lg-mb-placeholder2": "example@example.com",
+    "lg-mb-title3": "Password:",
+    "lg-mb-placeholder4": "MetropolitanMidnight2024*",
+    "lg-mb-title5": "Confirm password:",
+    "lg-mb-placeholder6": "MetropolitanMidnight2024*",
+    "lg-mb-title7": "Accept terms and conditions",
+    
+    "lg-mb-title8": "Submit"
+}

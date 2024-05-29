@@ -22,10 +22,10 @@
      
           <nav class="nav-items-desktop">
             <ul class="nav-desktop-container-items">
-              <li><a href="./discotecas.html">DISCOTECAS</a></li>
-              <li><a href="http://localhost:3001/">GRUPOS</a></li>
-              <li><a href="./transporte.html">TRANSPORTE</a></li>
-              <li><a href="./vip.html">VIP</a></li>
+              <li><a datai18n="lg-h-title1" href="./discotecas.html">DISCOTECAS</a></li>
+              <li><a datai18n="lg-h-title2" href="http://localhost:3001/">GRUPOS</a></li>
+              <li><a datai18n="lg-h-title3" href="./transporte.html">TRANSPORTE</a></li>
+              <li><a datai18n="lg-h-title4" href="./vip.html">VIP</a></li>
               <li>
                 <div class="dropdown">
                   <button class="btn btn-secondary btn-idioma dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -33,14 +33,14 @@
                     <i class="bi bi-translate"></i>
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#" onclick="changeLanguage('es')">ESPAÑOL</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">ENGLISH</a></li> 
+                    <li><a onclick="changeLanguage('es')" class="dropdown-item" href="#" >ESPAÑOL</a></li>
+                    <li><a onclick="changeLanguage('en')" class="dropdown-item" href="#">ENGLISH</a></li> 
                   </ul>
                 </div>
               </li>
             </ul>
             <div id="ingresar">
-              <a href="./ingresar.html">INGRESAR</a>
+              <a datai18n="lg-h-title5" href="./ingresar.html">INGRESAR</a>
             </div>
           </nav>
         </div>
@@ -49,22 +49,22 @@
         <div class="nav-mobile hiden">
           <i class="icon-close bi bi-x-lg"></i>
           <nav class="nav-items-mobile">
-            <a href="./discotecas.html">DISCOTECAS</a>
-            <a href="http://localhost:3001/">GRUPOS</a>
-            <a href="./transporte.html">TRANSPORTE</a>
-            <a href="./vip.html">VIP</a>
+            <a datai18n="lg-h-title1" href="./discotecas.html">DISCOTECAS</a>
+            <a datai18n="lg-h-title2" href="http://localhost:3001/">GRUPOS</a>
+            <a datai18n="lg-h-title3" href="./transporte.html">TRANSPORTE</a>
+            <a datai18n="lg-h-title4" href="./vip.html">VIP</a>
             <div class="dropdown">
               <button class="btn btn-secondary btn-idioma dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 <i class="bi bi-translate"></i>
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
-                <li><a class="dropdown-item" href="#">ENGLISH</a></li> 
+                <li><a onclick="changeLanguage('es')" class="dropdown-item" href="#">ESPAÑOL</a></li>
+                <li><a onclick="changeLanguage('en')" class="dropdown-item" href="#">ENGLISH</a></li> 
               </ul>
             </div>
             <div id="ingresar" class="contain-ingresar">
-              <a href="./ingresar.html">INGRESAR</a>
+              <a datai18n="lg-h-title5" href="./ingresar.html">INGRESAR</a>
             </div>
           </nav> 
         </div> 
@@ -72,24 +72,24 @@
 
   <main>
     <section id="section">
-      <h1>ENTRA Y COMPARTE <br>CON ESTA <span>GRAN COMUNIDAD</span></h1>
+      <h1 datai18n="lg-s-title1">ENTRA Y COMPARTE <br>CON ESTA <span>GRAN COMUNIDAD</span></h1>
       <div class="background"></div>
       <article class="card">
           <figure>
               <img src="../../public/img/imagenLogin.webp" alt="logo">
           </figure>
           <form class="form">
-              <h2>INICIO DE SESIÓN</h2>
-              <input type="email" class="email" placeholder="Correo electrónico" />
-              <input type="password" class="password" placeholder="Contraseña" />
-              <button type="submit" class="btn-form">ENTRAR</button>
+              <h2 datai18n="lg-s-title2">INICIO DE SESIÓN</h2>
+              <input datai18n="lg-s-placeholder3" type="email" class="email" placeholder="Correo electrónico" />
+              <input datai18n="lg-s-placeholder4" type="password" class="password" placeholder="Contraseña" />
+              <button datai18n="lg-s-title5" type="submit" class="btn-form">ENTRAR</button>
           </form>
       </article>
       <div class="banner">
-        <div class="recover-account">
-            ¿OLVIDASTE TU CONTRASEÑA?
+        <div datai18n="lg-b-title1" class="recover-account">
+            
         </div>
-        <div class="create-account">
+        <div datai18n="lg-b-title2" class="create-account">
             ¿NO TIENES UNA CUENTA? <a href="#" data-bs-toggle="modal" data-bs-target="#registrationModal">REGÍSTRATE</a>
         </div>
       </div>
@@ -99,35 +99,35 @@
             <article class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="registrationModalLabel">Registro</h5>
+                        <h5 datai18n="lg-mf-title1" class="modal-title" id="registrationModalLabel">Registro</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <form id="registration-form">
                             <div class="mb-3">
-                                <label for="nombre-usuario" class="form-label">Nombre de usuario:</label>
-                                <input type="text" id="nombre-usuario" name="nombre-usuario" class="form-control" placeholder="PepitoPérez (así, sin espacios)" required>
+                                <label datai18n="lg-mb-title2" for="nombre-usuario" class="form-label">Nombre de usuario:</label>
+                                <input datai18n="lg-mb-placeholder1" type="text" id="nombre-usuario" name="nombre-usuario" class="form-control" placeholder="PepitoPérez (así, sin espacios)" required>
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label">Correo electrónico:</label>
-                                <input type="email" id="email" name="email" class="form-control"
+                                <label datai18n="lg-mb-title2" for="email" class="form-label">Correo electrónico:</label>
+                                <input datai18n="lg-mb-placeholder2" type="email" id="email" name="email" class="form-control"
                                     placeholder="ejemplo@ejemplo.com" required>
                             </div>
                             <div class="mb-3">
-                                <label for="password" class="form-label">Contraseña:</label>
-                                <input type="password" id="password" name="password" class="form-control"
+                                <label datai18n="lg-mb-title3" for="password" class="form-label">Contraseña:</label>
+                                <input datai18n="lg-mb-placeholder4" type="password" id="password" name="password" class="form-control"
                                     placeholder="MetropolitanMidnight2024*" required>
                             </div>
                             <div class="mb-3">
-                                <label for="password" class="form-label">Confirmar contraseña:</label>
-                                <input type="password" id="confirm-password" name="confirm-password" class="form-control"
+                                <label datai18n="lg-mb-title5" for="password" class="form-label">Confirmar contraseña:</label>
+                                <input datai18n="lg-mb-placeholder6" type="password" id="confirm-password" name="confirm-password" class="form-control"
                                     placeholder="MetropolitanMidnight2024*" required>
                             </div>
                     
                           <section id="mainForm">
                             <div>
                                 <input type="checkbox" id="acceptTerms" required>
-                                <label for="acceptTerms"><a href="#" id="termsLink">Acepto los términos y condiciones</a></label>
+                                <label datai18n="lg-mb-title7" for="acceptTerms"><a href="#" id="termsLink">Acepto los términos y condiciones</a></label>
                             </div>
                         </section>
 
@@ -158,7 +158,7 @@
                               </div>
                           </div>
                             <div class="cont-btn-enviar">
-                                <button type="submit" class="btn btn-enviar-form">Enviar</button>
+                                <button datai18n="lg-mb-title8" type="submit" class="btn btn-enviar-form">Enviar</button>
                             </div>
                         </form>
                     </div>
@@ -225,5 +225,6 @@
     <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/ingresar.js"></script>
     <script type="module" src="../js/registrar.js"></script>
+    <script type="module" src="../js/translation/translator-login.js"></script>
 </body>
 </html>
