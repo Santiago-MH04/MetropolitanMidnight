@@ -1,4 +1,4 @@
-import '../scss/stylesTrasporte.scss';
+import '../scss/stylesTransporte.scss';
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 
