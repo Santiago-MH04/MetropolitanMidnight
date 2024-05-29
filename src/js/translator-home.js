@@ -15,8 +15,8 @@ i18next.use(Backend).init({
   backend: {
     loadPath: '/locales/{{lng}}/{{ns}}.json'    //URL de donde se obtiene el recurso
   },
-  ns: ['translationTransporte'],
-  defaultNS: 'translationTransporte',
+  ns: ['translationHome'],
+  defaultNS: 'translationHome',
   fallbackLng: 'en',
   interpolation: {
     escapeValue: false // not needed for react!!
@@ -37,4 +37,3 @@ window.changeLanguage = function(lng){
     i18next.changeLanguage(lng).then(() => updateContent());
     localStorage.setItem('favouriteLanguage', lng)
 }
-console.log("Hola mundo");

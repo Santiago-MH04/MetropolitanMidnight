@@ -37,17 +37,17 @@
       <img id="logo" src="./img/distintivo-visual.webp" width="200" alt="distintivo-visual">
     </a>
     <i class="icon-open btn-hiden bi bi-list"></i>
-               
+
     <!-- nav desktop -->
 
     <div class="nav-desktop">
- 
+
       <nav class="nav-items-desktop">
         <ul class="nav-desktop-container-items">
-          <li><a href="./src/pages/discotecas.html">DISCOTECAS</a></li>
-          <li><a href="http://localhost:3001/">GRUPOS</a></li>
-          <li><a href="./src/pages/transporte.html">TRANSPORTE</a></li>
-          <li><a href="./src/pages/vip.html">VIP</a></li>
+          <li><a href="./src/pages/discotecas.html" data-i18n="tittle1-ho">DISCOTECAS</a></li>
+          <li><a href="http://localhost:3001/" data-i18n="tittle2-ho">GRUPOS</a></li>
+          <li><a href="./src/pages/transporte.html" data-i18n="tittle3-ho">TRANSPORTE</a></li>
+          <li><a href="./src/pages/vip.html" data-i18n="tittle4-ho">VIP</a></li>
           <li>
             <div class="dropdown">
               <button class="btn btn-secondary btn-idioma dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -55,14 +55,14 @@
                 <i class="bi bi-translate"></i>
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
-                <li><a class="dropdown-item" href="#">ENGLISH</a></li> 
+                <li><a class="dropdown-item" onclick="changeLanguage('es')" data-bs-dismiss="modal">ESPAÑOL</a></li>
+                <li><a class="dropdown-item" onclick="changeLanguage('en')" data-bs-dismiss="modal">ENGLISH</a></li>
               </ul>
             </div>
           </li>
         </ul>
         <div id="ingresar">
-          <a href="./src/pages/ingresar.html">INGRESAR</a>
+          <a href="./src/pages/ingresar.html" data-i18n="tittle5-ho">INGRESAR</a>
         </div>
       </nav>
     </div>
@@ -71,25 +71,25 @@
     <div class="nav-mobile hiden">
       <i class="icon-close bi bi-x-lg"></i>
       <nav class="nav-items-mobile">
-        <a href="./src/pages/discotecas.html">DISCOTECAS</a>
-        <a href="http://localhost:3001/">GRUPOS</a>
-        <a href="./src/pages/transporte.html">TRANSPORTE</a>
-        <a href="./src/pages/vip.html">VIP</a>
+        <a href="./src/pages/discotecas.html" data-i18n="tittle1-ho">DISCOTECAS</a>
+        <a href="http://localhost:3001/" data-i18n="tittle2-ho">GRUPOS</a>
+        <a href="./src/pages/transporte.html" data-i18n="tittle3-ho">TRANSPORTE</a>
+        <a href="./src/pages/vip.html" data-i18n="tittle4-ho">VIP</a>
         <div class="dropdown">
           <button class="btn btn-secondary btn-idioma dropdown-toggle" type="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             <i class="bi bi-translate"></i>
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
-            <li><a class="dropdown-item" href="#">ENGLISH</a></li> 
+            <li><a class="dropdown-item" onclick="changeLanguage('es')" data-bs-dismiss="modal">ESPAÑOL</a></li>
+            <li><a class="dropdown-item" onclick="changeLanguage('en')" data-bs-dismiss="modal">ENGLISH</a></li>
           </ul>
         </div>
         <div id="ingresar" class="contain-ingresar">
           <a href="./src/pages/ingresar.html">INGRESAR</a>
         </div>
-      </nav> 
-    </div> 
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -109,7 +109,7 @@
           <h2 class="año">2024</h2>
         </div>
 
-    <div id="circle"></div>
+        <div id="circle"></div>
 
         <p class="textcontent">
           Las discotecas líderes se destacan por
@@ -182,5 +182,7 @@
   </footer>
 
   <script type="module" src="./src/js/main.js"></script>
+  <script type="module" src="./src/js/translation/translator-home.js"></script>
 </body>
+
 </html>
