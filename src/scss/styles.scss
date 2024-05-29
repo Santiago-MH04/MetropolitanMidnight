@@ -11,24 +11,25 @@
 //Krub
 @import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&display=swap');
 
-*{
+* {
     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-    --color-black:#1c1c1c;
-    --color-white:#ffffff;
-    --color-purple:#aa5eff;
-    --color-softGray:#dfdede;
-    --color-pink:#dc9fff;
-    --color-PureBlack:#111111;
+    --color-soft-black: #3a3a3a;
+    --color-black: #1c1c1c;
+    --color-white: #ffffff;
+    --color-purple: #aa5eff;
+    --color-softGray: #dfdede;
+    --color-pink: #dc9fff;
+    --color-PureBlack: #111111;
 }
 
 
 body {
-     background-color: var(--color-black);
+    background-color: var(--color-black);
 }
 
 //---------------------------HEADER------------------------
@@ -36,7 +37,7 @@ body {
 
 .header {
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -52,19 +53,23 @@ body {
 
 
 #logo {
+    position: relative;
     width: 200px;
     padding: 10px 0px;
-    
-    
 }
 
-.nav-desktop{
+
+
+
+
+.nav-desktop {
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
 }
-.nav-desktop-container-items{
+
+.nav-desktop-container-items {
     display: flex;
     list-style: none;
     justify-content: center;
@@ -72,39 +77,46 @@ body {
     gap: 5rem;
 }
 
+.btn-hiden {
+    display: none;
+}
+
 
 //--------------BARRA DE NAVEGACION desktop------------
-.nav-items-desktop{
+.nav-items-desktop {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items:baseline;
+    align-items: baseline;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
     z-index: 2;
 }
-.icon-open{
+
+.icon-open {
+    color: white;
     position: absolute;
     right: 0;
     top: 0;
     margin-top: 7rem;
     margin-right: 2rem;
 }
+
 #ingresar {
-    padding-left: 2rem;
+    padding-left: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 
-     a{
-        background-color: #dc9fff;
-     }
+    a {
+        background-color:var(--color-softGray);
+    }
 
-     a:hover{
-        background-color: #aa5eff;
-     }
+    a:hover {
+        background-color:var(--color-purple);
+    }
 }
 
 
@@ -113,19 +125,20 @@ body {
 #ingresar a {
     color: var(--color-black);
     padding-left: 10px;
-    padding-right:10px ;
+    padding-right: 10px;
 }
 
 
 
 .nav-items-desktop a {
-    position:relative;
+    position: relative;
     text-decoration: none;
     color: var(--color-softGray);
     letter-spacing: 0.5px;
-    
+
 
 }
+
 .nav-items-desktop a:hover {
     color: var(--color-white);
 }
@@ -138,7 +151,7 @@ body {
     height: 3px;
     width: 0;
     left: 0;
-    bottom:-10px;
+    bottom: -7px;
     transition: 0.3s;
 
 
@@ -152,93 +165,107 @@ body {
     height: 3px;
     width: 100%;
     left: 0;
-    bottom:-10px;
+    bottom: -7px;
 
 
 }
 
-//---------------------------------MENU HAMBURGUESA-----------------------
-// .mostrar-menu,.esconder-menu{
-//     color: #dfdede;
-//     font-size: 1.5rem;
-//     cursor: pointer;
-//     display: none;
-//     transition: 0.4s;
-//     z-index: 1000;
-// }
+.dropdown-menu {
+    line-height: 2;
+    background-color:var(--color-soft-black);
+}
+
+.dropdown-item:hover{
+    background-color:var(--color-pi);
+}
+
+//---------------------------ICONO IDIOMAS-----------------------------------
+.btn-idioma{
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+.btn i {
+    font-size: 17px;
+}
 
 
-// #check {
-//     display: none;
-// }
 
 
-// //----------------------RESPONSIVE BARRA DE NAVEGACION-----------------------
+//----------------------RESPONSIVE BARRA DE NAVEGACION-----------------------
 
-@media(max-width:1100px){
-    .nav-desktop{
+@media(max-width:1100px) {
+
+    .nav-desktop {
         display: none;
     }
 
-    .icon-open{
+    .icon-open {
         display: flex;
         color: white;
         font-size: 2rem;
         cursor: pointer;
     }
-    .btn-hidden{
+
+    .btn-hidden {
         display: none;
     }
-    .header{
+
+    .header {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         width: 100%;
     }
+
     .nav-mobile {
-        
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: var(--color-black);
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+
+        .icon-close {
+
+            cursor: pointer;
+            font-size: 2rem;
+            color: var(--color-white);
+        }
+
+
+
+        .nav-items-mobile {
+            width: 100%;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            height: auto;
-            background-color: var(--color-black);
-            padding: 100px 0px;
-            z-index: 100;
-            transition: 0.8s; 
-              
-            .icon-close {
-                cursor: pointer;
-                font-size: 2rem;
-                color: var(--color-white);
+            flex-direction: column;
+            padding-top: 2rem;
+            gap: 2rem;
+
+            a {
+                text-decoration: none;
+                color: var(--color-softGray);
+
             }
-        
-           
-            
-            .nav-items-mobile {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                padding-top: 2rem;
-                gap: 2rem;
-                
-                a {
-                    text-decoration: none;
-                    color: var(--color-softGray);
-                    
-                }
-                #ingresar {
-                    padding-left: 0rem;
-                   
-                }
-                
+
+            #ingresar {
+                padding-left: 0rem;
+
             }
+
+        }
     }
-    .icon-close{
+
+    .icon-close {
         position: absolute;
         right: 0;
         top: 0;
@@ -246,41 +273,13 @@ body {
         margin-right: 2rem;
     }
 }
- // HEADER
-//    nav {
-//     display: none;
-//    }
-//   .mostrar-menu,.esconder-menu{
-//     display: block;
-//   }
-//   nav {
-//     position: fixed;
-//     width: 100%;
-//     height: 100vh;
-//     background-color: var(--color-black);
-//     left: 0;
-//     top: 0;
-//     text-align: center;
-//     padding: 100px 0px;
-//     z-index: 100;
-//     transition: 0.8s;
-//   };
+
 
 
 // nav-mobile
-.hiden{
+.hiden {
     display: none;
 }
-
-// .nav-mobile{
-    
-//     position: absolute;
-//     left: 0;
-//     width:100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
 
 
 
@@ -288,66 +287,65 @@ body {
 
 .nombre-discoteca {
     margin-top: 170px;
-    // border: solid white;
+    
     width: 440px;
     height: 160px;
     padding-left: 50px;
-    // position: relative;
-    // top: 430px;
-    // left: 350px;
+    
     font-family: "Krub", sans-serif;
-//    z-index: 100;
+    
 }
 
 
 .nombre-discoteca h1 {
     margin: 0;
-    font-weight:700 ;
+    font-weight: 700;
     color: var(--color-white);
-    font-size:6rem ;
+    font-size: 6rem;
 }
 
 .nombre-discoteca h1 span {
- color: #aa5eff;
+    color: #aa5eff;
 }
 
 .nombre-discoteca p {
     margin-right: 30px;
     line-height: 0.6;
     color: var(--color-white);
-    font-size:2rem ;
+    font-size: 2rem;
     font-weight: 600;
     padding-left: 275px;
-    // text-align: right;
     
-    
+
+
 }
 
 
 
 //texto vertical
 
-#texto-vertical{
-   position: relative;
-   left: 0%;
-   top: 40%;
-    width:auto;
+#texto-vertical {
+    position: relative;
+    left: 0%;
+    top: 40%;
+    width: auto;
     right: 100px;
     height: auto;
     text-align: right;
-    writing-mode: vertical-lr; 
-    text-orientation: mixed; 
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
     transform: rotate(180deg);
-    
-    
-    z-index: 2; 
-     
-    
+
+
+    z-index: 2;
+
+
 }
-#texto-vertical h2{
+
+#texto-vertical h2 {
     color: var(--color-white);
     margin: 0;
-    font-size:3.5rem ;
+    font-size: 3.5rem;
     font-weight: 250;
     line-height: 1.2;
     letter-spacing: 2px;
@@ -355,12 +353,12 @@ body {
 
 #texto-vertical p {
     margin: 0;
- font-size: 1.8rem;
- line-height: 1;
- font-weight: 250;
- padding: 0;
- letter-spacing: 2px;
- 
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 250;
+    padding: 0;
+    letter-spacing: 2px;
+
 }
 
 
@@ -368,19 +366,17 @@ body {
 //imagen de la pareja disfrazada de diablo
 
 #contenedor-diablos {
-    padding-top: 150px;
+
+    padding-top: 0;
     display: flex;
-    // border: solid white;
     justify-content: center;
-    
+
 }
 
 #diablos {
-    
+
     width: 60vh;
     height: min-content;
-    // position: relative;
-    // z-index:1 ; 
 }
 
 //top discotecas
@@ -396,7 +392,7 @@ body {
     border-width: 3px;
     color: var(--color-white);
     font-family: "Krub", sans-serif;
-    
+
 }
 
 .mayo {
@@ -412,11 +408,10 @@ body {
 .año {
     padding-bottom: 20px;
     line-height: 0.6;
-    // text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    
-    
+
+
 }
 
 #descripcion {
@@ -428,19 +423,19 @@ body {
     font-weight: 700;
     margin-top: 50px;
     width: 460px;
-    
-    
+
+
 }
 
 .titulo {
     margin-top: 80px;
     margin-bottom: 20px;
-    
+
     text-transform: uppercase;
-    font-weight: 700;    
+    font-weight: 700;
 }
+
 .textcontent {
-    // text-align: justify;
     margin-bottom: 50px;
 }
 
@@ -448,14 +443,12 @@ body {
 
 //-----------------------------BOTONES CONOCELAS Y ARMA TU PLAN---------------------
 
-.links{
+.links {
     margin-left: 40px;
 }
 
-.links a{
-    
-    // margin-left: 20px;
-    // margin-right: 30px;
+.links a {
+
     letter-spacing: 2px;
     font-size: 1rem;
 }
@@ -470,32 +463,32 @@ body {
     background-color: var(--color-softGray);
 }
 
-.arma{
+.arma {
     position: relative;
     display: inline-block;
-    
+
     font-weight: 500;
     text-decoration: none;
     color: var(--color-softGray);
-   
+
 }
 
 .conocelas:hover {
-    background-color:var(--color-purple) ;
+    background-color: var(--color-purple);
 }
 
 .arma:hover {
     color: var(--color-white);
 }
 
-.arma::after{
+.arma::after {
     content: "";
     height: 3px;
     margin-top: 7px;
     width: 0;
     background-color: var(--color-purple);
     display: block;
-    transition:  0.4s;
+    transition: 0.4s;
 }
 
 .arma:hover::after {
@@ -504,10 +497,51 @@ body {
 }
 
 //------------------------------RESPONSIVE SECCION PRINCIPAL----------------------
-@media(max-width:1100px){
+@media(max-width:1100px) {
+    #contenedor-diablos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-    
+    #texto-vertical {
+        display: none;
+    }
+
+    .nombre-discoteca {
+        padding: 0;
+        
+    }
+
+
 }
+@media(max-width:400px) {
+    #contenedor-diablos {
+        width:200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #texto-vertical {
+        display: none;
+    }
+
+    .nombre-discoteca {
+        padding: 0;
+        
+        
+    }
+    #diablos {
+        padding-left: 60%;
+    }
+
+
+}
+
+
 
 
 //--------------------------------ACA COMIENZA EL FOOTER---------------------------
@@ -517,33 +551,27 @@ footer {
     box-shadow: 0 -5px 10px rgba($color: #090909, $alpha: 0.8);
     background-color: var(--color-PureBlack);
     font-family: "Oswald", sans-serif;
-    width: 100%; 
-    height: 300px; 
-    position: relative;
-    bottom: 20px; 
-    z-index: 1; 
-    color: var(--color-white);
-    // border: solid white; 
-    display: flex; 
-    // justify-content: center;
+    width: 100%;
+    height: 300px;
+    color: var(--color-white); 
+    display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 
 
-.footer{ //recordar poner display block para el responsive
+.footer {
     display: flex;
     gap: 14rem;
-    // border: solid white;
     height: max-content;
 
 }
 
 .content-mensajes {
     display: flex;
-    
+
 }
 
 .mensajes-ganchos h3 {
@@ -552,13 +580,14 @@ footer {
     font-size: 5rem;
     font-weight: 300;
     margin-top: -0.5rem;
-    
-    
+
+
 }
+
 .mensajes-ganchos h4 {
     font-size: 4rem;
     font-weight: 300;
-    
+
 }
 
 .parrafo {
@@ -567,14 +596,14 @@ footer {
     font-size: 1.5rem;
     padding-left: 0.8rem;
     line-height: 1.2;
-    letter-spacing: 0.1rem;    
+    letter-spacing: 0.1rem;
 }
 
 
 .redes {
-    
-   display: flex;
-   gap: 6rem; 
+
+    display: flex;
+    gap: 6rem;
 }
 
 .social-media {
@@ -585,19 +614,151 @@ footer {
     font-family: "Krub", sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
-    // border: solid white;
 }
 
 
-.social-media a{
-    font-size: 1.5rem ;
-    color:var(--color-purple);
+.social-media a {
+    font-size: 1.5rem;
+    color: var(--color-purple);
+
+}
+
+//----------RESPONSIVE FOOTER-------
+
+@media(max-width:1100px) {
+    footer {
+        margin-top: 30px;
+        height: 600px;
+
+    }
+
+    .footer {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+
+
+
+    }
+
+    .derechos {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+
+//___-----------------------------PAGINA VIP-------------------------------
+
+main {
+    margin-top: 10%;
+}
+
+.main-vip {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding-left: 5%;
+    padding: 5%;
+}
+
+
+.card-vip {
+    margin-top: 30%;
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid white;
+
+}
+
+.container-card {
+    color: var(--color-white);
+    width: 400px;
+    text-align: center;
+    border: solid var(--color-purple);
+    font-family: "krub", sans-serif;
+    letter-spacing: 0.5px;
+
+}
+
+.card-header {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.card-header h2 {
+    font-size: 2.5rem;
+    font-family: "Oswald", sans-serif;
+}
+
+.card-title {
+    color: var(--color-purple);
+    font-size: 2rem;
+    padding-bottom: 5%;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    text-align: start;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.btn {
+    position: relative;
+    right: 10px;
+    background-color: var(--color-purple);
+    border: none;
+    border-radius: 0px;
+
+}
+
+.btn:hover {
+    background-color: var(--color-pink);
+
+}
+
+
+
+//---------------------------------------------RESPONSIVE VIP-------------------------------
+
+@media(max-width:1100px){
+    .main-vip {
+        margin-top: 250px;
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        gap: 30px;
+    }
     
 }
 
-
-
-
-
-
+@media(max-width:400px){
+    .main-vip {
+        margin-top: 250px;
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        gap: 30px;
+    }
+        .container-card {
+            width: 300px;
+    }
+    
+}
 

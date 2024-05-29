@@ -1,0 +1,39 @@
+{
+    "database": [
+        {
+            "id": 1,
+            "username": "Pepito Pérez",
+            "password": "12345"
+        }
+    ],
+
+
+    "planes":[
+        {   
+            "nombre": "plan básico",
+            "costo": 9.99,
+            "descripcion": ["Acceso a descuentos del 10% en entradas y bebidas en discotecas participantes.",
+                "Accede a información privilegiada sobre horarios de apertura, ubicación y género musical.",
+                "Descuento del 5% en licores durante tu visita."
+            ]
+        },
+        {
+            "nombre":"plan premium",
+            "costo":19.99,
+            "descripcion": ["Entrada prioritaria: Evita las filas y entra más rápido a la discoteca.",
+                 "Descuentos ampliados: 20% de descuento en bebidas y 10% en la entrada a la discoteca.",
+                 "Reservas prioritarias: reserva mesas y areas VIP y disfruta sin restricción"
+                 
+            ]
+        },
+        {
+            "nombre":"plan élite",
+            "costo":25.99,
+            "descripcion": [
+                "Acceso a descuentos del 30% en entradas y bebidas en discotecas participantes",
+                "Accede a fiestas privadas privilegiadas sobre horarios de apertura, ubicación y género musical.",
+                "Descuento del 30% en licores durante tu visita."
+            ]
+        }
+    ]
+}

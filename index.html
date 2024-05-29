@@ -8,9 +8,9 @@
   <meta name="keywords" content="discoteca,amigos,relaciones,salidas,turismo,musica">
   <meta name="sitedomain" content="https://metropolitanmidnight.com" />
   <meta name="organization" content="metropolitan midnight" />
-  <meta name="author" content="juan pablo,juan felipe,dave,santiago, andres caceres" />
-  <meta name="designer" content="juan pablo,juan felipe,dave,santiago, andres caceres">
-  <meta name="publisher" content="juan pablo,juan felipe,dave,santiago, andres caceres" />
+  <meta name="author" content="juan pablo,juan felipe,dave,santiago Marin, andres caceres" />
+  <meta name="designer" content="juan pablo,juan felipe,dave,santiago Marin, andres caceres">
+  <meta name="publisher" content="juan pablo,juan felipe,dave,santiago Marin, andres caceres" />
   <meta name="copyright" content="&copy; 2024 metropolitan midnight. All rights reserved.">
   <meta name="robots" content="index,follow" />
   <meta name="googlebot" content="index,follow" />
@@ -22,23 +22,37 @@
 <body>
 
   <header class="header">
-      <img id="logo" src="./img/distintivo-visual.webp" width="200" alt="distintivo-visual">
-      <i class="icon-open btn-hiden bi bi-list"></i>
-      <div class="nav-desktop">
-        <nav class="nav-items-desktop">
-          <ul class="nav-desktop-container-items">
-            <li><a href="#">DISCOTECAS</a></li>
-            <li><a href="#">GRUPOS</a></li>
-            <li><a href="#">TRANSPORTE</a></li>
-            <li><a href="#">VIP</a></li>
-            <li><a href="#">IDIOMA</a></li>
-          </ul>
-          <div id="ingresar" >
-            <a href="#">INGRESAR</a>
-          </div>
-          <i class="bi bi-x-lg"></i>
-        </nav>
-      </div>
+    <img id="logo" src="./img/distintivo-visual.webp" width="200" alt="distintivo-visual">
+    <i class="icon-open btn-hiden bi bi-list"></i>
+               
+    <!-- nav desktop -->
+
+    <div class="nav-desktop">
+ 
+      <nav class="nav-items-desktop">
+        <ul class="nav-desktop-container-items">
+          <li><a href="#">DISCOTECAS</a></li>
+          <li><a href="#">GRUPOS</a></li>
+          <li><a href="#">TRANSPORTE</a></li>
+          <li><a href="./src/pages/vip.html">VIP</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="btn btn-secondary btn-idioma dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-translate"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
+                <li><a class="dropdown-item" href="#">ENGLISH</a></li> 
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div id="ingresar">
+          <a href="#">INGRESAR</a>
+        </div>
+      </nav>
+    </div>
 
     <!-- nav mobile -->
     <div class="nav-mobile hiden">
@@ -47,8 +61,17 @@
         <a href="#">DISCOTECAS</a>
         <a href="#">GRUPOS</a>
         <a href="#">TRANSPORTE</a>
-        <a href="#">VIP</a>
-        <a href="#">IDIOMA</a>
+        <a href="./src/pages/vip.html">VIP</a>
+        <div class="dropdown">
+          <button class="btn btn-secondary btn-idioma dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-translate"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
+            <li><a class="dropdown-item" href="#">ENGLISH</a></li> 
+          </ul>
+        </div>
         <div id="ingresar" class="contain-ingresar">
           <a href="#">INGRESAR</a>
         </div>
@@ -66,17 +89,15 @@
           <h2>AMBIENTE </h2>
         </div>
       </div>
-      <img id="diablos" src="./public/img/diablos1.webp" alt="pareja en fiesta">
-
+      <img id="diablos" src="./img/diablos1.webp" alt="pareja en fiesta">
       <div id="descripcion">
         <div class="top-discotecas">
           <h2 class="mayo">TOP MAYO</h2>
           <h2 class="año">2024</h2>
         </div>
 
-        <h3 class="titulo"> LAS 3 MEJORES rankeadas
-          por los usuarios //
-        </h3>
+        <h3 class="titulo"> LA MEJOR rankeada
+          por los usuarios //</h3>
 
         <p class="textcontent">
           Las discotecas líderes se destacan por
@@ -87,7 +108,7 @@
           para una experiencia refinada en la vida nocturna.
         </p>
         <div class="links">
-          <a class="conocelas" href="">CONOCELAS</a>
+          <a class="conocelas" href="">CONOCELA</a>
           <a class="arma" href="">ARMA TU PLAN</a>
         </div>
       </div>
@@ -142,12 +163,12 @@
         <p>METROPOLITANMIDNIGHT@GMAIL.COM</p>
       </div>
     </article>
-    <div class="social-media">
+
+    <div class="social-media derechos">
       <p> © 2024 METROPOLITAN MIDNIGHT ALL RIGHTS RESERVED</p>
     </div>
   </footer>
 
   <script type="module" src="./src/js/main.js"></script>
 </body>
-
 </html>
