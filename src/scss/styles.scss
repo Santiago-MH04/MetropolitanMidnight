@@ -33,8 +33,6 @@ body {
 }
 
 //---------------------------HEADER------------------------
-
-
 .header {
     width: 100%;
     display: flex;
@@ -47,6 +45,10 @@ body {
     left: 0;
     background-color: var(--color-black);
     z-index: 1000;
+}
+
+#menu {
+    display:flex;
 }
 
 #logo {
@@ -644,8 +646,7 @@ main {
         align-items: center;
         flex-direction:column;
         gap: 30px;
-    }
-    
+    }  
 }
 
 @media(max-width:400px){
@@ -660,4 +661,3 @@ main {
             width: 300px;
     }
 }
-
