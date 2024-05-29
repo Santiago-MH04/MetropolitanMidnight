@@ -10,10 +10,15 @@
             "id":2,
             "username":"juan",
             "password":"567"
+        },
+        {
+            "id":3,
+            "username":"andres",
+            "password":"567"
         }
 
     ],
-    "conected":[
+    "connected":[
         {
             "usernames":"juan"
         }

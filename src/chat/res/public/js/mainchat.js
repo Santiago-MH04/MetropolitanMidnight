@@ -69,7 +69,6 @@ $(async function () {
 
                 alert("usuario no registrado")
                 window.location.href = `http://localhost:5173`
-
             }
 
             // nickName.value = ``

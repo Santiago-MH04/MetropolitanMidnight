@@ -4,15 +4,19 @@
 export default async function (io) {
     
     //este es el array que esta recorriendo index of de los usuarios que estan conectados
-    const dataconected = await fetch(`http://localhost:3000/conected`);
-    const conected = await dataconected.json();
-    const nickNames = conected.map(entry => entry.usernames);
+    const dataconected = await fetch(`http://localhost:3000/connected`);
+    const connected = await dataconected.json();
+    const nickNames = connected.map(entry => entry.usernames);
 
+  
 
     // Si todo sale bien se mostrará esto
 
     io.on('connection', socket => {
         console.log('Nuevo usuario conectado');
+        
+
+
 
 
         socket.on("nuevo usuario", (data, cb) => {
@@ -21,17 +25,13 @@ export default async function (io) {
             
                 if (nickNames.indexOf(data) != -1) {
                     cb(false)
+                    
                 } else {
                     cb(true)
                     socket.nickName = data
                     nickNames.push(socket.nickName)
                     updateNicknames()
                 }
-            
-
-
-
-
         })
 
         //me envia los datos a traves de send messages
@@ -47,9 +47,6 @@ export default async function (io) {
             if (!socket.nickName) return;
             nickNames.splice(nickNames.indexOf(socket.nickName), 1)
             updateNicknames()
-
-
-
         })
 
 
@@ -64,6 +61,4 @@ export default async function (io) {
     io.on('error', error => {
         console.error('Error en la conexión:', error);
     });
-
-
 }

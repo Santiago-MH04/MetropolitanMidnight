@@ -9,131 +9,159 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 #content-wrap{
     display: none;
 }
 :root {
-    --color-black:#1c1c1c;
-    --color-white:#ffffff;
-    --color-purple:#aa5eff;
-    --color-softGray:#dfdede;
-    --color-purpleclaro:#a945c7;
+    --color-soft-black: #3a3a3a;
+    --color-black: #1c1c1c;
+    --color-white: #ffffff;
+    --color-purple: #aa5eff;
+    --color-softGray: #dfdede;
+    --color-pink: #dc9fff;
+    --color-PureBlack: #111111;
 }
+
 
 body {
     background-color: var(--color-black);
 }
 
-header {
-    display:flex;
-    
-    
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-black);
+    z-index: 1000;
 }
 
 #logo {
-    margin-top: 20px;
-    margin-left: 50px;
-    width: 300px;
+    position: relative;
+    width: 200px;
+    padding: 10px 0px;
 }
 
-nav{
-    background-color: var(--color-black);
-    position: fixed;
-    width: auto;
-    height: 120px;
-    padding-bottom: 0px;
-    margin-left: 500px;
+.nav-desktop {
     display: flex;
-    gap: 130px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.nav-desktop-container-items {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.btn-hiden {
+    display: none;
+}
+/* ------------------------------------------------------------ */
+
+.nav-items-desktop {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
-    align-items:end;
+    align-items: baseline;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     z-index: 2;
 }
-
-#ingresar{
-    margin-left: 100px;
-    background-color: var(--color-white);
+.icon-open {
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 7rem;
+    margin-right: 2rem;
 }
 
-#ingresar:hover{
-    background-color: var(--color-purple);
+
+#ingresar {
+    padding-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    a {
+        background-color:var(--color-softGray);
+    }
+
+    a:hover {
+        background-color:var(--color-purple);
+    }
 }
 
 #ingresar a {
     color: var(--color-black);
     padding-left: 10px;
-    padding-right:10px ;
+    padding-right: 10px;
 }
 
-
-
-nav a {
-    position:relative;
+.nav-items-desktop a {
+    position: relative;
     text-decoration: none;
     color: var(--color-softGray);
     letter-spacing: 0.5px;
-    
+
 
 }
-nav a:hover {
+
+.nav-items-desktop a:hover {
     color: var(--color-white);
 }
 
-nav a:after {
+.nav-items-desktop a:after {
     content: "";
     position: absolute;
     background-color: var(--color-purple);
     height: 3px;
     width: 0;
     left: 0;
-    bottom:-10px;
+    bottom: -7px;
     transition: 0.3s;
 
 
 }
 
-nav a:hover:after {
-    content: "";
-    position: absolute;
-    background-color: var(--color-purple);
-    height: 3px;
-    width: 100%;
-    left: 0;
-    bottom:-10px;
-
-
+.dropdown-menu {
+    line-height: 2;
+    background-color:var(--color-soft-black);
 }
 
-#circle {
-    width: 600px;
-    height: 600px;
-    background-color: var(--color-purple);
-    border-radius: 100%;
-    position: relative;
-    top: 70px;
-    margin: auto;
-
-
+.dropdown-item:hover{
+    background-color:var(--color-pi);
 }
+/* ////////////////////////////////////////////main */
 
-/* //imagen de la pareja disfrazada de diablo */
-
-#diablos {
-    width: 700px;
-    position: relative;
-    z-index:1 ;
-    bottom: 700px;
-    left: 620px;
+main{
+    margin-top: 10em;
+    margin-bottom: 10em;
 }
-
-
-/* aca terminan los styles generales de la pagina principal */
-
-
-
+.guardian{
+    margin-top: 20em;
+    margin-bottom: 10em;
+}
 
 
 
@@ -147,6 +175,10 @@ nav a:hover:after {
     color: var(--color-white);
 }
 
+.btn-chats{
+    margin-top: 10em;
+    margin-left: 10em;
+}
 
 .offcanvas-header{
     background-color: var(--color-purple);
@@ -174,21 +206,16 @@ nav a:hover:after {
 }
 
 
-.containerchat{
-    margin-bottom: 15px;
-    padding: 10px;
-    border-bottom: 1px solid white;
-    border-radius: 4px;
-    
-
-}
 .title{
     margin-right: 5em;
 }
 
 .container-chat{
-    background-color: var(--color-purpleclaro);
-    box-shadow: 0 0 10px var(--color-purpleclaro), 0 0 40px var(--color-purpleclaro),0 0 80px var(--color-purple);
+
+    margin-bottom: 15px;
+    padding: 2em;
+    background-color: var(--color-pink);
+    box-shadow: 0 0 10px var(--color-pink), 0 0 40px var(--color-pink),0 0 80px var(--color-pink);
     border-radius: 5px;
 }
 .title1{
@@ -261,5 +288,206 @@ nav a:hover:after {
     }
   }
 
+
+   /* //aca comienzan los estilos del footer */ 
+   footer {
+    padding-top: 3rem;
+    box-shadow: 0 -5px 10px rgba(9, 9, 9, 0.8);
+    background-color: var(--color-PureBlack);
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    height: 300px;
+    color: var(--color-white); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.footer {
+    display: flex;
+    gap: 14rem;
+    height: max-content;
+
+}
+
+.content-mensajes {
+    display: flex;
+
+}
+
+.mensajes-ganchos h3 {
+    color: var(--color-purple);
+    padding-right: 10px;
+    font-size: 5rem;
+    font-weight: 300;
+    margin-top: -0.5rem;
+
+
+}
+
+.mensajes-ganchos h4 {
+    font-size: 4rem;
+    font-weight: 300;
+
+}
+
+.parrafo {
+    font-family: "Krub", sans-serif;
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+    padding-left: 0.8rem;
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
+}
+
+
+.redes {
+
+    display: flex;
+    gap: 6rem;
+}
+
+.social-media {
+    margin-top: 1.8rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    font-family: "Krub", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
+.social-media a {
+    font-size: 1.5rem;
+    color: var(--color-purple);
+
+}
+
+//----------RESPONSIVE FOOTER-------
+
+@media(max-width:1100px) {
+    footer {
+        margin-top: 30px;
+        height: 600px;
+
+    }
+
+    .footer {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+
+
+
+    }
+
+    .derechos {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+//___-----------------------------PAGINA VIP-------------------------------
+
+main {
+    margin-top: 10%;
+}
+
+.main-vip {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding-left: 5%;
+    padding: 5%;
+}
+
+
+.card-vip {
+    margin-top: 30%;
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid white;
+
+}
+
+.container-card {
+    color: var(--color-white);
+    width: 400px;
+    text-align: center;
+    border: solid var(--color-purple);
+    font-family: "krub", sans-serif;
+    letter-spacing: 0.5px;
+
+}
+
+.card-header {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.card-header h2 {
+    font-size: 2.5rem;
+    font-family: "Oswald", sans-serif;
+}
+
+.card-title {
+    color: var(--color-purple);
+    font-size: 2rem;
+    padding-bottom: 5%;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    text-align: start;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.btn {
+    position: relative;
+    right: 10px;
+    background-color: var(--color-purple);
+    border: none;
+    border-radius: 0px;
+
+}
+
+.btn:hover {
+    background-color: var(--color-pink);
+
+}
+
+
+
+//---------------------------------------------responsive vip-------------------------------
+
+@media(max-width:1100px){
+    .main-vip {
+        margin-top: 250px;
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        gap: 30px;
+    }
+}
 
 
