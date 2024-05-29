@@ -83,7 +83,10 @@ $(async function () {
     $messageform.submit(e => {
         e.preventDefault();
         // console.log($messagebox.val())
-        socket.emit(`send message`, $messagebox.val())
+        socket.emit(`send message`, $messagebox.val(), data=>{
+            //este va a recibir posible errores
+            $chat.append(`<p class="error">${data}</p>`)
+        })
         $messagebox.val(``)
 
 
@@ -95,14 +98,17 @@ $(async function () {
     })
 
     socket.on("usernames", data => {
+        console.log(data)
         let html = ``
         for (let i = 0; i < data.length; i++) {
-            html += `<p><i class="bi bi-person-circle"></i>${data[i]}</p>`
+            html += `<p><i class="bi bi-person-circle"></i>:${data[i]}</p>`
 
         }
         users.innerHTML = html
     })
-
+    socket.on(`private`, data=>{
+        $chat.append(`<p class="private"><b>${data.nick}:</b>${data.msg}</p>`)
+    })
 })
 
 

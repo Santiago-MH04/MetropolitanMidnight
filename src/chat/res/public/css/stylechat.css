@@ -16,7 +16,13 @@
     box-sizing: border-box;
 }
 
+.error{
+    color: var(--color-purple)
+}
 
+.private{
+    color:var(--color-soft-black),
+}
 #content-wrap{
     display: none;
 }
