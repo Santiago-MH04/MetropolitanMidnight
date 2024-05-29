@@ -450,10 +450,13 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .info .info_title{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
     font-weight: bold;
     border-bottom: 3px solid var(--color-purple);
     width: 250px;
@@ -588,6 +591,7 @@ h2 {
 //--------------------------------ACA COMIENZA EL FOOTER---------------------------
 
 footer {
+    margin-top: 5%;
     padding-top: 3rem;
     box-shadow: 0 -5px 10px rgba($color: #090909, $alpha: 0.8);
     background-color: var(--color-PureBlack);
