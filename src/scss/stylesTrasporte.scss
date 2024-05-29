@@ -390,6 +390,34 @@ main {
     margin-top: 5%;
 }
 
+
+.star-rating {
+    display: flex;
+    direction: rtl;
+    margin-bottom: 0%;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.list-group-item li {
+    background-color: var(--color-softGray);
+}
+.star {
+    cursor: pointer;
+    color: var(--color-white);
+    transition: color 0.2s;
+}
+
+.star:hover,
+.star:hover~.star {
+    color: var(--color-purple);
+}
+
+.star.selected,
+.star.selected~.star {
+    color: var(--color-purple);
+}
+
 .card-text {
     text-align: center;
     font-family: "Oswald", sans-serif;

@@ -37,22 +37,10 @@
   ],
   "reservations": [
     {
-      "id": "e6ca",
-      "hora-reserva": "2024-05-11T08:47",
-      "lugar-partida": "34t5y6ui",
-      "discoteca-destino": "Miranda",
-      "telefono": "13435467687",
-      "correo": "adsfdg@adsf"
     }
   ],
   "trabaja": [
     {
-      "id": "de1b",
-      "fecha-de-nacimiento": "2024-06-03T11:47",
-      "documente": "ewrrdgd",
-      "telefono": "1435465",
-      "correo": "das@das", 
-      "filePath": "blob:http://localhost:5173/bfbdb61d-e4b3-4af2-8b8d-e5eb6efbb69c"
     }
   ]
 }
