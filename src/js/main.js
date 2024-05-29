@@ -8,7 +8,7 @@ const iconOpen = document.querySelector('.icon-open');
 const iconClose = document.querySelector('.icon-close')
 const navMobile = document.querySelector('.nav-mobile');
 
-iconClose.addEventListener('click', ()=>{
+iconClose.addEventListener('click', async()=>{
     navMobile.classList.toggle('hiden');
     iconOpen.classList.remove('btn-hidden');
 })

@@ -5,7 +5,52 @@
             "username": "Pepito Pérez",
             "email": "pepito@correopepito.net",
             "password": "12345",
+            "role": "customer"
+        },
+        {
+            "id": 2,
+            "username": "Silver Wolf",
+            "email": "andrescaceres776@metropolitanmidnight.com",
+            "password": "ecw984ef2e*",
             "role": "admin"
+        },
+        {
+            "id": 3,
+            "username": "Juan Felipe",
+            "email": "pulgarinhernandezjuanfelipe@metropolitanmidnight.com",
+            "password": "fclmwqe99jeg0w-*",
+            "role": "admin"
+        },
+        {
+            "id": 4,
+            "username": "Juan Pablo",
+            "email": "gomezjuanpazero@metropolitanmidnight.com",
+            "password": "zero-dxpwoe92f0&",
+            "role": "admin"
+        },
+        {
+            "id": 5,
+            "username": "David",
+            "email": "apolo4778@metropolitanmidnight.com",
+            "password": "dcweofj34-9*",
+            "role": "admin"
+        },
+        {
+            "id": 6,
+            "username": "Santiago",
+            "email": "santimh04@metropolitanmidnight.com",
+            "password": "Dwi7dawawce323qa*",
+            "role": "admin"
+        },
+        {
+            "id": 6,
+            "username": "Anita la huerfanita",
+            "email": "adoptame@orfanato.org",
+            "password": "password123",
+            "role": "customer"
         }
+    ],
+    "registrations": [
+    
     ]
 }

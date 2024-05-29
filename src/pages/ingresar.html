@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../scss/stylesLogin.scss">
+    <link rel="stylesheet" href="../scss/stylesRegister.scss">
     <title>Login</title>
 </head>
 <body>
@@ -67,10 +69,47 @@
             ¿OLVIDASTE TU CONTRASEÑA?
         </div>
         <div class="create-account">
-            ¿NO TIENES UNA CUENTA? <a href="#">REGÍSTRATE</a>
+            ¿NO TIENES UNA CUENTA? <a href="#" data-bs-toggle="modal" data-bs-target="#registrationModal">REGÍSTRATE</a>
         </div>
       </div>
     </section>
+    <section class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="reservationModalLabel"
+            aria-hidden="true">
+            <article class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="registrationModalLabel">Registro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="registration-form">
+                            <div class="mb-3">
+                                <label for="nombre-usuario" class="form-label">Nombre de usuario:</label>
+                                <input type="text" id="nombre-usuario" name="nombre-usuario" class="form-control" placeholder="Pepito Pérez" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico:</label>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="ejemplo@ejemplo.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña:</label>
+                                <input type="password" id="password" name="password" class="form-control"
+                                    placeholder="MetropolitanMidnight2024*" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Confirmar contraseña:</label>
+                                <input type="password" id="confirm-password" name="confirm-password" class="form-control"
+                                    placeholder="MetropolitanMidnight2024*" required>
+                            </div>
+                            <div class="cont-btn-enviar">
+                                <button type="submit" class="btn btn-enviar-form">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
   </main>
 
 <footer>
@@ -130,5 +169,6 @@
 </footer>
     <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/ingresar.js"></script>
+    <script type="module" src="../js/registrar.js"></script>
 </body>
 </html>
