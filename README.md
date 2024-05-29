@@ -58,7 +58,6 @@ build:metropolitan: Builds the project using Vite.
 chat:
 in the functionality of the chat we can see that it works with a local database so it can only be deployed in a local environment unless the program is uploaded to the network, if you open it in several windows and enter as if they were different users you can see that the server automatically reads when a user connects or disconnects, it also reads if someone is already connected and does not allow them to connect in the database there are some profiles created that allow us to see this operation, the chat was developed from the backend so it has a different json package.this is a valid exception for a program in a professional environment to have two package. json.
 
-Translated with DeepL.com (free version)
 
 The tasks management system used is Trello, and, the tasks assigned can be seen in here:
 https://trello.com/b/vSUyapnC/metropolitan-midnight
