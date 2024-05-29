@@ -4,11 +4,8 @@ import '../scss/styles.scss'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 
-<<<<<<< HEAD
 
 //------------------------------------------------LOGICA DE RESPONSIVE--------------------
-=======
->>>>>>> feature/S1-login
 const iconOpen = document.querySelector('.icon-open');
 const iconClose = document.querySelector('.icon-close')
 const navMobile = document.querySelector('.nav-mobile');
