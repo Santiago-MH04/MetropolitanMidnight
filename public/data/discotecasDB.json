@@ -47,11 +47,10 @@
         },
         "logo": "../../public/img/discotecas/tutaina/tutaina1.webp",
         "banner":"../../public/img/discotecas/tutaina/tutaina4.webp"
-
     },
     {
         "id": 4,
-        "name": "Clementia",
+        "name": "Clementina",
         "description": "A chic venue with a sophisticated vibe, featuring a mix of electronic and house music.",
         "location": {
             "zone": "Poblado",
@@ -64,7 +63,6 @@
         },
         "logo": "../../public/img/discotecas/CLEMENTINA/clementia3.webp",
         "banner":"../../public/img/discotecas/CLEMENTINA/clementia9.webp"
-
     },
     {
         "id": 5,
@@ -81,7 +79,6 @@
         },
         "logo": "../../public/img/discotecas/dulcinea/dulcinea1.webp",
         "banner":"../../public/img/discotecas/dulcinea/dulcinea3.webp"
-
     },
     {
         "id": 6,
@@ -98,6 +95,5 @@
         },
         "logo": "../../public/img/discotecas/logia/logia1.webp",
         "banner":"../../public/img/discotecas/logia/logia3.webp"
-
     }
 ]

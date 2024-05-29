@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </li>
             </ul>
             <div class="card-body">
-                <a href="#" class="card-link" id_discoteca=${disco.id}>ver mas</a>
+                <a href="#" class="card-link" id_discoteca=${disco.id}>ver más</a>
             </div>
         </div>
         `;
