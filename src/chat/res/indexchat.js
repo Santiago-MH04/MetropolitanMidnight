@@ -19,11 +19,11 @@ __dirname = path.dirname(__dirname);
 
 // Crear una instancia de la aplicación express o un servidor usando express
 const app = express();
-const server=http.createServer(app)
+const server = http.createServer(app)
 //el modulo socket io funciona ensima de un servidor 
-const io =new SocketIO(server);
+const io = new SocketIO(server);
 //si el puerto es otro toma ese puerto si no toma el 3000
-app.set(`port`,process.env.PORT  || 3001)
+app.set(`port`,process.env.PORT || 3001)
 
 //importamos lo que esta en sockets
 sockets(io);
@@ -33,7 +33,6 @@ sockets(io);
 console.log(path.join(__dirname, 'public'));
 
 // `C:\\Users\\Pc Personal\\Desktop\\intento_x\\src\\public (esta direccion es la que entrega en windows verificar en otro pc)`
-
 
 //archivos estaticos
 app.use(express.static(path.join(__dirname,'public')))
