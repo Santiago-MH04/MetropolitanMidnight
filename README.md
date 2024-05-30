@@ -1,6 +1,14 @@
 # MetropolitanMidnight
 Metropolitan Midnight is an intermediate project that gathers all the options for nightlife in the Aburrá Valley, and can create value by showing the broad entertainment options that can be found in our city, helping to transform the image Medellín has earned during the last years, and also creating jobs, which is amazing and such a great opportunity for us to be taken.
 
+                                Important!!!!!
+On the one hand, the command npm install most likely to work without any inconveniences if you run the command npm i both in chat and MetropoltanMidnight folders.
+On the other hand, in order to deploy the application, the user must initialise the terminal using the following commands, preferently in different terminal profiles: 
+
+    ---------- THE ORDER IS MANDATORY, OTHERWISE, IT WON'T WORK -------------------
+    1. npx json-server ./public/data/database.json
+    2. npm start
+
 Metropolitan Midnight is a project that integrates various tools and libraries to create a cohesive development environment. This README explains the libraries used in this project, detailing their purposes and functionalities.
 
 Libraries and Their Uses
