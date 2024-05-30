@@ -1,9 +1,144 @@
 {
-    "database": [
-        {
-            "id": 1,
-            "username": "Pepito Pérez",
-            "password": "12345"
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "username": "PepitoPérez",
+      "email": "pepito@correopepito.net",
+      "password": "12345",
+      "role": "customer"
+    },
+    {
+      "id": "2",
+      "username": "SilverWolf",
+      "email": "andrescaceres776@metropolitanmidnight.com",
+      "password": "ecw984ef2e*",
+      "role": "admin"
+    },
+    {
+      "id": "3",
+      "username": "JuanFelipe",
+      "email": "pulgarinhernandezjuanfelipe@metropolitanmidnight.com",
+      "password": "fclmwqe99jeg0w-*",
+      "role": "admin"
+    },
+    {
+      "id": "4",
+      "username": "JuanPablo",
+      "email": "gomezjuanpazero@metropolitanmidnight.com",
+      "password": "zero-dxpwoe92f0&",
+      "role": "admin"
+    },
+    {
+      "id": "5",
+      "username": "David",
+      "email": "apolo4778@metropolitanmidnight.com",
+      "password": "dcweofj34-9*",
+      "role": "admin"
+    },
+    {
+      "id": "6",
+      "username": "Santiago",
+      "email": "santimh04@metropolitanmidnight.com",
+      "password": "Dwi7dawawce323qa*",
+      "role": "admin"
+    },
+    {
+      "id": "6",
+      "username": "AnitaLaHuerfanita",
+      "email": "adoptame@orfanato.org",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "e3ba",
+      "username": "Daniela",
+      "email": "dani@moviematch.com",
+      "password": "123",
+      "role": "user"
+    }
+  ],
+  "connected": [
+    {
+      "usernames": "juan",
+      "id": "866b"
+    }
+  ],
+  "planes": [
+    {
+      "nombre": "plan básico",
+      "costo": 9.99,
+      "descripcion": [
+        "Acceso a descuentos del 10% en entradas y bebidas en discotecas participantes.",
+        "Accede a información privilegiada sobre horarios de apertura, ubicación y género musical.",
+        "Descuento del 5% en licores durante tu visita."
+      ],
+      "id": "6c46"
+    },
+    {
+      "nombre": "plan premium",
+      "costo": 19.99,
+      "descripcion": [
+        "Entrada prioritaria: Evita las filas y entra más rápido a la discoteca.",
+        "Descuentos ampliados: 20% de descuento en bebidas y 10% en la entrada a la discoteca.",
+        "Reservas prioritarias: reserva mesas y areas VIP y disfruta sin restricción"
+      ],
+      "id": "00eb"
+    },
+    {
+      "nombre": "plan élite",
+      "costo": 25.99,
+      "descripcion": [
+        "Acceso a descuentos del 30% en entradas y bebidas en discotecas participantes",
+        "Accede a fiestas privadas privilegiadas sobre horarios de apertura, ubicación y género musical.",
+        "Descuento del 30% en licores durante tu visita."
+      ],
+      "id": "15f6"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "zero",
+      "img": "../../public/img/conductor1.webp"
+    },
+    {
+      "id": "2",
+      "name": "david",
+      "img": "../../public/img/conductor2.webp"
+    },
+    {
+      "id": "3",
+      "name": "santiago",
+      "img": "../../public/img/conductor3.webp"
+    },
+    {
+      "id": "4",
+      "name": "felipe",
+      "img": "../../public/img/conductor4.webp"
+    }
+  ],
+  "discotecas": [
+    {
+      "name": "Perro Negro",
+      "id": "af00"
+    },
+    {
+      "name": "Miranda",
+      "id": "e4c7"
+    },
+    {
+      "name": "Club XYZ",
+      "id": "fc3a"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "c892"
+    }
+  ],
+  "trabaja": [
+    {
+      "id": "9a89"
+    }
+  ]
 }

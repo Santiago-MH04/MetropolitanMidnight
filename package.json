@@ -1,20 +1,48 @@
 {
-  "name": "metropolitan",
+  "name": "proyecto-combinado",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "concurrently \"npm run start:intento-2\" \"npm run dev:metropolitan\"",
+    "start:intento-2": "nodemon --exec babel-node src/chat/res/indexchat.js",
+    "dev:metropolitan": "vite",
+    "build:metropolitan": "vite build",
+    "preview:metropolitan": "vite preview"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.5",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0",
     "sass": "^1.77.1",
     "vite": "^5.2.11"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
-    "json-server": "^1.0.0-beta.0"
-  }
+    "bootstrap-icons": "^1.11.3",
+    "express": "^4.19.2",
+    "google-fonts": "^1.0.0",
+    "i18next": "^23.11.5",
+    "i18next-http-backend": "^2.5.2",
+    "json-server": "^1.0.0-beta.0",
+    "socket.io": "^4.7.5"
+  },
+  "description": "idk",
+  "main": "index.js",
+  "author": "David Sanchez C",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Santiago-MH04/MetropolitanMidnight.git"
+  },
+  "keywords": [
+    "idk"
+  ],
+  "bugs": {
+    "url": "https://github.com/Santiago-MH04/MetropolitanMidnight/issues"
+  },
+  "homepage": "https://github.com/Santiago-MH04/MetropolitanMidnight#readme"
 }
