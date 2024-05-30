@@ -1,3 +1,4 @@
+
 //codigo para el slider
 
 const $next = document.querySelector(".next");
@@ -12,8 +13,6 @@ $prev.addEventListener("click", () => {
     const items = document.querySelectorAll(".item");
     document.querySelector(".slide").prepend(items[items.length - 1]);
 });
-
-
 
 //imprimir en el html la info de las discotecas de la base de datos
 
@@ -58,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
         const discoElement = document.createElement('div');
         discoElement.classList.add('disco');
+
         discoElement.innerHTML = `
         <div class="card" style="width: 18rem;">
             <img src="${disco.logo}" class="card-img-top" alt="logo de ${disco.name}">
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </li>
             </ul>
             <div class="card-body">
-                <a href="#" class="card-link" id_discoteca=${disco.id}>ver más</a>
+                <a href="#" class="card-link" id_discoteca=${disco.id} data-i18n="ds-title7">ver más</a>
             </div>
         </div>
         `;
