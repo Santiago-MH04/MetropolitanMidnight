@@ -1,0 +1,663 @@
+// normalize
+@import url(./normalize.scss);
+//icons
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+//FONTS
+//oswald
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+//Krub
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-soft-black: #3a3a3a;
+    --color-black: #1c1c1c;
+    --color-white: #ffffff;
+    --color-purple: #aa5eff;
+    --color-softGray: #dfdede;
+    --color-pink: #dc9fff;
+    --color-PureBlack: #111111;
+}
+
+
+body {
+    background-color: var(--color-black);
+}
+
+//---------------------------HEADER------------------------
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-black);
+    z-index: 1000;
+}
+
+#menu {
+    display:flex;
+}
+
+#logo {
+    position: relative;
+    width: 200px;
+    padding: 10px 0px;
+}
+
+.nav-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.nav-desktop-container-items {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.btn-hiden {
+    display: none;
+}
+
+
+//--------------BARRA DE NAVEGACION desktop------------
+.nav-items-desktop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    z-index: 2;
+}
+
+.icon-open {
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 7rem;
+    margin-right: 2rem;
+}
+
+#ingresar {
+    padding-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    a {
+        background-color:var(--color-softGray);
+    }
+
+    a:hover {
+        background-color:var(--color-purple);
+    }
+}
+
+#ingresar a {
+    color: var(--color-black);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-items-desktop a {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-softGray);
+    letter-spacing: 0.5px;
+}
+
+.nav-items-desktop a:hover {
+    color: var(--color-white);
+}
+
+.nav-items-desktop a:after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-purple);
+    // background-color: var(--color-white);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: 0.3s;
+}
+
+.nav-items-desktop a:hover:after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-purple);
+    // background-color: var(--color-white);
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -7px;
+}
+
+.dropdown-menu {
+    line-height: 2;
+    background-color:var(--color-soft-black);
+}
+
+.dropdown-item:hover{
+    background-color:var(--color-pi);
+}
+
+//---------------------------ICONO IDIOMAS-----------------------------------
+.btn-idioma{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.btn i {
+    font-size: 17px;
+}
+
+//----------------------RESPONSIVE BARRA DE NAVEGACION-----------------------
+
+@media(max-width:1100px) {
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .icon-open {
+        display: flex;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .btn-hidden {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-mobile {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: var(--color-black);
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+
+        .icon-close {
+            cursor: pointer;
+            font-size: 2rem;
+            color: var(--color-white);
+        }
+
+        .nav-items-mobile {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 2rem;
+            gap: 2rem;
+
+            a {
+                text-decoration: none;
+                color: var(--color-softGray);
+            }
+
+            #ingresar {
+                padding-left: 0rem;
+            }
+        }
+    }
+
+    .icon-close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 15rem;
+        margin-right: 2rem;
+    }
+}
+
+// nav-mobile
+.hiden {
+    display: none;
+}
+
+//----SECCION PRINCIPAL----
+
+.nombre-discoteca {
+    margin-top: 170px;
+    width: 440px;
+    height: 160px;
+    padding-left: 50px;
+    font-family: "Krub", sans-serif;
+}
+
+.nombre-discoteca h1 {
+    margin: 0;
+    font-weight: 700;
+    color: var(--color-white);
+    font-size: 6rem;
+}
+
+.nombre-discoteca h1 span {
+    color: #aa5eff;
+}
+
+.nombre-discoteca p {
+    margin-right: 30px;
+    line-height: 0.6;
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: 600;
+    padding-left: 275px;
+}
+
+//texto vertical
+#texto-vertical {
+    position: relative;
+    left: 0%;
+    top: 40%;
+    width: auto;
+    right: 100px;
+    height: auto;
+    text-align: right;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    z-index: 2;
+}
+
+#texto-vertical h2 {
+    color: var(--color-white);
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 250;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+#texto-vertical p {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 250;
+    padding: 0;
+    letter-spacing: 2px;
+}
+
+//imagen de la pareja disfrazada de diablo
+#contenedor-diablos {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#diablos {
+    width: 60vh;
+    height: min-content;
+}
+
+//top discotecas
+.top-discotecas {
+    position: relative;
+    z-index: -1;
+    padding-left: 30px;
+    left: 300px;
+    width: 425px;
+    height: 110px;
+    border: solid var(--color-white);
+    border-width: 3px;
+    color: var(--color-white);
+    font-family: "Krub", sans-serif;
+
+}
+
+.mayo {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.año {
+    padding-bottom: 20px;
+    line-height: 0.6;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#descripcion {
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    font-family: "Krub", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 50px;
+    width: 460px;
+}
+
+.titulo {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.textcontent {
+    margin-bottom: 50px;
+}
+
+//-----------------------------BOTONES CONOCELAS Y ARMA TU PLAN---------------------
+.links {
+    margin-left: 40px;
+}
+
+.links a {
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+
+.conocelas {
+    margin-right: 30px;
+    font-family: "Oswald", sans-serif;
+    padding: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-black);
+    background-color: var(--color-softGray);
+}
+
+.arma {
+    position: relative;
+    display: inline-block;
+
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-softGray);
+
+}
+
+.conocelas:hover {
+    background-color: var(--color-purple);
+}
+
+.arma:hover {
+    color: var(--color-white);
+}
+
+.arma::after {
+    content: "";
+    height: 3px;
+    margin-top: 7px;
+    width: 0;
+    background-color: var(--color-purple);
+    display: block;
+    transition: 0.4s;
+}
+
+.arma:hover::after {
+    bottom: -10px;
+    width: 100%;
+}
+
+//------------------------------RESPONSIVE SECCION PRINCIPAL----------------------
+@media(max-width:1100px) {
+    #contenedor-diablos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #texto-vertical {
+        display: none;
+    }
+
+    .nombre-discoteca {
+        padding: 0;   
+    }
+}
+
+@media(max-width:400px) {
+    #contenedor-diablos {
+        width:200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #texto-vertical {
+        display: none;
+    }
+
+    .nombre-discoteca {
+        padding: 0;
+        
+        
+    }
+    #diablos {
+        padding-left: 60%;
+    }
+}
+
+
+//--------------------------------ACA COMIENZA EL FOOTER---------------------------
+
+footer {
+    padding-top: 3rem;
+    box-shadow: 0 -5px 10px rgba($color: #090909, $alpha: 0.8);
+    background-color: var(--color-PureBlack);
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    height: 300px;
+    color: var(--color-white); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer {
+    display: flex;
+    gap: 14rem;
+    height: max-content;
+}
+
+.content-mensajes {
+    display: flex;
+}
+
+.mensajes-ganchos h3 {
+    color: var(--color-purple);
+    padding-right: 10px;
+    font-size: 5rem;
+    font-weight: 300;
+    margin-top: -0.5rem;
+}
+
+.mensajes-ganchos h4 {
+    font-size: 4rem;
+    font-weight: 300;
+
+}
+
+.parrafo {
+    font-family: "Krub", sans-serif;
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+    padding-left: 0.8rem;
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
+}
+
+.redes {
+    display: flex;
+    gap: 6rem;
+}
+
+.social-media {
+    margin-top: 1.8rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    font-family: "Krub", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.social-media a {
+    font-size: 1.5rem;
+    color: var(--color-purple);
+}
+
+//----------RESPONSIVE FOOTER-------
+@media(max-width:1100px) {
+    footer {
+        margin-top: 30px;
+        height: 600px;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+    }
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+
+    .derechos {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+//___-----------------------------PAGINA VIP-------------------------------
+main {
+    margin-top: 10%;
+}
+
+.main-vip {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding-left: 5%;
+    padding: 5%;
+}
+
+.card-vip {
+    margin-top: 30%;
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid white;
+}
+
+.container-card {
+    color: var(--color-white);
+    width: 400px;
+    text-align: center;
+    border: solid var(--color-purple);
+    font-family: "krub", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.card-header {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.card-header h2 {
+    font-size: 2.5rem;
+    font-family: "Oswald", sans-serif;
+}
+
+.card-title {
+    color: var(--color-purple);
+    font-size: 2rem;
+    padding-bottom: 5%;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    text-align: start;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.btn {
+    position: relative;
+    right: 10px;
+    background-color: var(--color-purple);
+    border: none;
+    border-radius: 0px;
+
+}
+
+.btn:hover {
+    background-color: var(--color-pink);
+}
+
+//---------------------------------------------RESPONSIVE VIP-------------------------------
+@media(max-width:1100px){
+    .main-vip {
+        margin-top: 250px;
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        gap: 30px;
+    }  
+}
+
+@media(max-width:400px){
+    .main-vip {
+        margin-top: 250px;
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        gap: 30px;
+    }
+        .container-card {
+            width: 300px;
+    }
+}

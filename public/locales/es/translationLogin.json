@@ -1,0 +1,29 @@
+{
+    "lg-h-title1": "DISCOTECAS",
+    "lg-h-title2": "GRUPOS",
+    "lg-h-title3": "TRANSPORTE",
+    "lg-h-title4": "VIP",
+    "lg-h-title5": "INGRESAR",
+
+    "lg-s-title1": "ENTRA Y COMPARTE CON ESTA GRAN COMUNIDAD",
+    "lg-s-title2": "INICIO DE SESIÓN",
+    "lg-s-placeholder3": "Correo electrónico",
+    "lg-s-placeholder4": "Contraseña",
+    "lg-s-title5": "ENTRAR",
+
+    "lg-b-title1": "¿OLVIDASTE TU CONTRASEÑA?",
+    "lg-b-title2": "¿NO TIENES UNA CUENTA? REGÍSTRATE",
+
+    "lg-mf-title1": "Registro",
+    "lg-mb-title1": "Nombre de usuario:",
+    "lg-mb-placeholder1": "PepitoPérez (así, sin espacios)",
+    "lg-mb-title2": "Correo electrónico:",
+    "lg-mb-placeholder2": "ejemplo@ejemplo.com",
+    "lg-mb-title3": "Contraseña:",
+    "lg-mb-placeholder4": "MetropolitanMidnight2024*",
+    "lg-mb-title5": "Confirmar contraseña:",
+    "lg-mb-placeholder6": "MetropolitanMidnight2024*",
+    "lg-mb-title7": "Acepto los términos y condiciones",
+    
+    "lg-mb-title8": "Enviar"
+}

@@ -1,0 +1,530 @@
+
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.error{
+    color: var(--color-purple)
+}
+
+.private{
+    color:var(--color-soft-black),
+}
+#content-wrap{
+    display: none;
+}
+:root {
+    --color-soft-black: #3a3a3a;
+    --color-black: #1c1c1c;
+    --color-white: #ffffff;
+    --color-purple: #aa5eff;
+    --color-softGray: #dfdede;
+    --color-pink: #dc9fff;
+    --color-PureBlack: #111111;
+}
+
+
+body {
+    background-color: var(--color-black);
+}
+
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-black);
+    z-index: 1000;
+}
+
+#logo {
+    position: relative;
+    width: 200px;
+    padding: 10px 0px;
+}
+
+.nav-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.nav-desktop-container-items {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.btn-hiden {
+    display: none;
+}
+/* ------------------------------------------------------------ */
+
+.nav-items-desktop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    z-index: 2;
+}
+.icon-open {
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 7rem;
+    margin-right: 2rem;
+}
+
+
+#ingresar {
+    padding-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    a {
+        background-color:var(--color-softGray);
+    }
+
+    a:hover {
+        background-color:var(--color-purple);
+    }
+}
+
+#ingresar a {
+    color: var(--color-black);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-items-desktop a {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-softGray);
+    letter-spacing: 0.5px;
+
+
+}
+
+.nav-items-desktop a:hover {
+    color: var(--color-white);
+}
+
+.nav-items-desktop a:after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-purple);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: 0.3s;
+
+
+}
+
+.dropdown-menu {
+    line-height: 2;
+    background-color:var(--color-soft-black);
+}
+
+.dropdown-item:hover{
+    background-color:var(--color-pi);
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-desktop {
+        justify-content: space-between;
+    }
+
+    #logo {
+        width: 150px; /* Ajusta el tamaño del logo para pantallas más pequeñas */
+    }
+
+    #ingresar {
+        padding-left: 0; /* Elimina el padding izquierdo en pantallas más pequeñas */
+    }
+}
+
+/* Media Query para pantallas de tamaño pequeño */
+@media only screen and (max-width: 576px) {
+    .nav-desktop-container-items {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        gap: 1rem; /* Reduzca el espacio entre los elementos */
+    }
+
+    #ingresar {
+        padding-top: 1rem; /* Agrega un poco de espacio arriba */
+        width: auto; /* Establece el ancho automático */
+    }
+
+    #ingresar a {
+        padding: 5px 10px; /* Ajusta el padding de los enlaces */
+    }
+}
+/* ////////////////////////////////////////////main */
+
+main{
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+.guardian{
+    margin-top: 20em;
+    margin-bottom: 10em;
+}
+
+
+
+
+.btn{
+    background-color: var(--color-purple);
+}
+
+.btn:hover{
+    background-color: var(--color-softGray);
+    color: var(--color-white);
+}
+
+.btn-chats{
+    margin-top: 10em;
+    margin-left: 10em;
+}
+
+.offcanvas-header{
+    background-color: var(--color-purple);
+}
+
+.chat{
+    background-color: var(--color-black);
+}
+
+.card-chat{
+    background-color: var(--color-purple);
+}
+
+.card-chat img{
+    max-width: 800px;
+    max-height: 800px;
+}
+
+.card-chat:hover{
+    background-color: var(--color-softGray);
+    transition: 4s;
+    transform: scale(1.04);
+
+    
+}
+
+
+.title{
+    margin-right: 5em;
+}
+
+.container-chat{
+
+    margin-bottom: 15px;
+    padding: 2em;
+    background-color: var(--color-pink);
+    box-shadow: 0 0 10px var(--color-pink), 0 0 40px var(--color-pink),0 0 80px var(--color-pink);
+    border-radius: 5px;
+}
+.title1{
+    margin-left: 4em;
+    color: var(--color-purple);
+}
+
+#user{min-height: 30em;
+    min-width: 15em;
+    background-color: var(--color-black);
+    color: var(--color-white);
+
+}
+
+#chat{
+    min-height: 30em;
+    min-width:50em ;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.card-header{
+    background-color: var(--color-purple);
+    color:var(--color-white) ;
+
+}
+
+.card-footer{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 768px) {
+    /* Redimensiona el ancho mínimo del chat y los usuarios */
+    
+    #chat{
+      min-width:10em;
+      min-height: 10em;
+    }
+    #user {
+        display: none;
+    }
+  
+    /* Ajusta el tamaño de la fuente en los encabezados de la tarjeta */
+    .card-header h3 {
+      font-size: 1.5rem; /* Puedes ajustar el tamaño según lo necesites */
+    }
+  }
+  
+  /* Agrega estilos específicos para pantallas de hasta 576px de ancho */
+  @media screen and (max-width: 576px) {
+    /* Redimensiona el ancho mínimo del formulario de mensaje */
+    
+    
+    
+    #message-form {
+      flex-direction: column; /* Cambia la dirección del flexbox a columna */
+      align-items: center; /* Centra los elementos en el eje transversal */
+    }
+  
+    /* Ajusta el tamaño del input de mensaje */
+    #message {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      margin-bottom: 1rem; /* Añade espacio entre el input y el botón */
+    }
+  
+    /* Ajusta el tamaño del botón de enviar mensaje */
+    #message-form .btn {
+      width: 100%; /* Ocupa todo el ancho disponible */
+    }
+  }
+
+
+   /* //aca comienzan los estilos del footer */ 
+   footer {
+    padding-top: 3rem;
+    box-shadow: 0 -5px 10px rgba(9, 9, 9, 0.8);
+    background-color: var(--color-PureBlack);
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    height: 300px;
+    color: var(--color-white); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.footer {
+    display: flex;
+    gap: 14rem;
+    height: max-content;
+
+}
+
+.content-mensajes {
+    display: flex;
+
+}
+
+.mensajes-ganchos h3 {
+    color: var(--color-purple);
+    padding-right: 10px;
+    font-size: 5rem;
+    font-weight: 300;
+    margin-top: -0.5rem;
+
+
+}
+
+.mensajes-ganchos h4 {
+    font-size: 4rem;
+    font-weight: 300;
+
+}
+
+.parrafo {
+    font-family: "Krub", sans-serif;
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+    padding-left: 0.8rem;
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
+}
+
+
+.redes {
+
+    display: flex;
+    gap: 6rem;
+}
+
+.social-media {
+    margin-top: 1.8rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    font-family: "Krub", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
+.social-media a {
+    font-size: 1.5rem;
+    color: var(--color-purple);
+
+}
+
+/* //----------RESPONSIVE FOOTER------- */
+
+@media(max-width:1100px) {
+    footer {
+        margin-top: 30px;
+        height: 600px;
+
+    }
+
+    .footer {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+
+
+
+    }
+
+    .derechos {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+/* //___-----------------------------PAGINA VIP------------------------------- */
+
+main {
+    margin-top: 10%;
+}
+
+.main-vip {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding-left: 5%;
+    padding: 5%;
+}
+
+
+.card-vip {
+    margin-top: 30%;
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid white;
+
+}
+
+.container-card {
+    color: var(--color-white);
+    width: 400px;
+    text-align: center;
+    border: solid var(--color-purple);
+    font-family: "krub", sans-serif;
+    letter-spacing: 0.5px;
+
+}
+
+.card-header {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.card-header h2 {
+    font-size: 2.5rem;
+    font-family: "Oswald", sans-serif;
+}
+
+.card-title {
+    color: var(--color-purple);
+    font-size: 2rem;
+    padding-bottom: 5%;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    text-align: start;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.btn {
+    position: relative;
+    right: 10px;
+    background-color: var(--color-purple);
+    border: none;
+    border-radius: 0px;
+
+}
+
+.btn:hover {
+    background-color: var(--color-pink);
+
+}
+
+
+
+//---------------------------------------------responsive vip-------------------------------
+
+@media(max-width:1100px){
+    .main-vip {
+        margin-top: 250px;
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        gap: 30px;
+    }
+}
+
+
